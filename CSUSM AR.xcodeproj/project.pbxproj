@@ -7,22 +7,104 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B51A95142ABE1901009DD218 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51A95132ABE1901009DD218 /* AppDelegate.swift */; };
-		B51A95162ABE1901009DD218 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B51A95152ABE1901009DD218 /* art.scnassets */; };
-		B51A95182ABE1901009DD218 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51A95172ABE1901009DD218 /* ViewController.swift */; };
-		B51A951B2ABE1901009DD218 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51A95192ABE1901009DD218 /* Main.storyboard */; };
-		B51A951D2ABE1902009DD218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51A951C2ABE1902009DD218 /* Assets.xcassets */; };
-		B51A95202ABE1902009DD218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51A951E2ABE1902009DD218 /* LaunchScreen.storyboard */; };
+		B51041F12AD7355400F8C941 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041B92AD7355400F8C941 /* Constants.swift */; };
+		B51041F22AD7355400F8C941 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041BA2AD7355400F8C941 /* ViewController.swift */; };
+		B51041F32AD7355400F8C941 /* geospatial_marker.obj in Resources */ = {isa = PBXBuildFile; fileRef = B51041BB2AD7355400F8C941 /* geospatial_marker.obj */; };
+		B51041F42AD7355400F8C941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51041BC2AD7355400F8C941 /* Assets.xcassets */; };
+		B51041F52AD7355400F8C941 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041BD2AD7355400F8C941 /* HomeViewController.swift */; };
+		B51041F62AD7355400F8C941 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51041BE2AD7355400F8C941 /* LaunchScreen.storyboard */; };
+		B51041F72AD7355400F8C941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51041C02AD7355400F8C941 /* Main.storyboard */; };
+		B51041F82AD7355400F8C941 /* RewrittenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041C22AD7355400F8C941 /* RewrittenViewController.swift */; };
+		B51041F92AD7355400F8C941 /* EventFeedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041C32AD7355400F8C941 /* EventFeedScrollView.swift */; };
+		B51041FA2AD7355400F8C941 /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041C42AD7355400F8C941 /* EventDetailsView.swift */; };
+		B51041FB2AD7355400F8C941 /* spatial-marker-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = B51041C52AD7355400F8C941 /* spatial-marker-yellow.png */; };
+		B51041FC2AD7355400F8C941 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B51041C62AD7355400F8C941 /* art.scnassets */; };
+		B51041FD2AD7355400F8C941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041C72AD7355400F8C941 /* AppDelegate.swift */; };
+		B51041FE2AD7355400F8C941 /* NavigationToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041C82AD7355400F8C941 /* NavigationToolbar.swift */; };
+		B51041FF2AD7355400F8C941 /* spatial-marker-baked.png in Resources */ = {isa = PBXBuildFile; fileRef = B51041C92AD7355400F8C941 /* spatial-marker-baked.png */; };
+		B51042002AD7355400F8C941 /* String+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041CC2AD7355400F8C941 /* String+Utilities.swift */; };
+		B51042012AD7355400F8C941 /* Bool+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041CD2AD7355400F8C941 /* Bool+VPropertyEncodable.swift */; };
+		B51042022AD7355400F8C941 /* String+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041CE2AD7355400F8C941 /* String+VPropertyEncodable.swift */; };
+		B51042032AD7355400F8C941 /* Date+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041CF2AD7355400F8C941 /* Date+VPropertyEncodable.swift */; };
+		B51042042AD7355400F8C941 /* URL+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041D02AD7355400F8C941 /* URL+VPropertyEncodable.swift */; };
+		B51042052AD7355400F8C941 /* UUID+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041D12AD7355400F8C941 /* UUID+VPropertyEncodable.swift */; };
+		B51042062AD7355400F8C941 /* Int+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041D22AD7355400F8C941 /* Int+VPropertyEncodable.swift */; };
+		B51042072AD7355400F8C941 /* ICalAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041D42AD7355400F8C941 /* ICalAlarm.swift */; };
+		B51042082AD7355400F8C941 /* ICalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041D52AD7355400F8C941 /* ICalendar.swift */; };
+		B51042092AD7355400F8C941 /* ICalSubTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041D62AD7355400F8C941 /* ICalSubTimeZone.swift */; };
+		B510420A2AD7355400F8C941 /* XTrumbaField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041D72AD7355400F8C941 /* XTrumbaField.swift */; };
+		B510420B2AD7355400F8C941 /* ICalTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041D82AD7355400F8C941 /* ICalTimeZone.swift */; };
+		B510420C2AD7355400F8C941 /* ICalComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041D92AD7355400F8C941 /* ICalComponent.swift */; };
+		B510420D2AD7355400F8C941 /* ICalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041DA2AD7355400F8C941 /* ICalEvent.swift */; };
+		B510420E2AD7355400F8C941 /* DateTimeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041DC2AD7355400F8C941 /* DateTimeUtil.swift */; };
+		B510420F2AD7355400F8C941 /* VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041DE2AD7355400F8C941 /* VPropertyEncodable.swift */; };
+		B51042102AD7355400F8C941 /* VEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041DF2AD7355400F8C941 /* VEncodable.swift */; };
+		B51042112AD7355400F8C941 /* VComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041E02AD7355400F8C941 /* VComponent.swift */; };
+		B51042122AD7355400F8C941 /* ICalParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041E22AD7355400F8C941 /* ICalParser.swift */; };
+		B51042132AD7355400F8C941 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041E42AD7355400F8C941 /* Constant.swift */; };
+		B51042142AD7355400F8C941 /* PropertyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041E62AD7355400F8C941 /* PropertyBuilder.swift */; };
+		B51042152AD7355400F8C941 /* ICalDateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041E82AD7355400F8C941 /* ICalDateTime.swift */; };
+		B51042162AD7355400F8C941 /* ICalDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041E92AD7355400F8C941 /* ICalDuration.swift */; };
+		B51042172AD7355400F8C941 /* ICalParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041EA2AD7355400F8C941 /* ICalParameter.swift */; };
+		B51042182AD7355400F8C941 /* VContentLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041EB2AD7355400F8C941 /* VContentLine.swift */; };
+		B51042192AD7355400F8C941 /* ICalRRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041EC2AD7355400F8C941 /* ICalRRule.swift */; };
+		B510421A2AD7355400F8C941 /* ICalProductIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041ED2AD7355400F8C941 /* ICalProductIdentifier.swift */; };
+		B510421B2AD7355400F8C941 /* ICalDateTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041EE2AD7355400F8C941 /* ICalDateTimes.swift */; };
+		B510421C2AD7355400F8C941 /* ICalPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041EF2AD7355400F8C941 /* ICalPeriod.swift */; };
+		B510421D2AD7355400F8C941 /* ICalAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041F02AD7355400F8C941 /* ICalAttachment.swift */; };
+		B51A952C2ABE1987009DD218 /* ARCoreGARSession in Frameworks */ = {isa = PBXBuildFile; productRef = B51A952B2ABE1987009DD218 /* ARCoreGARSession */; };
+		B51A952E2ABE1987009DD218 /* ARCoreGeospatial in Frameworks */ = {isa = PBXBuildFile; productRef = B51A952D2ABE1987009DD218 /* ARCoreGeospatial */; };
+		B538A2A82ACDDBE4001B1F9B /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = B538A2A72ACDDBE4001B1F9B /* SwiftSoup */; };
+		B55510D52ACDB3AF0093E096 /* XMLCoder in Frameworks */ = {isa = PBXBuildFile; productRef = B55510D42ACDB3AF0093E096 /* XMLCoder */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B51041B92AD7355400F8C941 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B51041BA2AD7355400F8C941 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B51041BB2AD7355400F8C941 /* geospatial_marker.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = geospatial_marker.obj; sourceTree = "<group>"; };
+		B51041BC2AD7355400F8C941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B51041BD2AD7355400F8C941 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B51041BF2AD7355400F8C941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B51041C12AD7355400F8C941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B51041C22AD7355400F8C941 /* RewrittenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewrittenViewController.swift; sourceTree = "<group>"; };
+		B51041C32AD7355400F8C941 /* EventFeedScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFeedScrollView.swift; sourceTree = "<group>"; };
+		B51041C42AD7355400F8C941 /* EventDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
+		B51041C52AD7355400F8C941 /* spatial-marker-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spatial-marker-yellow.png"; sourceTree = "<group>"; };
+		B51041C62AD7355400F8C941 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		B51041C72AD7355400F8C941 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B51041C82AD7355400F8C941 /* NavigationToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationToolbar.swift; sourceTree = "<group>"; };
+		B51041C92AD7355400F8C941 /* spatial-marker-baked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spatial-marker-baked.png"; sourceTree = "<group>"; };
+		B51041CC2AD7355400F8C941 /* String+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utilities.swift"; sourceTree = "<group>"; };
+		B51041CD2AD7355400F8C941 /* Bool+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+VPropertyEncodable.swift"; sourceTree = "<group>"; };
+		B51041CE2AD7355400F8C941 /* String+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+VPropertyEncodable.swift"; sourceTree = "<group>"; };
+		B51041CF2AD7355400F8C941 /* Date+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+VPropertyEncodable.swift"; sourceTree = "<group>"; };
+		B51041D02AD7355400F8C941 /* URL+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+VPropertyEncodable.swift"; sourceTree = "<group>"; };
+		B51041D12AD7355400F8C941 /* UUID+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UUID+VPropertyEncodable.swift"; sourceTree = "<group>"; };
+		B51041D22AD7355400F8C941 /* Int+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+VPropertyEncodable.swift"; sourceTree = "<group>"; };
+		B51041D42AD7355400F8C941 /* ICalAlarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalAlarm.swift; sourceTree = "<group>"; };
+		B51041D52AD7355400F8C941 /* ICalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalendar.swift; sourceTree = "<group>"; };
+		B51041D62AD7355400F8C941 /* ICalSubTimeZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalSubTimeZone.swift; sourceTree = "<group>"; };
+		B51041D72AD7355400F8C941 /* XTrumbaField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTrumbaField.swift; sourceTree = "<group>"; };
+		B51041D82AD7355400F8C941 /* ICalTimeZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalTimeZone.swift; sourceTree = "<group>"; };
+		B51041D92AD7355400F8C941 /* ICalComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalComponent.swift; sourceTree = "<group>"; };
+		B51041DA2AD7355400F8C941 /* ICalEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalEvent.swift; sourceTree = "<group>"; };
+		B51041DC2AD7355400F8C941 /* DateTimeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeUtil.swift; sourceTree = "<group>"; };
+		B51041DE2AD7355400F8C941 /* VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPropertyEncodable.swift; sourceTree = "<group>"; };
+		B51041DF2AD7355400F8C941 /* VEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VEncodable.swift; sourceTree = "<group>"; };
+		B51041E02AD7355400F8C941 /* VComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VComponent.swift; sourceTree = "<group>"; };
+		B51041E22AD7355400F8C941 /* ICalParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalParser.swift; sourceTree = "<group>"; };
+		B51041E42AD7355400F8C941 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		B51041E62AD7355400F8C941 /* PropertyBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyBuilder.swift; sourceTree = "<group>"; };
+		B51041E82AD7355400F8C941 /* ICalDateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalDateTime.swift; sourceTree = "<group>"; };
+		B51041E92AD7355400F8C941 /* ICalDuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalDuration.swift; sourceTree = "<group>"; };
+		B51041EA2AD7355400F8C941 /* ICalParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalParameter.swift; sourceTree = "<group>"; };
+		B51041EB2AD7355400F8C941 /* VContentLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VContentLine.swift; sourceTree = "<group>"; };
+		B51041EC2AD7355400F8C941 /* ICalRRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalRRule.swift; sourceTree = "<group>"; };
+		B51041ED2AD7355400F8C941 /* ICalProductIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalProductIdentifier.swift; sourceTree = "<group>"; };
+		B51041EE2AD7355400F8C941 /* ICalDateTimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalDateTimes.swift; sourceTree = "<group>"; };
+		B51041EF2AD7355400F8C941 /* ICalPeriod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalPeriod.swift; sourceTree = "<group>"; };
+		B51041F02AD7355400F8C941 /* ICalAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalAttachment.swift; sourceTree = "<group>"; };
 		B51A95102ABE1901009DD218 /* CSUSM AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSUSM AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B51A95132ABE1901009DD218 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B51A95152ABE1901009DD218 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		B51A95172ABE1901009DD218 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B51A951A2ABE1901009DD218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B51A951C2ABE1902009DD218 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B51A951F2ABE1902009DD218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,16 +112,184 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55510D52ACDB3AF0093E096 /* XMLCoder in Frameworks */,
+				B538A2A82ACDDBE4001B1F9B /* SwiftSoup in Frameworks */,
+				B51A952C2ABE1987009DD218 /* ARCoreGARSession in Frameworks */,
+				B51A952E2ABE1987009DD218 /* ARCoreGeospatial in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B51041B82AD7355400F8C941 /* CSUSM AR */ = {
+			isa = PBXGroup;
+			children = (
+				B51041C72AD7355400F8C941 /* AppDelegate.swift */,
+				B51041B92AD7355400F8C941 /* Constants.swift */,
+				B510421E2AD7358E00F8C941 /* Views */,
+				B51042222AD735FC00F8C941 /* Geospatial Assets */,
+				B51041CA2AD7355400F8C941 /* iCalSwift */,
+				B51041BC2AD7355400F8C941 /* Assets.xcassets */,
+				B51041BE2AD7355400F8C941 /* LaunchScreen.storyboard */,
+				B51041C02AD7355400F8C941 /* Main.storyboard */,
+			);
+			path = "CSUSM AR";
+			sourceTree = "<group>";
+		};
+		B51041CA2AD7355400F8C941 /* iCalSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B51041CB2AD7355400F8C941 /* Extension */,
+				B51041D32AD7355400F8C941 /* Component */,
+				B51041DB2AD7355400F8C941 /* Utils */,
+				B51041DD2AD7355400F8C941 /* Protocol */,
+				B51041E12AD7355400F8C941 /* Parser */,
+				B51041E32AD7355400F8C941 /* Constant */,
+				B51041E52AD7355400F8C941 /* Builder */,
+				B51041E72AD7355400F8C941 /* Structure */,
+			);
+			path = iCalSwift;
+			sourceTree = "<group>";
+		};
+		B51041CB2AD7355400F8C941 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B51041CC2AD7355400F8C941 /* String+Utilities.swift */,
+				B51041CD2AD7355400F8C941 /* Bool+VPropertyEncodable.swift */,
+				B51041CE2AD7355400F8C941 /* String+VPropertyEncodable.swift */,
+				B51041CF2AD7355400F8C941 /* Date+VPropertyEncodable.swift */,
+				B51041D02AD7355400F8C941 /* URL+VPropertyEncodable.swift */,
+				B51041D12AD7355400F8C941 /* UUID+VPropertyEncodable.swift */,
+				B51041D22AD7355400F8C941 /* Int+VPropertyEncodable.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B51041D32AD7355400F8C941 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				B51041D42AD7355400F8C941 /* ICalAlarm.swift */,
+				B51041D52AD7355400F8C941 /* ICalendar.swift */,
+				B51041D62AD7355400F8C941 /* ICalSubTimeZone.swift */,
+				B51041D72AD7355400F8C941 /* XTrumbaField.swift */,
+				B51041D82AD7355400F8C941 /* ICalTimeZone.swift */,
+				B51041D92AD7355400F8C941 /* ICalComponent.swift */,
+				B51041DA2AD7355400F8C941 /* ICalEvent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		B51041DB2AD7355400F8C941 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B51041DC2AD7355400F8C941 /* DateTimeUtil.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B51041DD2AD7355400F8C941 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B51041DE2AD7355400F8C941 /* VPropertyEncodable.swift */,
+				B51041DF2AD7355400F8C941 /* VEncodable.swift */,
+				B51041E02AD7355400F8C941 /* VComponent.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		B51041E12AD7355400F8C941 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				B51041E22AD7355400F8C941 /* ICalParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		B51041E32AD7355400F8C941 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				B51041E42AD7355400F8C941 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		B51041E52AD7355400F8C941 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				B51041E62AD7355400F8C941 /* PropertyBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		B51041E72AD7355400F8C941 /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				B51041E82AD7355400F8C941 /* ICalDateTime.swift */,
+				B51041E92AD7355400F8C941 /* ICalDuration.swift */,
+				B51041EA2AD7355400F8C941 /* ICalParameter.swift */,
+				B51041EB2AD7355400F8C941 /* VContentLine.swift */,
+				B51041EC2AD7355400F8C941 /* ICalRRule.swift */,
+				B51041ED2AD7355400F8C941 /* ICalProductIdentifier.swift */,
+				B51041EE2AD7355400F8C941 /* ICalDateTimes.swift */,
+				B51041EF2AD7355400F8C941 /* ICalPeriod.swift */,
+				B51041F02AD7355400F8C941 /* ICalAttachment.swift */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
+		B510421E2AD7358E00F8C941 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B51041BD2AD7355400F8C941 /* HomeViewController.swift */,
+				B510421F2AD735B100F8C941 /* Event Feed */,
+				B51042202AD735BE00F8C941 /* Augmented Reality */,
+				B51042212AD735D100F8C941 /* UI Extensions */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B510421F2AD735B100F8C941 /* Event Feed */ = {
+			isa = PBXGroup;
+			children = (
+				B51041C32AD7355400F8C941 /* EventFeedScrollView.swift */,
+				B51041C42AD7355400F8C941 /* EventDetailsView.swift */,
+			);
+			path = "Event Feed";
+			sourceTree = "<group>";
+		};
+		B51042202AD735BE00F8C941 /* Augmented Reality */ = {
+			isa = PBXGroup;
+			children = (
+				B51041C22AD7355400F8C941 /* RewrittenViewController.swift */,
+				B51041BA2AD7355400F8C941 /* ViewController.swift */,
+			);
+			path = "Augmented Reality";
+			sourceTree = "<group>";
+		};
+		B51042212AD735D100F8C941 /* UI Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B51041C82AD7355400F8C941 /* NavigationToolbar.swift */,
+			);
+			path = "UI Extensions";
+			sourceTree = "<group>";
+		};
+		B51042222AD735FC00F8C941 /* Geospatial Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B51041C62AD7355400F8C941 /* art.scnassets */,
+				B51041BB2AD7355400F8C941 /* geospatial_marker.obj */,
+				B51041C52AD7355400F8C941 /* spatial-marker-yellow.png */,
+				B51041C92AD7355400F8C941 /* spatial-marker-baked.png */,
+			);
+			path = "Geospatial Assets";
+			sourceTree = "<group>";
+		};
 		B51A95072ABE1901009DD218 = {
 			isa = PBXGroup;
 			children = (
-				B51A95122ABE1901009DD218 /* CSUSM AR */,
+				B51041B82AD7355400F8C941 /* CSUSM AR */,
 				B51A95112ABE1901009DD218 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,19 +300,6 @@
 				B51A95102ABE1901009DD218 /* CSUSM AR.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B51A95122ABE1901009DD218 /* CSUSM AR */ = {
-			isa = PBXGroup;
-			children = (
-				B51A95132ABE1901009DD218 /* AppDelegate.swift */,
-				B51A95152ABE1901009DD218 /* art.scnassets */,
-				B51A95172ABE1901009DD218 /* ViewController.swift */,
-				B51A95192ABE1901009DD218 /* Main.storyboard */,
-				B51A951C2ABE1902009DD218 /* Assets.xcassets */,
-				B51A951E2ABE1902009DD218 /* LaunchScreen.storyboard */,
-			);
-			path = "CSUSM AR";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +318,12 @@
 			dependencies = (
 			);
 			name = "CSUSM AR";
+			packageProductDependencies = (
+				B51A952B2ABE1987009DD218 /* ARCoreGARSession */,
+				B51A952D2ABE1987009DD218 /* ARCoreGeospatial */,
+				B55510D42ACDB3AF0093E096 /* XMLCoder */,
+				B538A2A72ACDDBE4001B1F9B /* SwiftSoup */,
+			);
 			productName = "CSUSM AR";
 			productReference = B51A95102ABE1901009DD218 /* CSUSM AR.app */;
 			productType = "com.apple.product-type.application";
@@ -109,6 +352,11 @@
 				Base,
 			);
 			mainGroup = B51A95072ABE1901009DD218;
+			packageReferences = (
+				B51A95262ABE1987009DD218 /* XCRemoteSwiftPackageReference "arcore-ios-sdk" */,
+				B55510D32ACDB3AF0093E096 /* XCRemoteSwiftPackageReference "XMLCoder" */,
+				B538A2A62ACDDBE4001B1F9B /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = B51A95112ABE1901009DD218 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -123,10 +371,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B51A95162ABE1901009DD218 /* art.scnassets in Resources */,
-				B51A95202ABE1902009DD218 /* LaunchScreen.storyboard in Resources */,
-				B51A951D2ABE1902009DD218 /* Assets.xcassets in Resources */,
-				B51A951B2ABE1901009DD218 /* Main.storyboard in Resources */,
+				B51041FB2AD7355400F8C941 /* spatial-marker-yellow.png in Resources */,
+				B51041FF2AD7355400F8C941 /* spatial-marker-baked.png in Resources */,
+				B51041FC2AD7355400F8C941 /* art.scnassets in Resources */,
+				B51041F62AD7355400F8C941 /* LaunchScreen.storyboard in Resources */,
+				B51041F42AD7355400F8C941 /* Assets.xcassets in Resources */,
+				B51041F32AD7355400F8C941 /* geospatial_marker.obj in Resources */,
+				B51041F72AD7355400F8C941 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,28 +388,64 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B51A95182ABE1901009DD218 /* ViewController.swift in Sources */,
-				B51A95142ABE1901009DD218 /* AppDelegate.swift in Sources */,
+				B51042072AD7355400F8C941 /* ICalAlarm.swift in Sources */,
+				B51042182AD7355400F8C941 /* VContentLine.swift in Sources */,
+				B51042102AD7355400F8C941 /* VEncodable.swift in Sources */,
+				B510421B2AD7355400F8C941 /* ICalDateTimes.swift in Sources */,
+				B510421A2AD7355400F8C941 /* ICalProductIdentifier.swift in Sources */,
+				B51042162AD7355400F8C941 /* ICalDuration.swift in Sources */,
+				B51042062AD7355400F8C941 /* Int+VPropertyEncodable.swift in Sources */,
+				B51042142AD7355400F8C941 /* PropertyBuilder.swift in Sources */,
+				B51041F22AD7355400F8C941 /* ViewController.swift in Sources */,
+				B51041F12AD7355400F8C941 /* Constants.swift in Sources */,
+				B51041F52AD7355400F8C941 /* HomeViewController.swift in Sources */,
+				B51042172AD7355400F8C941 /* ICalParameter.swift in Sources */,
+				B51042152AD7355400F8C941 /* ICalDateTime.swift in Sources */,
+				B51041F82AD7355400F8C941 /* RewrittenViewController.swift in Sources */,
+				B51042132AD7355400F8C941 /* Constant.swift in Sources */,
+				B510421D2AD7355400F8C941 /* ICalAttachment.swift in Sources */,
+				B51042192AD7355400F8C941 /* ICalRRule.swift in Sources */,
+				B51042042AD7355400F8C941 /* URL+VPropertyEncodable.swift in Sources */,
+				B51042082AD7355400F8C941 /* ICalendar.swift in Sources */,
+				B510420E2AD7355400F8C941 /* DateTimeUtil.swift in Sources */,
+				B51041FD2AD7355400F8C941 /* AppDelegate.swift in Sources */,
+				B510420B2AD7355400F8C941 /* ICalTimeZone.swift in Sources */,
+				B510420F2AD7355400F8C941 /* VPropertyEncodable.swift in Sources */,
+				B51042032AD7355400F8C941 /* Date+VPropertyEncodable.swift in Sources */,
+				B510420A2AD7355400F8C941 /* XTrumbaField.swift in Sources */,
+				B51042092AD7355400F8C941 /* ICalSubTimeZone.swift in Sources */,
+				B51042012AD7355400F8C941 /* Bool+VPropertyEncodable.swift in Sources */,
+				B51041FE2AD7355400F8C941 /* NavigationToolbar.swift in Sources */,
+				B510421C2AD7355400F8C941 /* ICalPeriod.swift in Sources */,
+				B510420C2AD7355400F8C941 /* ICalComponent.swift in Sources */,
+				B51042022AD7355400F8C941 /* String+VPropertyEncodable.swift in Sources */,
+				B51042122AD7355400F8C941 /* ICalParser.swift in Sources */,
+				B51042112AD7355400F8C941 /* VComponent.swift in Sources */,
+				B510420D2AD7355400F8C941 /* ICalEvent.swift in Sources */,
+				B51041FA2AD7355400F8C941 /* EventDetailsView.swift in Sources */,
+				B51042002AD7355400F8C941 /* String+Utilities.swift in Sources */,
+				B51042052AD7355400F8C941 /* UUID+VPropertyEncodable.swift in Sources */,
+				B51041F92AD7355400F8C941 /* EventFeedScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B51A95192ABE1901009DD218 /* Main.storyboard */ = {
+		B51041BE2AD7355400F8C941 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B51A951A2ABE1901009DD218 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B51A951E2ABE1902009DD218 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B51A951F2ABE1902009DD218 /* Base */,
+				B51041BF2AD7355400F8C941 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B51041C02AD7355400F8C941 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B51041C12AD7355400F8C941 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -221,6 +508,10 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -277,6 +568,10 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
@@ -288,11 +583,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DD8G3E28HN;
+				DEVELOPMENT_TEAM = C37X5KX2W5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permission is needed for AR mode.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Always in Use";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Location needed for AR tracking, doiii...";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location permission is needed for geospatial localization.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -305,8 +604,16 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.salmanburhan.CSUSM-AR";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salmanburhan.CSUSM-AR-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -318,11 +625,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DD8G3E28HN;
+				DEVELOPMENT_TEAM = C37X5KX2W5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permission is needed for AR mode.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Always in Use";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Location needed for AR tracking, doiii...";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location permission is needed for geospatial localization.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,8 +646,16 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.salmanburhan.CSUSM-AR";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salmanburhan.CSUSM-AR-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -365,6 +684,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B51A95262ABE1987009DD218 /* XCRemoteSwiftPackageReference "arcore-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google-ar/arcore-ios-sdk.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.39.0;
+			};
+		};
+		B538A2A62ACDDBE4001B1F9B /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.1;
+			};
+		};
+		B55510D32ACDB3AF0093E096 /* XCRemoteSwiftPackageReference "XMLCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CoreOffice/XMLCoder.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.17.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B51A952B2ABE1987009DD218 /* ARCoreGARSession */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B51A95262ABE1987009DD218 /* XCRemoteSwiftPackageReference "arcore-ios-sdk" */;
+			productName = ARCoreGARSession;
+		};
+		B51A952D2ABE1987009DD218 /* ARCoreGeospatial */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B51A95262ABE1987009DD218 /* XCRemoteSwiftPackageReference "arcore-ios-sdk" */;
+			productName = ARCoreGeospatial;
+		};
+		B538A2A72ACDDBE4001B1F9B /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B538A2A62ACDDBE4001B1F9B /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		B55510D42ACDB3AF0093E096 /* XMLCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B55510D32ACDB3AF0093E096 /* XCRemoteSwiftPackageReference "XMLCoder" */;
+			productName = XMLCoder;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B51A95082ABE1901009DD218 /* Project object */;
 }
