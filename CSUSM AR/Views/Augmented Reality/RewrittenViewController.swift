@@ -102,7 +102,7 @@ class RewrittenViewController: UIViewController {
         print("setupGARSession() ==> Not Setup, Attempting...")
         do {
             
-            let garSession = try GARSession(apiKey: Constants.AR.kGOOGLE_API_KEY, bundleIdentifier: nil)
+            let garSession = try GARSession(apiKey: GoogleAPI.sandbox.apiKey, bundleIdentifier: nil)
             if !garSession.isGeospatialModeSupported(.enabled) { print("GARGeospatialModeEnabled Is Not Supported On This Device.") }
             
             let configuration = GARSessionConfiguration()

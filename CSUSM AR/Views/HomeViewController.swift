@@ -59,23 +59,25 @@ struct HomeViewController: View {
                     }
                     .foregroundColor(.white)
                 }
-                HStack(alignment: .top) {
-                    Image(systemName: "building.2")
-                        .symbolRenderingMode(.monochrome)
-                    Text("Find a Building")
-                    Spacer()
-                }
-                .background {
-                    Group {
-                        
+                NavigationLink(destination: BuildingListView()) {
+                    HStack(alignment: .top) {
+                        Image(systemName: "building.2")
+                            .symbolRenderingMode(.monochrome)
+                        Text("Find a Building")
+                        Spacer()
                     }
+                    .background {
+                        Group {
+                            
+                        }
+                    }
+                    .padding()
+                    .background {
+                        RoundedRectangle(cornerRadius: 24, style: .continuous)
+                            .fill(.blue)
+                    }
+                    .foregroundColor(.white)
                 }
-                .padding()
-                .background {
-                    RoundedRectangle(cornerRadius: 24, style: .continuous)
-                        .fill(.blue)
-                }
-                .foregroundColor(.white)
             }
             .padding(.leading, 60)
         }
