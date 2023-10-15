@@ -12,7 +12,6 @@ import SwiftUI
 struct Constants {
     
     struct AR {
-        static let kGOOGLE_API_KEY = "***REMOVED***"
         static let kVPS_AVAILABILITY_TEXT = "The Google Visual Positioning Service (VPS) is not available at your current location. Location data may not be as accurate."
         static let kHorizontalAccuracyLowThreshold: CLLocationAccuracy = 10
         static let kHorizontalAccuracyHighThreshold: CLLocationAccuracy = 20
