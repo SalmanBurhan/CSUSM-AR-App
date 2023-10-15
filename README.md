@@ -13,10 +13,17 @@ struct Secrets {
         static let SandboxGoogleAPIKey: String?
         static let ProductionGoogleAPIKey: String? 
     }
+    struct Concept3DAPI {
+        static let baseURL: String?
+        static let key: String?
+        static let mapId: Int?
+        static let cmsBaseURL: String?
+    }
 }
 ```
-Access the API key using
+Access the Google API key using
 ``` swift
 GoogleAPI.production.apiKey
 GoogleAPI.sandbox.apiKey
 ```
+Access to the Concept3D API Key is not necessary as there is no need for distinguishing between sandbox and production environments at this time.
