@@ -56,6 +56,8 @@
 		B51A952E2ABE1987009DD218 /* ARCoreGeospatial in Frameworks */ = {isa = PBXBuildFile; productRef = B51A952D2ABE1987009DD218 /* ARCoreGeospatial */; };
 		B538A2A82ACDDBE4001B1F9B /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = B538A2A72ACDDBE4001B1F9B /* SwiftSoup */; };
 		B55510D52ACDB3AF0093E096 /* XMLCoder in Frameworks */ = {isa = PBXBuildFile; productRef = B55510D42ACDB3AF0093E096 /* XMLCoder */; };
+		B5DE6E812ADB6C35001BBBAB /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE6E802ADB6C35001BBBAB /* Secrets.swift */; };
+		B5DE6E832ADB6DF6001BBBAB /* GoogleAPIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE6E822ADB6DF6001BBBAB /* GoogleAPIKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +107,8 @@
 		B51041EF2AD7355400F8C941 /* ICalPeriod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalPeriod.swift; sourceTree = "<group>"; };
 		B51041F02AD7355400F8C941 /* ICalAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalAttachment.swift; sourceTree = "<group>"; };
 		B51A95102ABE1901009DD218 /* CSUSM AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSUSM AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DE6E802ADB6C35001BBBAB /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		B5DE6E822ADB6DF6001BBBAB /* GoogleAPIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAPIKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 			children = (
 				B51041C72AD7355400F8C941 /* AppDelegate.swift */,
 				B51041B92AD7355400F8C941 /* Constants.swift */,
+				B5DE6E802ADB6C35001BBBAB /* Secrets.swift */,
+				B5DE6E822ADB6DF6001BBBAB /* GoogleAPIKey.swift */,
 				B510421E2AD7358E00F8C941 /* Views */,
 				B51042222AD735FC00F8C941 /* Geospatial Assets */,
 				B51041CA2AD7355400F8C941 /* iCalSwift */,
@@ -393,6 +399,7 @@
 				B51042102AD7355400F8C941 /* VEncodable.swift in Sources */,
 				B510421B2AD7355400F8C941 /* ICalDateTimes.swift in Sources */,
 				B510421A2AD7355400F8C941 /* ICalProductIdentifier.swift in Sources */,
+				B5DE6E832ADB6DF6001BBBAB /* GoogleAPIKey.swift in Sources */,
 				B51042162AD7355400F8C941 /* ICalDuration.swift in Sources */,
 				B51042062AD7355400F8C941 /* Int+VPropertyEncodable.swift in Sources */,
 				B51042142AD7355400F8C941 /* PropertyBuilder.swift in Sources */,
@@ -425,6 +432,7 @@
 				B51041FA2AD7355400F8C941 /* EventDetailsView.swift in Sources */,
 				B51042002AD7355400F8C941 /* String+Utilities.swift in Sources */,
 				B51042052AD7355400F8C941 /* UUID+VPropertyEncodable.swift in Sources */,
+				B5DE6E812ADB6C35001BBBAB /* Secrets.swift in Sources */,
 				B51041F92AD7355400F8C941 /* EventFeedScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

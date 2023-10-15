@@ -8,14 +8,14 @@
 import Foundation
 import UIKit
 import ARKit
-import ARCore
+import ARCoreGeospatial
 import CoreLocation
 import SceneKit
 import SceneKit.ModelIO
 
 class ViewController: UIViewController {
     
-    private let kARCoreAPIKey = "***REMOVED***"
+    private let kARCoreAPIKey = GoogleAPI.sandbox.apiKey
     
     let kHorizontalAccuracyLowThreshold: CLLocationAccuracy = 10
     let kHorizontalAccuracyHighThreshold: CLLocationAccuracy = 20
@@ -627,10 +627,8 @@ class ViewController: UIViewController {
     }
     
     func addTerrainAnchorWithCoordinate(_ coordinate: CLLocationCoordinate2D, eastUpSouthQTarget: simd_quatf, shouldSave: Bool) {
-        
-        
         do {
-            try garSession?.createAnchorOnTerrain(coordinate: coordinate, altitudeAboveTerrain: 0, eastUpSouthQAnchor: eastUpSouthQTarget)
+            try garSession?.createAnchorOnTerrain(coordinate: coordinate, altitudeAboveTerrain: 0, eastUpSouthQAnchor: eastUpSouthQTarget, completionHandler:nil)
         } catch {
             print("Error adding anchor: \(error)")
             return
@@ -700,7 +698,20 @@ class ViewController: UIViewController {
             print("Failed to get a raycast query")
             return
         }
+
+        let garRaycastResults = try? self.garSession?.raycastStreetscapeGeometry(origin: query.origin, direction: query.direction)
+        print("GAR RAYCAST RESULTS => \(garRaycastResults as AnyObject)")
+        
+        if let result = garRaycastResults?.first {
+            do {
+                let ganchor = try self.garSession?.createAnchor(geometry: result.streetscapeGeometry, transform: result.worldTransform)
+            } catch {
+                print("Error creating anchor for streetscape geometry result")
+            }
+        }
+        
         let rayCastResults = arSession.raycast(query)
+        print("AR RAYCAST RESULTS => \(rayCastResults as AnyObject)")
         
         if let result = rayCastResults.first {
             do {
@@ -709,7 +720,7 @@ class ViewController: UIViewController {
                     print("No transform")
                     return
                 }
-                geospatialTransform.eastUpSouthQTarget
+                //geospatialTransform.eastUpSouthQTarget
                 if self.isTerrainAnchorMode {
                     addTerrainAnchorWithCoordinate(geospatialTransform.coordinate,
                                                    eastUpSouthQTarget: geospatialTransform.eastUpSouthQTarget,
