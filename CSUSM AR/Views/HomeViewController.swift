@@ -59,7 +59,7 @@ struct HomeViewController: View {
                     }
                     .foregroundColor(.white)
                 }
-                NavigationLink(destination: BuildingListView()) {
+                NavigationLink(destination: Concept3DCategoryListView()) {
                     HStack(alignment: .top) {
                         Image(systemName: "building.2")
                             .symbolRenderingMode(.monochrome)

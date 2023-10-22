@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B50809942ADC38DD00A556CA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50809932ADC38DD00A556CA /* Location.swift */; };
-		B50809972ADC3B2800A556CA /* LocationCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50809962ADC3B2800A556CA /* LocationCatalog.swift */; };
+		B50809942ADC38DD00A556CA /* Concept3DLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50809932ADC38DD00A556CA /* Concept3DLocation.swift */; };
+		B50809972ADC3B2800A556CA /* Concept3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50809962ADC3B2800A556CA /* Concept3D.swift */; };
 		B50809992ADC3DB900A556CA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50809982ADC3DB900A556CA /* NetworkError.swift */; };
-		B508099B2ADC41ED00A556CA /* LocationCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B508099A2ADC41ED00A556CA /* LocationCategory.swift */; };
-		B508099E2ADC62FE00A556CA /* BuildingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B508099D2ADC62FE00A556CA /* BuildingListView.swift */; };
-		B50809A02ADC69C200A556CA /* LocationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B508099F2ADC69C200A556CA /* LocationDetails.swift */; };
+		B508099B2ADC41ED00A556CA /* Concept3DCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B508099A2ADC41ED00A556CA /* Concept3DCategory.swift */; };
+		B508099E2ADC62FE00A556CA /* Concept3DCategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B508099D2ADC62FE00A556CA /* Concept3DCategoryListView.swift */; };
+		B50809A02ADC69C200A556CA /* Concept3DLocationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B508099F2ADC69C200A556CA /* Concept3DLocationDetails.swift */; };
 		B51041F12AD7355400F8C941 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041B92AD7355400F8C941 /* Constants.swift */; };
 		B51041F22AD7355400F8C941 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041BA2AD7355400F8C941 /* ViewController.swift */; };
 		B51041F32AD7355400F8C941 /* geospatial_marker.obj in Resources */ = {isa = PBXBuildFile; fileRef = B51041BB2AD7355400F8C941 /* geospatial_marker.obj */; };
@@ -63,16 +63,20 @@
 		B538A2A82ACDDBE4001B1F9B /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = B538A2A72ACDDBE4001B1F9B /* SwiftSoup */; };
 		B53913A52ADB7EF2003A86B1 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53913A42ADB7EF2003A86B1 /* Secrets.swift */; };
 		B55510D52ACDB3AF0093E096 /* XMLCoder in Frameworks */ = {isa = PBXBuildFile; productRef = B55510D42ACDB3AF0093E096 /* XMLCoder */; };
+		B59FB8012AE4794100809C5B /* Concept3DError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FB8002AE4794100809C5B /* Concept3DError.swift */; };
+		B59FB8032AE4795300809C5B /* Concept3DEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FB8022AE4795300809C5B /* Concept3DEndpoint.swift */; };
+		B59FB8052AE4998400809C5B /* Concept3DCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FB8042AE4998400809C5B /* Concept3DCategoryView.swift */; };
+		B59FB8072AE4B44600809C5B /* Concept3DLocationImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FB8062AE4B44600809C5B /* Concept3DLocationImage.swift */; };
 		B5DE6E832ADB6DF6001BBBAB /* GoogleAPIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE6E822ADB6DF6001BBBAB /* GoogleAPIKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B50809932ADC38DD00A556CA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		B50809962ADC3B2800A556CA /* LocationCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCatalog.swift; sourceTree = "<group>"; };
+		B50809932ADC38DD00A556CA /* Concept3DLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept3DLocation.swift; sourceTree = "<group>"; };
+		B50809962ADC3B2800A556CA /* Concept3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept3D.swift; sourceTree = "<group>"; };
 		B50809982ADC3DB900A556CA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		B508099A2ADC41ED00A556CA /* LocationCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCategory.swift; sourceTree = "<group>"; };
-		B508099D2ADC62FE00A556CA /* BuildingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingListView.swift; sourceTree = "<group>"; };
-		B508099F2ADC69C200A556CA /* LocationDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetails.swift; sourceTree = "<group>"; };
+		B508099A2ADC41ED00A556CA /* Concept3DCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept3DCategory.swift; sourceTree = "<group>"; };
+		B508099D2ADC62FE00A556CA /* Concept3DCategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept3DCategoryListView.swift; sourceTree = "<group>"; };
+		B508099F2ADC69C200A556CA /* Concept3DLocationDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept3DLocationDetails.swift; sourceTree = "<group>"; };
 		B51041B92AD7355400F8C941 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B51041BA2AD7355400F8C941 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B51041BB2AD7355400F8C941 /* geospatial_marker.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = geospatial_marker.obj; sourceTree = "<group>"; };
@@ -120,6 +124,10 @@
 		B51041F02AD7355400F8C941 /* ICalAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalAttachment.swift; sourceTree = "<group>"; };
 		B51A95102ABE1901009DD218 /* CSUSM AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSUSM AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53913A42ADB7EF2003A86B1 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		B59FB8002AE4794100809C5B /* Concept3DError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept3DError.swift; sourceTree = "<group>"; };
+		B59FB8022AE4795300809C5B /* Concept3DEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept3DEndpoint.swift; sourceTree = "<group>"; };
+		B59FB8042AE4998400809C5B /* Concept3DCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept3DCategoryView.swift; sourceTree = "<group>"; };
+		B59FB8062AE4B44600809C5B /* Concept3DLocationImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept3DLocationImage.swift; sourceTree = "<group>"; };
 		B5DE6E822ADB6DF6001BBBAB /* GoogleAPIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAPIKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,21 +146,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B50809922ADC38C000A556CA /* LocationCatalog */ = {
+		B50809922ADC38C000A556CA /* Concept3D */ = {
 			isa = PBXGroup;
 			children = (
 				B50809952ADC3B1C00A556CA /* Models */,
-				B50809962ADC3B2800A556CA /* LocationCatalog.swift */,
+				B50809962ADC3B2800A556CA /* Concept3D.swift */,
+				B59FB8002AE4794100809C5B /* Concept3DError.swift */,
+				B59FB8022AE4795300809C5B /* Concept3DEndpoint.swift */,
 			);
-			path = LocationCatalog;
+			path = Concept3D;
 			sourceTree = "<group>";
 		};
 		B50809952ADC3B1C00A556CA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B50809932ADC38DD00A556CA /* Location.swift */,
-				B508099F2ADC69C200A556CA /* LocationDetails.swift */,
-				B508099A2ADC41ED00A556CA /* LocationCategory.swift */,
+				B50809932ADC38DD00A556CA /* Concept3DLocation.swift */,
+				B59FB8062AE4B44600809C5B /* Concept3DLocationImage.swift */,
+				B508099F2ADC69C200A556CA /* Concept3DLocationDetails.swift */,
+				B508099A2ADC41ED00A556CA /* Concept3DCategory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -160,7 +171,8 @@
 		B508099C2ADC62D300A556CA /* BuildingCatalog */ = {
 			isa = PBXGroup;
 			children = (
-				B508099D2ADC62FE00A556CA /* BuildingListView.swift */,
+				B508099D2ADC62FE00A556CA /* Concept3DCategoryListView.swift */,
+				B59FB8042AE4998400809C5B /* Concept3DCategoryView.swift */,
 			);
 			path = BuildingCatalog;
 			sourceTree = "<group>";
@@ -175,7 +187,7 @@
 				B510421E2AD7358E00F8C941 /* Views */,
 				B51042222AD735FC00F8C941 /* Geospatial Assets */,
 				B51041CA2AD7355400F8C941 /* iCalSwift */,
-				B50809922ADC38C000A556CA /* LocationCatalog */,
+				B50809922ADC38C000A556CA /* Concept3D */,
 				B51041BC2AD7355400F8C941 /* Assets.xcassets */,
 				B50809982ADC3DB900A556CA /* NetworkError.swift */,
 				B51041BE2AD7355400F8C941 /* LaunchScreen.storyboard */,
@@ -440,20 +452,21 @@
 				B53913A52ADB7EF2003A86B1 /* Secrets.swift in Sources */,
 				B51042182AD7355400F8C941 /* VContentLine.swift in Sources */,
 				B51042102AD7355400F8C941 /* VEncodable.swift in Sources */,
-				B508099B2ADC41ED00A556CA /* LocationCategory.swift in Sources */,
+				B508099B2ADC41ED00A556CA /* Concept3DCategory.swift in Sources */,
 				B510421B2AD7355400F8C941 /* ICalDateTimes.swift in Sources */,
 				B510421A2AD7355400F8C941 /* ICalProductIdentifier.swift in Sources */,
-				B50809972ADC3B2800A556CA /* LocationCatalog.swift in Sources */,
+				B50809972ADC3B2800A556CA /* Concept3D.swift in Sources */,
 				B5DE6E832ADB6DF6001BBBAB /* GoogleAPIKey.swift in Sources */,
 				B51042162AD7355400F8C941 /* ICalDuration.swift in Sources */,
 				B51042062AD7355400F8C941 /* Int+VPropertyEncodable.swift in Sources */,
 				B51042142AD7355400F8C941 /* PropertyBuilder.swift in Sources */,
 				B51041F22AD7355400F8C941 /* ViewController.swift in Sources */,
-				B50809A02ADC69C200A556CA /* LocationDetails.swift in Sources */,
+				B50809A02ADC69C200A556CA /* Concept3DLocationDetails.swift in Sources */,
 				B51041F12AD7355400F8C941 /* Constants.swift in Sources */,
 				B51041F52AD7355400F8C941 /* HomeViewController.swift in Sources */,
 				B51042172AD7355400F8C941 /* ICalParameter.swift in Sources */,
 				B51042152AD7355400F8C941 /* ICalDateTime.swift in Sources */,
+				B59FB8032AE4795300809C5B /* Concept3DEndpoint.swift in Sources */,
 				B51041F82AD7355400F8C941 /* RewrittenViewController.swift in Sources */,
 				B51042132AD7355400F8C941 /* Constant.swift in Sources */,
 				B510421D2AD7355400F8C941 /* ICalAttachment.swift in Sources */,
@@ -468,15 +481,18 @@
 				B510420A2AD7355400F8C941 /* XTrumbaField.swift in Sources */,
 				B51042092AD7355400F8C941 /* ICalSubTimeZone.swift in Sources */,
 				B51042012AD7355400F8C941 /* Bool+VPropertyEncodable.swift in Sources */,
-				B50809942ADC38DD00A556CA /* Location.swift in Sources */,
+				B50809942ADC38DD00A556CA /* Concept3DLocation.swift in Sources */,
 				B51041FE2AD7355400F8C941 /* NavigationToolbar.swift in Sources */,
+				B59FB8012AE4794100809C5B /* Concept3DError.swift in Sources */,
 				B510421C2AD7355400F8C941 /* ICalPeriod.swift in Sources */,
-				B508099E2ADC62FE00A556CA /* BuildingListView.swift in Sources */,
+				B508099E2ADC62FE00A556CA /* Concept3DCategoryListView.swift in Sources */,
+				B59FB8072AE4B44600809C5B /* Concept3DLocationImage.swift in Sources */,
 				B510420C2AD7355400F8C941 /* ICalComponent.swift in Sources */,
 				B51042022AD7355400F8C941 /* String+VPropertyEncodable.swift in Sources */,
 				B51042122AD7355400F8C941 /* ICalParser.swift in Sources */,
 				B51042112AD7355400F8C941 /* VComponent.swift in Sources */,
 				B50809992ADC3DB900A556CA /* NetworkError.swift in Sources */,
+				B59FB8052AE4998400809C5B /* Concept3DCategoryView.swift in Sources */,
 				B510420D2AD7355400F8C941 /* ICalEvent.swift in Sources */,
 				B51041FA2AD7355400F8C941 /* EventDetailsView.swift in Sources */,
 				B51042002AD7355400F8C941 /* String+Utilities.swift in Sources */,
