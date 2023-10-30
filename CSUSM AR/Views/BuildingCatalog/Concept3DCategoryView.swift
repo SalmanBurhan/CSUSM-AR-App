@@ -56,7 +56,7 @@ extension Concept3DCategoryView {
         }
         .frame(maxWidth: .infinity)
         .clipped()
-        .padding(.top, 98)
+        .padding(.top, 100)
         .padding(.bottom)
     }
     
@@ -102,6 +102,22 @@ extension Concept3DCategoryView {
     
     @ViewBuilder
     func locationListView() -> some View {
+        Group {
+            Text("Locations")
+                .font(.headline)
+                .fontWeight(.medium)
+                .foregroundStyle(.secondary)
+            
+            ForEach(self.locations) { location in
+                LocationCollectionCardView(for: location, with: category)
+                    .padding(.bottom, 5)
+            }
+            
+        }
+    }
+    
+    @ViewBuilder
+    func _locationListView() -> some View {
         Group {
             Text("Locations")
                 .font(.headline)
