@@ -31,14 +31,14 @@ struct LocationCollectionCardView: View {
                         .font(.title)
                         .fontWeight(.bold)
                         .minimumScaleFactor(0.90)
-                        .foregroundStyle(Constants.Colors.spiritBlue)
+                        .foregroundStyle(Color.spiritBlue)
                         .padding()
                     Spacer()
                 }
                 .frame(minWidth: 100, maxWidth: .infinity)
                 .background {
                     LinearGradient(colors: [
-                        Constants.Colors.universityBlue, .black
+                        Color.universityBlue, .black
                     ], startPoint: .topLeading, endPoint: .bottomTrailing).background(.ultraThickMaterial)
                 }
             }

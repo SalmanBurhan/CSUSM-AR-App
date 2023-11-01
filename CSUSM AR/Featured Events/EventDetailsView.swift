@@ -87,10 +87,10 @@ struct EventImageView: View {
         } placeholder: {
             VStack {
                 Spacer()
-                Text("CSUSM").font(.largeTitle.bold()).foregroundStyle(Constants.Colors.spiritBlue)
+                Text("CSUSM").font(.largeTitle.bold()).foregroundStyle(Color.spiritBlue)
                 Spacer()
             }.frame(maxWidth: .infinity) .background {
-                Color(Constants.Colors.universityBlue)
+                Color.universityBlue
             }
         }.frame(width: 390, height: 320).clipped()
     }
@@ -148,7 +148,7 @@ struct EventHighlightsView: View {
     
     var timeHighlight: some View {
         HStack(spacing: 9) {
-            Image(systemName: "clock").symbolRenderingMode(.monochrome).foregroundColor(Constants.Colors.universityBlue).frame(width: 20).clipped()
+            Image(systemName: "clock").symbolRenderingMode(.monochrome).foregroundStyle(Color.universityBlue).frame(width: 20).clipped()
             Text("\(startTime) to \(endTime)")
             Spacer()
         }.font(.subheadline)
@@ -156,7 +156,7 @@ struct EventHighlightsView: View {
     
     var organizationHighlight: some View {
         HStack(spacing: 9) {
-            Image(systemName: "person.3").symbolRenderingMode(.monochrome).foregroundColor(Constants.Colors.universityBlue).frame(width: 20).clipped()
+            Image(systemName: "person.3").symbolRenderingMode(.monochrome).foregroundColor(.universityBlue).frame(width: 20).clipped()
             Text(organization)
             Spacer()
         }.font(.subheadline)
@@ -164,7 +164,7 @@ struct EventHighlightsView: View {
     
     var locationHighlight: some View {
         HStack(spacing: 9) {
-            Image(systemName: "location").symbolRenderingMode(.monochrome).foregroundColor(Constants.Colors.universityBlue).frame(width: 20).clipped()
+            Image(systemName: "location").symbolRenderingMode(.monochrome).foregroundColor(.universityBlue).frame(width: 20).clipped()
             Text(location)
             Spacer()
         }.font(.subheadline)
@@ -172,7 +172,7 @@ struct EventHighlightsView: View {
     
     var eventTypeHighlight: some View {
         HStack(spacing: 9) {
-            Image(systemName: "info").symbolRenderingMode(.monochrome).foregroundColor(Constants.Colors.universityBlue).frame(width: 20).clipped()
+            Image(systemName: "info").symbolRenderingMode(.monochrome).foregroundColor(.universityBlue).frame(width: 20).clipped()
             Text(eventType)
             Spacer()
         }.font(.subheadline)
@@ -188,7 +188,7 @@ struct GuidanceButton: View {
     
     var body: some View {
         VStack(spacing: 14) {
-            Text("Begin Guidance").font(.system(.title3, weight: .medium)).padding(.vertical, 12).padding(.horizontal, 24).background(Constants.Colors.cougarBlue).foregroundColor(.white).mask {
+            Text("Begin Guidance").font(.system(.title3, weight: .medium)).padding(.vertical, 12).padding(.horizontal, 24).background(Color.cougarBlue).foregroundColor(.white).mask {
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
             }
         }.padding(.vertical, 28)

@@ -22,8 +22,7 @@ struct Concept3DCategoryListView: View {
                 } else {
                     self.renderCategoryListView()
                 }
-            }
-            .ignoresSafeArea()
+            }.ignoresSafeArea()
         }
     }
 }
@@ -32,10 +31,18 @@ extension Concept3DCategoryListView {
         
     @ViewBuilder
     func renderContentUnavailableView() -> some View {
-        ContentUnavailableView {
-            Label("Catalog Empty", systemImage: "list.number")
-        } description: {
-            Text("The catalog appears to be empty at the moment. Please try again in a few minutes.")
+        if #available(iOS 17.0, *) {
+            ContentUnavailableView {
+                Label("Catalog Empty", systemImage: "list.number")
+            } description: {
+                Text("The catalog appears to be empty at the moment. Please try again in a few minutes.")
+            }
+        } else {
+            // Fallback on earlier versions
+            Group {
+                Label("Catalog Empty", systemImage: "list.number")
+                Text("The catalog appears to be empty at the moment. Please try again in a few minutes.")
+            }
         }
     }
     
@@ -52,7 +59,7 @@ extension Concept3DCategoryListView {
                         }.buttonStyle(.plain)
                     }
                 }
-            }.frame(maxWidth: .infinity).clipped().padding(.top, 98).padding(.bottom)
+            }.frame(maxWidth: .infinity).clipped().padding(.top, 100).padding(.bottom)
         }
     }
     
@@ -69,10 +76,10 @@ extension Concept3DCategoryListView {
                 Image(systemName: "questionmark.circle.fill")
                     .symbolRenderingMode(.hierarchical)
                     .imageScale(.large)
-                    .foregroundStyle(Constants.Colors.spiritBlue)
+                    .foregroundStyle(Color.spiritBlue)
                     .frame(width: 40, height: 40, alignment: .center).clipped()
                     .background {
-                        Color(Constants.Colors.universityBlue)
+                        Color.universityBlue
                     }
                     .mask { RoundedRectangle(cornerRadius: 16, style: .continuous) }
             }
@@ -86,7 +93,7 @@ extension Concept3DCategoryListView {
             Image(systemName: "arrow.down.right.circle.fill")
                 .symbolRenderingMode(.hierarchical)
                 .font(.title)
-                .foregroundColor(Constants.Colors.spiritBlue)
+                .foregroundColor(Color.spiritBlue)
         }
         .padding(.horizontal)
     }

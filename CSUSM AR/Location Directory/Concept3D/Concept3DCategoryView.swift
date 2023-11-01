@@ -67,7 +67,6 @@ extension Concept3DCategoryView {
                 .font(.headline)
                 .fontWeight(.medium)
                 .foregroundStyle(.secondary)
-            
             ForEach(self.children) { child in
                 NavigationLink(destination: Concept3DCategoryView(category: child).withCustomBackButton()) {
                     HStack {
@@ -81,9 +80,9 @@ extension Concept3DCategoryView {
                             Image(systemName: "questionmark.circle.fill")
                                 .symbolRenderingMode(.hierarchical)
                                 .imageScale(.large)
-                                .foregroundStyle(Constants.Colors.spiritBlue)
+                                .foregroundStyle(Color.spiritBlue)
                                 .frame(width: 40, height: 40, alignment: .center).clipped()
-                                .background { Color(Constants.Colors.universityBlue) }
+                                .background { Color.universityBlue }
                                 .mask { RoundedRectangle(cornerRadius: 16, style: .continuous) }
                         }
 
@@ -95,7 +94,6 @@ extension Concept3DCategoryView {
                             .foregroundStyle(.secondary)
                     }.padding(.horizontal)
                 }.buttonStyle(.plain)
-
             }
         }
     }
@@ -138,12 +136,12 @@ extension Concept3DCategoryView {
                     } placeholder: {
                         VStack {
                             Spacer()
-                            Text("CSUSM").fontWeight(.bold).minimumScaleFactor(0.75).foregroundStyle(Constants.Colors.spiritBlue)
+                            Text("CSUSM").fontWeight(.bold).minimumScaleFactor(0.75).foregroundStyle(Color.spiritBlue)
                             Spacer()
                         }
                         .frame(width: 100, height: 120, alignment: .center).clipped()
                         .background {
-                            Color(Constants.Colors.universityBlue)
+                            Color.universityBlue
                         }
                         .mask { RoundedRectangle(cornerRadius: 16, style: .continuous) }
                     }
@@ -160,7 +158,7 @@ extension Concept3DCategoryView {
                     Image(systemName: "arrow.down.right.circle.fill")
                         .symbolRenderingMode(.hierarchical)
                         .font(.title)
-                        .foregroundColor(Constants.Colors.spiritBlue)
+                        .foregroundColor(Color.spiritBlue)
                 }
                 .padding(.horizontal)
             }

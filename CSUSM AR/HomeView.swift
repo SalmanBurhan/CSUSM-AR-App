@@ -51,16 +51,16 @@ extension HomeView {
                 
                 NavigationLink(destination: EventFeedView()) {
                     menuTrayItem("Events", systemIcon: "calendar")
-                        .foregroundStyle(Constants.Colors.cougarBlue.gradient)
+                        .foregroundStyle(Color.cougarBlue.gradient)
                 }.buttonStyle(.plain)
                 
                 NavigationLink(destination: Concept3DCategoryListView()) {
                     menuTrayItem("Buildings", systemIcon: "building.2")
-                        .foregroundStyle(Constants.Colors.universityBlue.gradient)
+                        .foregroundStyle(Color.universityBlue.gradient)
                 }.buttonStyle(.plain)
                 
                 menuTrayItem("Explore", systemIcon: "arkit")
-                    .foregroundStyle(Constants.Colors.spiritBlue.gradient)
+                    .foregroundStyle(Color.spiritBlue.gradient)
             })
         }
     }
@@ -74,7 +74,7 @@ extension HomeView {
     
     @ViewBuilder
     func headerView() -> some View {
-        LinearGradient(colors: [Constants.Colors.universityBlue, .black], startPoint: .topLeading, endPoint: .bottomTrailing).background(.ultraThickMaterial)
+        LinearGradient(colors: [Color.universityBlue, .black], startPoint: .topLeading, endPoint: .bottomTrailing).background(.ultraThickMaterial)
             .clipShape(UnevenRoundedRectangle(cornerRadii: .init(bottomLeading: 50, bottomTrailing: 50), style: .circular))
             .frame(height: 250)
             .overlay {

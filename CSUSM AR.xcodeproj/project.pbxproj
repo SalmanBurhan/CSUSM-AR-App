@@ -7,371 +7,352 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B50809942ADC38DD00A556CA /* Concept3DLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50809932ADC38DD00A556CA /* Concept3DLocation.swift */; };
-		B50809972ADC3B2800A556CA /* Concept3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50809962ADC3B2800A556CA /* Concept3D.swift */; };
-		B50809992ADC3DB900A556CA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50809982ADC3DB900A556CA /* NetworkError.swift */; };
-		B508099B2ADC41ED00A556CA /* Concept3DCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B508099A2ADC41ED00A556CA /* Concept3DCategory.swift */; };
-		B508099E2ADC62FE00A556CA /* Concept3DCategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B508099D2ADC62FE00A556CA /* Concept3DCategoryListView.swift */; };
-		B50809A02ADC69C200A556CA /* Concept3DLocationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B508099F2ADC69C200A556CA /* Concept3DLocationDetails.swift */; };
-		B51041F12AD7355400F8C941 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041B92AD7355400F8C941 /* Constants.swift */; };
-		B51041F22AD7355400F8C941 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041BA2AD7355400F8C941 /* ViewController.swift */; };
-		B51041F32AD7355400F8C941 /* geospatial_marker.obj in Resources */ = {isa = PBXBuildFile; fileRef = B51041BB2AD7355400F8C941 /* geospatial_marker.obj */; };
-		B51041F42AD7355400F8C941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51041BC2AD7355400F8C941 /* Assets.xcassets */; };
-		B51041F52AD7355400F8C941 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041BD2AD7355400F8C941 /* HomeViewController.swift */; };
-		B51041F62AD7355400F8C941 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51041BE2AD7355400F8C941 /* LaunchScreen.storyboard */; };
-		B51041F72AD7355400F8C941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51041C02AD7355400F8C941 /* Main.storyboard */; };
-		B51041F82AD7355400F8C941 /* RewrittenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041C22AD7355400F8C941 /* RewrittenViewController.swift */; };
-		B51041F92AD7355400F8C941 /* EventFeedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041C32AD7355400F8C941 /* EventFeedScrollView.swift */; };
-		B51041FA2AD7355400F8C941 /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041C42AD7355400F8C941 /* EventDetailsView.swift */; };
-		B51041FB2AD7355400F8C941 /* spatial-marker-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = B51041C52AD7355400F8C941 /* spatial-marker-yellow.png */; };
-		B51041FC2AD7355400F8C941 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B51041C62AD7355400F8C941 /* art.scnassets */; };
-		B51041FD2AD7355400F8C941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041C72AD7355400F8C941 /* AppDelegate.swift */; };
-		B51041FE2AD7355400F8C941 /* NavigationToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041C82AD7355400F8C941 /* NavigationToolbar.swift */; };
-		B51041FF2AD7355400F8C941 /* spatial-marker-baked.png in Resources */ = {isa = PBXBuildFile; fileRef = B51041C92AD7355400F8C941 /* spatial-marker-baked.png */; };
-		B51042002AD7355400F8C941 /* String+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041CC2AD7355400F8C941 /* String+Utilities.swift */; };
-		B51042012AD7355400F8C941 /* Bool+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041CD2AD7355400F8C941 /* Bool+VPropertyEncodable.swift */; };
-		B51042022AD7355400F8C941 /* String+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041CE2AD7355400F8C941 /* String+VPropertyEncodable.swift */; };
-		B51042032AD7355400F8C941 /* Date+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041CF2AD7355400F8C941 /* Date+VPropertyEncodable.swift */; };
-		B51042042AD7355400F8C941 /* URL+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041D02AD7355400F8C941 /* URL+VPropertyEncodable.swift */; };
-		B51042052AD7355400F8C941 /* UUID+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041D12AD7355400F8C941 /* UUID+VPropertyEncodable.swift */; };
-		B51042062AD7355400F8C941 /* Int+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041D22AD7355400F8C941 /* Int+VPropertyEncodable.swift */; };
-		B51042072AD7355400F8C941 /* ICalAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041D42AD7355400F8C941 /* ICalAlarm.swift */; };
-		B51042082AD7355400F8C941 /* ICalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041D52AD7355400F8C941 /* ICalendar.swift */; };
-		B51042092AD7355400F8C941 /* ICalSubTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041D62AD7355400F8C941 /* ICalSubTimeZone.swift */; };
-		B510420A2AD7355400F8C941 /* XTrumbaField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041D72AD7355400F8C941 /* XTrumbaField.swift */; };
-		B510420B2AD7355400F8C941 /* ICalTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041D82AD7355400F8C941 /* ICalTimeZone.swift */; };
-		B510420C2AD7355400F8C941 /* ICalComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041D92AD7355400F8C941 /* ICalComponent.swift */; };
-		B510420D2AD7355400F8C941 /* ICalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041DA2AD7355400F8C941 /* ICalEvent.swift */; };
-		B510420E2AD7355400F8C941 /* DateTimeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041DC2AD7355400F8C941 /* DateTimeUtil.swift */; };
-		B510420F2AD7355400F8C941 /* VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041DE2AD7355400F8C941 /* VPropertyEncodable.swift */; };
-		B51042102AD7355400F8C941 /* VEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041DF2AD7355400F8C941 /* VEncodable.swift */; };
-		B51042112AD7355400F8C941 /* VComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041E02AD7355400F8C941 /* VComponent.swift */; };
-		B51042122AD7355400F8C941 /* ICalParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041E22AD7355400F8C941 /* ICalParser.swift */; };
-		B51042132AD7355400F8C941 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041E42AD7355400F8C941 /* Constant.swift */; };
-		B51042142AD7355400F8C941 /* PropertyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041E62AD7355400F8C941 /* PropertyBuilder.swift */; };
-		B51042152AD7355400F8C941 /* ICalDateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041E82AD7355400F8C941 /* ICalDateTime.swift */; };
-		B51042162AD7355400F8C941 /* ICalDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041E92AD7355400F8C941 /* ICalDuration.swift */; };
-		B51042172AD7355400F8C941 /* ICalParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041EA2AD7355400F8C941 /* ICalParameter.swift */; };
-		B51042182AD7355400F8C941 /* VContentLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041EB2AD7355400F8C941 /* VContentLine.swift */; };
-		B51042192AD7355400F8C941 /* ICalRRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041EC2AD7355400F8C941 /* ICalRRule.swift */; };
-		B510421A2AD7355400F8C941 /* ICalProductIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041ED2AD7355400F8C941 /* ICalProductIdentifier.swift */; };
-		B510421B2AD7355400F8C941 /* ICalDateTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041EE2AD7355400F8C941 /* ICalDateTimes.swift */; };
-		B510421C2AD7355400F8C941 /* ICalPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041EF2AD7355400F8C941 /* ICalPeriod.swift */; };
-		B510421D2AD7355400F8C941 /* ICalAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51041F02AD7355400F8C941 /* ICalAttachment.swift */; };
-		B51A952C2ABE1987009DD218 /* ARCoreGARSession in Frameworks */ = {isa = PBXBuildFile; productRef = B51A952B2ABE1987009DD218 /* ARCoreGARSession */; };
-		B51A952E2ABE1987009DD218 /* ARCoreGeospatial in Frameworks */ = {isa = PBXBuildFile; productRef = B51A952D2ABE1987009DD218 /* ARCoreGeospatial */; };
-		B538A2A82ACDDBE4001B1F9B /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = B538A2A72ACDDBE4001B1F9B /* SwiftSoup */; };
-		B53913A52ADB7EF2003A86B1 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53913A42ADB7EF2003A86B1 /* Secrets.swift */; };
-		B55510D52ACDB3AF0093E096 /* XMLCoder in Frameworks */ = {isa = PBXBuildFile; productRef = B55510D42ACDB3AF0093E096 /* XMLCoder */; };
-		B59FB8012AE4794100809C5B /* Concept3DError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FB8002AE4794100809C5B /* Concept3DError.swift */; };
-		B59FB8032AE4795300809C5B /* Concept3DEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FB8022AE4795300809C5B /* Concept3DEndpoint.swift */; };
-		B59FB8052AE4998400809C5B /* Concept3DCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FB8042AE4998400809C5B /* Concept3DCategoryView.swift */; };
-		B59FB8072AE4B44600809C5B /* Concept3DLocationImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FB8062AE4B44600809C5B /* Concept3DLocationImage.swift */; };
-		B5DE6E832ADB6DF6001BBBAB /* GoogleAPIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE6E822ADB6DF6001BBBAB /* GoogleAPIKey.swift */; };
+		B5C0AD8B2AF2D18300F4F752 /* NavigationToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD892AF2D18300F4F752 /* NavigationToolbar.swift */; };
+		B5C0AD8C2AF2D18300F4F752 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD8A2AF2D18300F4F752 /* Colors.swift */; };
+		B5C0AD8E2AF2D18B00F4F752 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD8D2AF2D18B00F4F752 /* Secrets.swift */; };
+		B5C0AD992AF2D1D700F4F752 /* EventFeedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD902AF2D1D700F4F752 /* EventFeedScrollView.swift */; };
+		B5C0AD9A2AF2D1D700F4F752 /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD912AF2D1D700F4F752 /* EventDetailsView.swift */; };
+		B5C0AD9B2AF2D1D700F4F752 /* EventRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD922AF2D1D700F4F752 /* EventRowView.swift */; };
+		B5C0AD9C2AF2D1D700F4F752 /* Concept3DCategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD952AF2D1D700F4F752 /* Concept3DCategoryListView.swift */; };
+		B5C0AD9D2AF2D1D700F4F752 /* Concept3DCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD962AF2D1D700F4F752 /* Concept3DCategoryView.swift */; };
+		B5C0AD9E2AF2D1D700F4F752 /* LocationCollectionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD972AF2D1D700F4F752 /* LocationCollectionCardView.swift */; };
+		B5C0AD9F2AF2D1D700F4F752 /* LocationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD982AF2D1D700F4F752 /* LocationDetailsView.swift */; };
+		B5C0ADA32AF2D2A400F4F752 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0ADA22AF2D2A400F4F752 /* HomeView.swift */; };
+		B5E9289D2AF2C5DE00272193 /* CSUSM_ARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9289C2AF2C5DE00272193 /* CSUSM_ARApp.swift */; };
+		B5E9289F2AF2C5DE00272193 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9289E2AF2C5DE00272193 /* ContentView.swift */; };
+		B5E928A12AF2C5DF00272193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E928A02AF2C5DF00272193 /* Assets.xcassets */; };
+		B5E928A42AF2C5DF00272193 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E928A32AF2C5DF00272193 /* Preview Assets.xcassets */; };
+		B5E928AC2AF2C6A700272193 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = B5E928AB2AF2C6A700272193 /* SwiftSoup */; };
+		B5E9291B2AF2C74200272193 /* String+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E928F62AF2C74200272193 /* String+Utilities.swift */; };
+		B5E9291C2AF2C74200272193 /* Bool+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E928F72AF2C74200272193 /* Bool+VPropertyEncodable.swift */; };
+		B5E9291D2AF2C74200272193 /* String+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E928F82AF2C74200272193 /* String+VPropertyEncodable.swift */; };
+		B5E9291E2AF2C74200272193 /* Date+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E928F92AF2C74200272193 /* Date+VPropertyEncodable.swift */; };
+		B5E9291F2AF2C74200272193 /* URL+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E928FA2AF2C74200272193 /* URL+VPropertyEncodable.swift */; };
+		B5E929202AF2C74200272193 /* UUID+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E928FB2AF2C74200272193 /* UUID+VPropertyEncodable.swift */; };
+		B5E929212AF2C74200272193 /* Int+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E928FC2AF2C74200272193 /* Int+VPropertyEncodable.swift */; };
+		B5E929222AF2C74200272193 /* ICalAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E928FE2AF2C74200272193 /* ICalAlarm.swift */; };
+		B5E929232AF2C74200272193 /* ICalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E928FF2AF2C74200272193 /* ICalendar.swift */; };
+		B5E929242AF2C74200272193 /* ICalSubTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929002AF2C74200272193 /* ICalSubTimeZone.swift */; };
+		B5E929252AF2C74200272193 /* XTrumbaField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929012AF2C74200272193 /* XTrumbaField.swift */; };
+		B5E929262AF2C74200272193 /* ICalTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929022AF2C74200272193 /* ICalTimeZone.swift */; };
+		B5E929272AF2C74200272193 /* ICalComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929032AF2C74200272193 /* ICalComponent.swift */; };
+		B5E929282AF2C74200272193 /* ICalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929042AF2C74200272193 /* ICalEvent.swift */; };
+		B5E929292AF2C74200272193 /* DateTimeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929062AF2C74200272193 /* DateTimeUtil.swift */; };
+		B5E9292A2AF2C74200272193 /* VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929082AF2C74200272193 /* VPropertyEncodable.swift */; };
+		B5E9292B2AF2C74200272193 /* VEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929092AF2C74200272193 /* VEncodable.swift */; };
+		B5E9292C2AF2C74200272193 /* VComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9290A2AF2C74200272193 /* VComponent.swift */; };
+		B5E9292D2AF2C74200272193 /* ICalParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9290C2AF2C74200272193 /* ICalParser.swift */; };
+		B5E9292E2AF2C74200272193 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9290E2AF2C74200272193 /* Constant.swift */; };
+		B5E9292F2AF2C74200272193 /* PropertyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929102AF2C74200272193 /* PropertyBuilder.swift */; };
+		B5E929302AF2C74200272193 /* ICalDateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929122AF2C74200272193 /* ICalDateTime.swift */; };
+		B5E929312AF2C74200272193 /* ICalDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929132AF2C74200272193 /* ICalDuration.swift */; };
+		B5E929322AF2C74200272193 /* ICalParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929142AF2C74200272193 /* ICalParameter.swift */; };
+		B5E929332AF2C74200272193 /* VContentLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929152AF2C74200272193 /* VContentLine.swift */; };
+		B5E929342AF2C74200272193 /* ICalRRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929162AF2C74200272193 /* ICalRRule.swift */; };
+		B5E929352AF2C74200272193 /* ICalProductIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929172AF2C74200272193 /* ICalProductIdentifier.swift */; };
+		B5E929362AF2C74200272193 /* ICalDateTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929182AF2C74200272193 /* ICalDateTimes.swift */; };
+		B5E929372AF2C74200272193 /* ICalPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929192AF2C74200272193 /* ICalPeriod.swift */; };
+		B5E929382AF2C74200272193 /* ICalAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9291A2AF2C74200272193 /* ICalAttachment.swift */; };
+		B5E929522AF2C8D800272193 /* Concept3DError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9294A2AF2C8D800272193 /* Concept3DError.swift */; };
+		B5E929532AF2C8D800272193 /* Concept3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9294B2AF2C8D800272193 /* Concept3D.swift */; };
+		B5E929542AF2C8D800272193 /* Concept3DCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9294D2AF2C8D800272193 /* Concept3DCategory.swift */; };
+		B5E929552AF2C8D800272193 /* Concept3DLocationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9294E2AF2C8D800272193 /* Concept3DLocationDetails.swift */; };
+		B5E929562AF2C8D800272193 /* Concept3DLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9294F2AF2C8D800272193 /* Concept3DLocation.swift */; };
+		B5E929572AF2C8D800272193 /* Concept3DLocationImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929502AF2C8D800272193 /* Concept3DLocationImage.swift */; };
+		B5E929582AF2C8D800272193 /* Concept3DEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929512AF2C8D800272193 /* Concept3DEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B50809932ADC38DD00A556CA /* Concept3DLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept3DLocation.swift; sourceTree = "<group>"; };
-		B50809962ADC3B2800A556CA /* Concept3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept3D.swift; sourceTree = "<group>"; };
-		B50809982ADC3DB900A556CA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		B508099A2ADC41ED00A556CA /* Concept3DCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept3DCategory.swift; sourceTree = "<group>"; };
-		B508099D2ADC62FE00A556CA /* Concept3DCategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept3DCategoryListView.swift; sourceTree = "<group>"; };
-		B508099F2ADC69C200A556CA /* Concept3DLocationDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept3DLocationDetails.swift; sourceTree = "<group>"; };
-		B51041B92AD7355400F8C941 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		B51041BA2AD7355400F8C941 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B51041BB2AD7355400F8C941 /* geospatial_marker.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = geospatial_marker.obj; sourceTree = "<group>"; };
-		B51041BC2AD7355400F8C941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B51041BD2AD7355400F8C941 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		B51041BF2AD7355400F8C941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B51041C12AD7355400F8C941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B51041C22AD7355400F8C941 /* RewrittenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewrittenViewController.swift; sourceTree = "<group>"; };
-		B51041C32AD7355400F8C941 /* EventFeedScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFeedScrollView.swift; sourceTree = "<group>"; };
-		B51041C42AD7355400F8C941 /* EventDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
-		B51041C52AD7355400F8C941 /* spatial-marker-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spatial-marker-yellow.png"; sourceTree = "<group>"; };
-		B51041C62AD7355400F8C941 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		B51041C72AD7355400F8C941 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B51041C82AD7355400F8C941 /* NavigationToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationToolbar.swift; sourceTree = "<group>"; };
-		B51041C92AD7355400F8C941 /* spatial-marker-baked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spatial-marker-baked.png"; sourceTree = "<group>"; };
-		B51041CC2AD7355400F8C941 /* String+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utilities.swift"; sourceTree = "<group>"; };
-		B51041CD2AD7355400F8C941 /* Bool+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+VPropertyEncodable.swift"; sourceTree = "<group>"; };
-		B51041CE2AD7355400F8C941 /* String+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+VPropertyEncodable.swift"; sourceTree = "<group>"; };
-		B51041CF2AD7355400F8C941 /* Date+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+VPropertyEncodable.swift"; sourceTree = "<group>"; };
-		B51041D02AD7355400F8C941 /* URL+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+VPropertyEncodable.swift"; sourceTree = "<group>"; };
-		B51041D12AD7355400F8C941 /* UUID+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UUID+VPropertyEncodable.swift"; sourceTree = "<group>"; };
-		B51041D22AD7355400F8C941 /* Int+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+VPropertyEncodable.swift"; sourceTree = "<group>"; };
-		B51041D42AD7355400F8C941 /* ICalAlarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalAlarm.swift; sourceTree = "<group>"; };
-		B51041D52AD7355400F8C941 /* ICalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalendar.swift; sourceTree = "<group>"; };
-		B51041D62AD7355400F8C941 /* ICalSubTimeZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalSubTimeZone.swift; sourceTree = "<group>"; };
-		B51041D72AD7355400F8C941 /* XTrumbaField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTrumbaField.swift; sourceTree = "<group>"; };
-		B51041D82AD7355400F8C941 /* ICalTimeZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalTimeZone.swift; sourceTree = "<group>"; };
-		B51041D92AD7355400F8C941 /* ICalComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalComponent.swift; sourceTree = "<group>"; };
-		B51041DA2AD7355400F8C941 /* ICalEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalEvent.swift; sourceTree = "<group>"; };
-		B51041DC2AD7355400F8C941 /* DateTimeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeUtil.swift; sourceTree = "<group>"; };
-		B51041DE2AD7355400F8C941 /* VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPropertyEncodable.swift; sourceTree = "<group>"; };
-		B51041DF2AD7355400F8C941 /* VEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VEncodable.swift; sourceTree = "<group>"; };
-		B51041E02AD7355400F8C941 /* VComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VComponent.swift; sourceTree = "<group>"; };
-		B51041E22AD7355400F8C941 /* ICalParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalParser.swift; sourceTree = "<group>"; };
-		B51041E42AD7355400F8C941 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		B51041E62AD7355400F8C941 /* PropertyBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyBuilder.swift; sourceTree = "<group>"; };
-		B51041E82AD7355400F8C941 /* ICalDateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalDateTime.swift; sourceTree = "<group>"; };
-		B51041E92AD7355400F8C941 /* ICalDuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalDuration.swift; sourceTree = "<group>"; };
-		B51041EA2AD7355400F8C941 /* ICalParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalParameter.swift; sourceTree = "<group>"; };
-		B51041EB2AD7355400F8C941 /* VContentLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VContentLine.swift; sourceTree = "<group>"; };
-		B51041EC2AD7355400F8C941 /* ICalRRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalRRule.swift; sourceTree = "<group>"; };
-		B51041ED2AD7355400F8C941 /* ICalProductIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalProductIdentifier.swift; sourceTree = "<group>"; };
-		B51041EE2AD7355400F8C941 /* ICalDateTimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalDateTimes.swift; sourceTree = "<group>"; };
-		B51041EF2AD7355400F8C941 /* ICalPeriod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalPeriod.swift; sourceTree = "<group>"; };
-		B51041F02AD7355400F8C941 /* ICalAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalAttachment.swift; sourceTree = "<group>"; };
-		B51A95102ABE1901009DD218 /* CSUSM AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSUSM AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B53913A42ADB7EF2003A86B1 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
-		B59FB8002AE4794100809C5B /* Concept3DError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept3DError.swift; sourceTree = "<group>"; };
-		B59FB8022AE4795300809C5B /* Concept3DEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept3DEndpoint.swift; sourceTree = "<group>"; };
-		B59FB8042AE4998400809C5B /* Concept3DCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept3DCategoryView.swift; sourceTree = "<group>"; };
-		B59FB8062AE4B44600809C5B /* Concept3DLocationImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept3DLocationImage.swift; sourceTree = "<group>"; };
-		B5DE6E822ADB6DF6001BBBAB /* GoogleAPIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAPIKey.swift; sourceTree = "<group>"; };
+		B5C0AD892AF2D18300F4F752 /* NavigationToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationToolbar.swift; sourceTree = "<group>"; };
+		B5C0AD8A2AF2D18300F4F752 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B5C0AD8D2AF2D18B00F4F752 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		B5C0AD902AF2D1D700F4F752 /* EventFeedScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFeedScrollView.swift; sourceTree = "<group>"; };
+		B5C0AD912AF2D1D700F4F752 /* EventDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
+		B5C0AD922AF2D1D700F4F752 /* EventRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRowView.swift; sourceTree = "<group>"; };
+		B5C0AD952AF2D1D700F4F752 /* Concept3DCategoryListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DCategoryListView.swift; sourceTree = "<group>"; };
+		B5C0AD962AF2D1D700F4F752 /* Concept3DCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DCategoryView.swift; sourceTree = "<group>"; };
+		B5C0AD972AF2D1D700F4F752 /* LocationCollectionCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCollectionCardView.swift; sourceTree = "<group>"; };
+		B5C0AD982AF2D1D700F4F752 /* LocationDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailsView.swift; sourceTree = "<group>"; };
+		B5C0ADA22AF2D2A400F4F752 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B5E928992AF2C5DE00272193 /* CSUSM AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSUSM AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E9289C2AF2C5DE00272193 /* CSUSM_ARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUSM_ARApp.swift; sourceTree = "<group>"; };
+		B5E9289E2AF2C5DE00272193 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B5E928A02AF2C5DF00272193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5E928A32AF2C5DF00272193 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5E928F62AF2C74200272193 /* String+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utilities.swift"; sourceTree = "<group>"; };
+		B5E928F72AF2C74200272193 /* Bool+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+VPropertyEncodable.swift"; sourceTree = "<group>"; };
+		B5E928F82AF2C74200272193 /* String+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+VPropertyEncodable.swift"; sourceTree = "<group>"; };
+		B5E928F92AF2C74200272193 /* Date+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+VPropertyEncodable.swift"; sourceTree = "<group>"; };
+		B5E928FA2AF2C74200272193 /* URL+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+VPropertyEncodable.swift"; sourceTree = "<group>"; };
+		B5E928FB2AF2C74200272193 /* UUID+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UUID+VPropertyEncodable.swift"; sourceTree = "<group>"; };
+		B5E928FC2AF2C74200272193 /* Int+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+VPropertyEncodable.swift"; sourceTree = "<group>"; };
+		B5E928FE2AF2C74200272193 /* ICalAlarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalAlarm.swift; sourceTree = "<group>"; };
+		B5E928FF2AF2C74200272193 /* ICalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalendar.swift; sourceTree = "<group>"; };
+		B5E929002AF2C74200272193 /* ICalSubTimeZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalSubTimeZone.swift; sourceTree = "<group>"; };
+		B5E929012AF2C74200272193 /* XTrumbaField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTrumbaField.swift; sourceTree = "<group>"; };
+		B5E929022AF2C74200272193 /* ICalTimeZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalTimeZone.swift; sourceTree = "<group>"; };
+		B5E929032AF2C74200272193 /* ICalComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalComponent.swift; sourceTree = "<group>"; };
+		B5E929042AF2C74200272193 /* ICalEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalEvent.swift; sourceTree = "<group>"; };
+		B5E929062AF2C74200272193 /* DateTimeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeUtil.swift; sourceTree = "<group>"; };
+		B5E929082AF2C74200272193 /* VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPropertyEncodable.swift; sourceTree = "<group>"; };
+		B5E929092AF2C74200272193 /* VEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VEncodable.swift; sourceTree = "<group>"; };
+		B5E9290A2AF2C74200272193 /* VComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VComponent.swift; sourceTree = "<group>"; };
+		B5E9290C2AF2C74200272193 /* ICalParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalParser.swift; sourceTree = "<group>"; };
+		B5E9290E2AF2C74200272193 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		B5E929102AF2C74200272193 /* PropertyBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyBuilder.swift; sourceTree = "<group>"; };
+		B5E929122AF2C74200272193 /* ICalDateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalDateTime.swift; sourceTree = "<group>"; };
+		B5E929132AF2C74200272193 /* ICalDuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalDuration.swift; sourceTree = "<group>"; };
+		B5E929142AF2C74200272193 /* ICalParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalParameter.swift; sourceTree = "<group>"; };
+		B5E929152AF2C74200272193 /* VContentLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VContentLine.swift; sourceTree = "<group>"; };
+		B5E929162AF2C74200272193 /* ICalRRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalRRule.swift; sourceTree = "<group>"; };
+		B5E929172AF2C74200272193 /* ICalProductIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalProductIdentifier.swift; sourceTree = "<group>"; };
+		B5E929182AF2C74200272193 /* ICalDateTimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalDateTimes.swift; sourceTree = "<group>"; };
+		B5E929192AF2C74200272193 /* ICalPeriod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalPeriod.swift; sourceTree = "<group>"; };
+		B5E9291A2AF2C74200272193 /* ICalAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalAttachment.swift; sourceTree = "<group>"; };
+		B5E9294A2AF2C8D800272193 /* Concept3DError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DError.swift; sourceTree = "<group>"; };
+		B5E9294B2AF2C8D800272193 /* Concept3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3D.swift; sourceTree = "<group>"; };
+		B5E9294D2AF2C8D800272193 /* Concept3DCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DCategory.swift; sourceTree = "<group>"; };
+		B5E9294E2AF2C8D800272193 /* Concept3DLocationDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DLocationDetails.swift; sourceTree = "<group>"; };
+		B5E9294F2AF2C8D800272193 /* Concept3DLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DLocation.swift; sourceTree = "<group>"; };
+		B5E929502AF2C8D800272193 /* Concept3DLocationImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DLocationImage.swift; sourceTree = "<group>"; };
+		B5E929512AF2C8D800272193 /* Concept3DEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B51A950D2ABE1901009DD218 /* Frameworks */ = {
+		B5E928962AF2C5DE00272193 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B55510D52ACDB3AF0093E096 /* XMLCoder in Frameworks */,
-				B538A2A82ACDDBE4001B1F9B /* SwiftSoup in Frameworks */,
-				B51A952C2ABE1987009DD218 /* ARCoreGARSession in Frameworks */,
-				B51A952E2ABE1987009DD218 /* ARCoreGeospatial in Frameworks */,
+				B5E928AC2AF2C6A700272193 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B50809922ADC38C000A556CA /* Concept3D */ = {
+		B5C0AD882AF2D18300F4F752 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B50809952ADC3B1C00A556CA /* Models */,
-				B50809962ADC3B2800A556CA /* Concept3D.swift */,
-				B59FB8002AE4794100809C5B /* Concept3DError.swift */,
-				B59FB8022AE4795300809C5B /* Concept3DEndpoint.swift */,
+				B5C0AD892AF2D18300F4F752 /* NavigationToolbar.swift */,
+				B5C0AD8A2AF2D18300F4F752 /* Colors.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B5C0AD8F2AF2D1D700F4F752 /* Featured Events */ = {
+			isa = PBXGroup;
+			children = (
+				B5C0AD902AF2D1D700F4F752 /* EventFeedScrollView.swift */,
+				B5C0AD912AF2D1D700F4F752 /* EventDetailsView.swift */,
+				B5C0AD922AF2D1D700F4F752 /* EventRowView.swift */,
+			);
+			path = "Featured Events";
+			sourceTree = "<group>";
+		};
+		B5C0AD932AF2D1D700F4F752 /* Location Directory */ = {
+			isa = PBXGroup;
+			children = (
+				B5C0AD942AF2D1D700F4F752 /* Concept3D */,
+				B5C0AD972AF2D1D700F4F752 /* LocationCollectionCardView.swift */,
+				B5C0AD982AF2D1D700F4F752 /* LocationDetailsView.swift */,
+			);
+			path = "Location Directory";
+			sourceTree = "<group>";
+		};
+		B5C0AD942AF2D1D700F4F752 /* Concept3D */ = {
+			isa = PBXGroup;
+			children = (
+				B5C0AD952AF2D1D700F4F752 /* Concept3DCategoryListView.swift */,
+				B5C0AD962AF2D1D700F4F752 /* Concept3DCategoryView.swift */,
 			);
 			path = Concept3D;
 			sourceTree = "<group>";
 		};
-		B50809952ADC3B1C00A556CA /* Models */ = {
+		B5E928902AF2C5DE00272193 = {
 			isa = PBXGroup;
 			children = (
-				B50809932ADC38DD00A556CA /* Concept3DLocation.swift */,
-				B59FB8062AE4B44600809C5B /* Concept3DLocationImage.swift */,
-				B508099F2ADC69C200A556CA /* Concept3DLocationDetails.swift */,
-				B508099A2ADC41ED00A556CA /* Concept3DCategory.swift */,
+				B5C0AD8D2AF2D18B00F4F752 /* Secrets.swift */,
+				B5E9289B2AF2C5DE00272193 /* CSUSM AR */,
+				B5E9289A2AF2C5DE00272193 /* Products */,
+				B5C0AD882AF2D18300F4F752 /* Extensions */,
+				B5E928AD2AF2C6D900272193 /* Frameworks */,
 			);
-			path = Models;
 			sourceTree = "<group>";
 		};
-		B508099C2ADC62D300A556CA /* BuildingCatalog */ = {
+		B5E9289A2AF2C5DE00272193 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B508099D2ADC62FE00A556CA /* Concept3DCategoryListView.swift */,
-				B59FB8042AE4998400809C5B /* Concept3DCategoryView.swift */,
+				B5E928992AF2C5DE00272193 /* CSUSM AR.app */,
 			);
-			path = BuildingCatalog;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		B51041B82AD7355400F8C941 /* CSUSM AR */ = {
+		B5E9289B2AF2C5DE00272193 /* CSUSM AR */ = {
 			isa = PBXGroup;
 			children = (
-				B51041C72AD7355400F8C941 /* AppDelegate.swift */,
-				B51041B92AD7355400F8C941 /* Constants.swift */,
-				B53913A42ADB7EF2003A86B1 /* Secrets.swift */,
-				B5DE6E822ADB6DF6001BBBAB /* GoogleAPIKey.swift */,
-				B510421E2AD7358E00F8C941 /* Views */,
-				B51042222AD735FC00F8C941 /* Geospatial Assets */,
-				B51041CA2AD7355400F8C941 /* iCalSwift */,
-				B50809922ADC38C000A556CA /* Concept3D */,
-				B51041BC2AD7355400F8C941 /* Assets.xcassets */,
-				B50809982ADC3DB900A556CA /* NetworkError.swift */,
-				B51041BE2AD7355400F8C941 /* LaunchScreen.storyboard */,
-				B51041C02AD7355400F8C941 /* Main.storyboard */,
+				B5C0AD8F2AF2D1D700F4F752 /* Featured Events */,
+				B5C0AD932AF2D1D700F4F752 /* Location Directory */,
+				B5E9289C2AF2C5DE00272193 /* CSUSM_ARApp.swift */,
+				B5C0ADA22AF2D2A400F4F752 /* HomeView.swift */,
+				B5E9289E2AF2C5DE00272193 /* ContentView.swift */,
+				B5E928A02AF2C5DF00272193 /* Assets.xcassets */,
+				B5E928A22AF2C5DF00272193 /* Preview Content */,
 			);
 			path = "CSUSM AR";
 			sourceTree = "<group>";
 		};
-		B51041CA2AD7355400F8C941 /* iCalSwift */ = {
+		B5E928A22AF2C5DF00272193 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				B51041CB2AD7355400F8C941 /* Extension */,
-				B51041D32AD7355400F8C941 /* Component */,
-				B51041DB2AD7355400F8C941 /* Utils */,
-				B51041DD2AD7355400F8C941 /* Protocol */,
-				B51041E12AD7355400F8C941 /* Parser */,
-				B51041E32AD7355400F8C941 /* Constant */,
-				B51041E52AD7355400F8C941 /* Builder */,
-				B51041E72AD7355400F8C941 /* Structure */,
+				B5E928A32AF2C5DF00272193 /* Preview Assets.xcassets */,
 			);
-			path = iCalSwift;
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B51041CB2AD7355400F8C941 /* Extension */ = {
+		B5E928AD2AF2C6D900272193 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B51041CC2AD7355400F8C941 /* String+Utilities.swift */,
-				B51041CD2AD7355400F8C941 /* Bool+VPropertyEncodable.swift */,
-				B51041CE2AD7355400F8C941 /* String+VPropertyEncodable.swift */,
-				B51041CF2AD7355400F8C941 /* Date+VPropertyEncodable.swift */,
-				B51041D02AD7355400F8C941 /* URL+VPropertyEncodable.swift */,
-				B51041D12AD7355400F8C941 /* UUID+VPropertyEncodable.swift */,
-				B51041D22AD7355400F8C941 /* Int+VPropertyEncodable.swift */,
+				B5E929492AF2C8D800272193 /* Concept3D */,
+				B5E928F42AF2C74200272193 /* iCalSwift */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5E928F42AF2C74200272193 /* iCalSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B5E928F52AF2C74200272193 /* Extension */,
+				B5E928FD2AF2C74200272193 /* Component */,
+				B5E929052AF2C74200272193 /* Utils */,
+				B5E929072AF2C74200272193 /* Protocol */,
+				B5E9290B2AF2C74200272193 /* Parser */,
+				B5E9290D2AF2C74200272193 /* Constant */,
+				B5E9290F2AF2C74200272193 /* Builder */,
+				B5E929112AF2C74200272193 /* Structure */,
+			);
+			name = iCalSwift;
+			path = Frameworks/iCalSwift;
+			sourceTree = "<group>";
+		};
+		B5E928F52AF2C74200272193 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B5E928F62AF2C74200272193 /* String+Utilities.swift */,
+				B5E928F72AF2C74200272193 /* Bool+VPropertyEncodable.swift */,
+				B5E928F82AF2C74200272193 /* String+VPropertyEncodable.swift */,
+				B5E928F92AF2C74200272193 /* Date+VPropertyEncodable.swift */,
+				B5E928FA2AF2C74200272193 /* URL+VPropertyEncodable.swift */,
+				B5E928FB2AF2C74200272193 /* UUID+VPropertyEncodable.swift */,
+				B5E928FC2AF2C74200272193 /* Int+VPropertyEncodable.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		B51041D32AD7355400F8C941 /* Component */ = {
+		B5E928FD2AF2C74200272193 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				B51041D42AD7355400F8C941 /* ICalAlarm.swift */,
-				B51041D52AD7355400F8C941 /* ICalendar.swift */,
-				B51041D62AD7355400F8C941 /* ICalSubTimeZone.swift */,
-				B51041D72AD7355400F8C941 /* XTrumbaField.swift */,
-				B51041D82AD7355400F8C941 /* ICalTimeZone.swift */,
-				B51041D92AD7355400F8C941 /* ICalComponent.swift */,
-				B51041DA2AD7355400F8C941 /* ICalEvent.swift */,
+				B5E928FE2AF2C74200272193 /* ICalAlarm.swift */,
+				B5E928FF2AF2C74200272193 /* ICalendar.swift */,
+				B5E929002AF2C74200272193 /* ICalSubTimeZone.swift */,
+				B5E929012AF2C74200272193 /* XTrumbaField.swift */,
+				B5E929022AF2C74200272193 /* ICalTimeZone.swift */,
+				B5E929032AF2C74200272193 /* ICalComponent.swift */,
+				B5E929042AF2C74200272193 /* ICalEvent.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
 		};
-		B51041DB2AD7355400F8C941 /* Utils */ = {
+		B5E929052AF2C74200272193 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				B51041DC2AD7355400F8C941 /* DateTimeUtil.swift */,
+				B5E929062AF2C74200272193 /* DateTimeUtil.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		B51041DD2AD7355400F8C941 /* Protocol */ = {
+		B5E929072AF2C74200272193 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				B51041DE2AD7355400F8C941 /* VPropertyEncodable.swift */,
-				B51041DF2AD7355400F8C941 /* VEncodable.swift */,
-				B51041E02AD7355400F8C941 /* VComponent.swift */,
+				B5E929082AF2C74200272193 /* VPropertyEncodable.swift */,
+				B5E929092AF2C74200272193 /* VEncodable.swift */,
+				B5E9290A2AF2C74200272193 /* VComponent.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		B51041E12AD7355400F8C941 /* Parser */ = {
+		B5E9290B2AF2C74200272193 /* Parser */ = {
 			isa = PBXGroup;
 			children = (
-				B51041E22AD7355400F8C941 /* ICalParser.swift */,
+				B5E9290C2AF2C74200272193 /* ICalParser.swift */,
 			);
 			path = Parser;
 			sourceTree = "<group>";
 		};
-		B51041E32AD7355400F8C941 /* Constant */ = {
+		B5E9290D2AF2C74200272193 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
-				B51041E42AD7355400F8C941 /* Constant.swift */,
+				B5E9290E2AF2C74200272193 /* Constant.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
 		};
-		B51041E52AD7355400F8C941 /* Builder */ = {
+		B5E9290F2AF2C74200272193 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				B51041E62AD7355400F8C941 /* PropertyBuilder.swift */,
+				B5E929102AF2C74200272193 /* PropertyBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
 		};
-		B51041E72AD7355400F8C941 /* Structure */ = {
+		B5E929112AF2C74200272193 /* Structure */ = {
 			isa = PBXGroup;
 			children = (
-				B51041E82AD7355400F8C941 /* ICalDateTime.swift */,
-				B51041E92AD7355400F8C941 /* ICalDuration.swift */,
-				B51041EA2AD7355400F8C941 /* ICalParameter.swift */,
-				B51041EB2AD7355400F8C941 /* VContentLine.swift */,
-				B51041EC2AD7355400F8C941 /* ICalRRule.swift */,
-				B51041ED2AD7355400F8C941 /* ICalProductIdentifier.swift */,
-				B51041EE2AD7355400F8C941 /* ICalDateTimes.swift */,
-				B51041EF2AD7355400F8C941 /* ICalPeriod.swift */,
-				B51041F02AD7355400F8C941 /* ICalAttachment.swift */,
+				B5E929122AF2C74200272193 /* ICalDateTime.swift */,
+				B5E929132AF2C74200272193 /* ICalDuration.swift */,
+				B5E929142AF2C74200272193 /* ICalParameter.swift */,
+				B5E929152AF2C74200272193 /* VContentLine.swift */,
+				B5E929162AF2C74200272193 /* ICalRRule.swift */,
+				B5E929172AF2C74200272193 /* ICalProductIdentifier.swift */,
+				B5E929182AF2C74200272193 /* ICalDateTimes.swift */,
+				B5E929192AF2C74200272193 /* ICalPeriod.swift */,
+				B5E9291A2AF2C74200272193 /* ICalAttachment.swift */,
 			);
 			path = Structure;
 			sourceTree = "<group>";
 		};
-		B510421E2AD7358E00F8C941 /* Views */ = {
+		B5E929492AF2C8D800272193 /* Concept3D */ = {
 			isa = PBXGroup;
 			children = (
-				B51041BD2AD7355400F8C941 /* HomeViewController.swift */,
-				B508099C2ADC62D300A556CA /* BuildingCatalog */,
-				B510421F2AD735B100F8C941 /* Event Feed */,
-				B51042202AD735BE00F8C941 /* Augmented Reality */,
-				B51042212AD735D100F8C941 /* UI Extensions */,
+				B5E9294A2AF2C8D800272193 /* Concept3DError.swift */,
+				B5E9294B2AF2C8D800272193 /* Concept3D.swift */,
+				B5E9294C2AF2C8D800272193 /* Models */,
+				B5E929512AF2C8D800272193 /* Concept3DEndpoint.swift */,
 			);
-			path = Views;
+			name = Concept3D;
+			path = Frameworks/Concept3D;
 			sourceTree = "<group>";
 		};
-		B510421F2AD735B100F8C941 /* Event Feed */ = {
+		B5E9294C2AF2C8D800272193 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B51041C32AD7355400F8C941 /* EventFeedScrollView.swift */,
-				B51041C42AD7355400F8C941 /* EventDetailsView.swift */,
+				B5E9294D2AF2C8D800272193 /* Concept3DCategory.swift */,
+				B5E9294E2AF2C8D800272193 /* Concept3DLocationDetails.swift */,
+				B5E9294F2AF2C8D800272193 /* Concept3DLocation.swift */,
+				B5E929502AF2C8D800272193 /* Concept3DLocationImage.swift */,
 			);
-			path = "Event Feed";
-			sourceTree = "<group>";
-		};
-		B51042202AD735BE00F8C941 /* Augmented Reality */ = {
-			isa = PBXGroup;
-			children = (
-				B51041C22AD7355400F8C941 /* RewrittenViewController.swift */,
-				B51041BA2AD7355400F8C941 /* ViewController.swift */,
-			);
-			path = "Augmented Reality";
-			sourceTree = "<group>";
-		};
-		B51042212AD735D100F8C941 /* UI Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				B51041C82AD7355400F8C941 /* NavigationToolbar.swift */,
-			);
-			path = "UI Extensions";
-			sourceTree = "<group>";
-		};
-		B51042222AD735FC00F8C941 /* Geospatial Assets */ = {
-			isa = PBXGroup;
-			children = (
-				B51041C62AD7355400F8C941 /* art.scnassets */,
-				B51041BB2AD7355400F8C941 /* geospatial_marker.obj */,
-				B51041C52AD7355400F8C941 /* spatial-marker-yellow.png */,
-				B51041C92AD7355400F8C941 /* spatial-marker-baked.png */,
-			);
-			path = "Geospatial Assets";
-			sourceTree = "<group>";
-		};
-		B51A95072ABE1901009DD218 = {
-			isa = PBXGroup;
-			children = (
-				B51041B82AD7355400F8C941 /* CSUSM AR */,
-				B51A95112ABE1901009DD218 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		B51A95112ABE1901009DD218 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B51A95102ABE1901009DD218 /* CSUSM AR.app */,
-			);
-			name = Products;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B51A950F2ABE1901009DD218 /* CSUSM AR */ = {
+		B5E928982AF2C5DE00272193 /* CSUSM AR */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B51A95232ABE1902009DD218 /* Build configuration list for PBXNativeTarget "CSUSM AR" */;
+			buildConfigurationList = B5E928A72AF2C5DF00272193 /* Build configuration list for PBXNativeTarget "CSUSM AR" */;
 			buildPhases = (
-				B51A950C2ABE1901009DD218 /* Sources */,
-				B51A950D2ABE1901009DD218 /* Frameworks */,
-				B51A950E2ABE1901009DD218 /* Resources */,
+				B5E928952AF2C5DE00272193 /* Sources */,
+				B5E928962AF2C5DE00272193 /* Frameworks */,
+				B5E928972AF2C5DE00272193 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -379,31 +360,28 @@
 			);
 			name = "CSUSM AR";
 			packageProductDependencies = (
-				B51A952B2ABE1987009DD218 /* ARCoreGARSession */,
-				B51A952D2ABE1987009DD218 /* ARCoreGeospatial */,
-				B55510D42ACDB3AF0093E096 /* XMLCoder */,
-				B538A2A72ACDDBE4001B1F9B /* SwiftSoup */,
+				B5E928AB2AF2C6A700272193 /* SwiftSoup */,
 			);
 			productName = "CSUSM AR";
-			productReference = B51A95102ABE1901009DD218 /* CSUSM AR.app */;
+			productReference = B5E928992AF2C5DE00272193 /* CSUSM AR.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B51A95082ABE1901009DD218 /* Project object */ = {
+		B5E928912AF2C5DE00272193 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					B51A950F2ABE1901009DD218 = {
-						CreatedOnToolsVersion = 15.0;
+					B5E928982AF2C5DE00272193 = {
+						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
 			};
-			buildConfigurationList = B51A950B2ABE1901009DD218 /* Build configuration list for PBXProject "CSUSM AR" */;
+			buildConfigurationList = B5E928942AF2C5DE00272193 /* Build configuration list for PBXProject "CSUSM AR" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -411,119 +389,93 @@
 				en,
 				Base,
 			);
-			mainGroup = B51A95072ABE1901009DD218;
+			mainGroup = B5E928902AF2C5DE00272193;
 			packageReferences = (
-				B51A95262ABE1987009DD218 /* XCRemoteSwiftPackageReference "arcore-ios-sdk" */,
-				B55510D32ACDB3AF0093E096 /* XCRemoteSwiftPackageReference "XMLCoder" */,
-				B538A2A62ACDDBE4001B1F9B /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				B5E928AA2AF2C6A700272193 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 			);
-			productRefGroup = B51A95112ABE1901009DD218 /* Products */;
+			productRefGroup = B5E9289A2AF2C5DE00272193 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B51A950F2ABE1901009DD218 /* CSUSM AR */,
+				B5E928982AF2C5DE00272193 /* CSUSM AR */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B51A950E2ABE1901009DD218 /* Resources */ = {
+		B5E928972AF2C5DE00272193 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B51041FB2AD7355400F8C941 /* spatial-marker-yellow.png in Resources */,
-				B51041FF2AD7355400F8C941 /* spatial-marker-baked.png in Resources */,
-				B51041FC2AD7355400F8C941 /* art.scnassets in Resources */,
-				B51041F62AD7355400F8C941 /* LaunchScreen.storyboard in Resources */,
-				B51041F42AD7355400F8C941 /* Assets.xcassets in Resources */,
-				B51041F32AD7355400F8C941 /* geospatial_marker.obj in Resources */,
-				B51041F72AD7355400F8C941 /* Main.storyboard in Resources */,
+				B5E928A42AF2C5DF00272193 /* Preview Assets.xcassets in Resources */,
+				B5E928A12AF2C5DF00272193 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B51A950C2ABE1901009DD218 /* Sources */ = {
+		B5E928952AF2C5DE00272193 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B51042072AD7355400F8C941 /* ICalAlarm.swift in Sources */,
-				B53913A52ADB7EF2003A86B1 /* Secrets.swift in Sources */,
-				B51042182AD7355400F8C941 /* VContentLine.swift in Sources */,
-				B51042102AD7355400F8C941 /* VEncodable.swift in Sources */,
-				B508099B2ADC41ED00A556CA /* Concept3DCategory.swift in Sources */,
-				B510421B2AD7355400F8C941 /* ICalDateTimes.swift in Sources */,
-				B510421A2AD7355400F8C941 /* ICalProductIdentifier.swift in Sources */,
-				B50809972ADC3B2800A556CA /* Concept3D.swift in Sources */,
-				B5DE6E832ADB6DF6001BBBAB /* GoogleAPIKey.swift in Sources */,
-				B51042162AD7355400F8C941 /* ICalDuration.swift in Sources */,
-				B51042062AD7355400F8C941 /* Int+VPropertyEncodable.swift in Sources */,
-				B51042142AD7355400F8C941 /* PropertyBuilder.swift in Sources */,
-				B51041F22AD7355400F8C941 /* ViewController.swift in Sources */,
-				B50809A02ADC69C200A556CA /* Concept3DLocationDetails.swift in Sources */,
-				B51041F12AD7355400F8C941 /* Constants.swift in Sources */,
-				B51041F52AD7355400F8C941 /* HomeViewController.swift in Sources */,
-				B51042172AD7355400F8C941 /* ICalParameter.swift in Sources */,
-				B51042152AD7355400F8C941 /* ICalDateTime.swift in Sources */,
-				B59FB8032AE4795300809C5B /* Concept3DEndpoint.swift in Sources */,
-				B51041F82AD7355400F8C941 /* RewrittenViewController.swift in Sources */,
-				B51042132AD7355400F8C941 /* Constant.swift in Sources */,
-				B510421D2AD7355400F8C941 /* ICalAttachment.swift in Sources */,
-				B51042192AD7355400F8C941 /* ICalRRule.swift in Sources */,
-				B51042042AD7355400F8C941 /* URL+VPropertyEncodable.swift in Sources */,
-				B51042082AD7355400F8C941 /* ICalendar.swift in Sources */,
-				B510420E2AD7355400F8C941 /* DateTimeUtil.swift in Sources */,
-				B51041FD2AD7355400F8C941 /* AppDelegate.swift in Sources */,
-				B510420B2AD7355400F8C941 /* ICalTimeZone.swift in Sources */,
-				B510420F2AD7355400F8C941 /* VPropertyEncodable.swift in Sources */,
-				B51042032AD7355400F8C941 /* Date+VPropertyEncodable.swift in Sources */,
-				B510420A2AD7355400F8C941 /* XTrumbaField.swift in Sources */,
-				B51042092AD7355400F8C941 /* ICalSubTimeZone.swift in Sources */,
-				B51042012AD7355400F8C941 /* Bool+VPropertyEncodable.swift in Sources */,
-				B50809942ADC38DD00A556CA /* Concept3DLocation.swift in Sources */,
-				B51041FE2AD7355400F8C941 /* NavigationToolbar.swift in Sources */,
-				B59FB8012AE4794100809C5B /* Concept3DError.swift in Sources */,
-				B510421C2AD7355400F8C941 /* ICalPeriod.swift in Sources */,
-				B508099E2ADC62FE00A556CA /* Concept3DCategoryListView.swift in Sources */,
-				B59FB8072AE4B44600809C5B /* Concept3DLocationImage.swift in Sources */,
-				B510420C2AD7355400F8C941 /* ICalComponent.swift in Sources */,
-				B51042022AD7355400F8C941 /* String+VPropertyEncodable.swift in Sources */,
-				B51042122AD7355400F8C941 /* ICalParser.swift in Sources */,
-				B51042112AD7355400F8C941 /* VComponent.swift in Sources */,
-				B50809992ADC3DB900A556CA /* NetworkError.swift in Sources */,
-				B59FB8052AE4998400809C5B /* Concept3DCategoryView.swift in Sources */,
-				B510420D2AD7355400F8C941 /* ICalEvent.swift in Sources */,
-				B51041FA2AD7355400F8C941 /* EventDetailsView.swift in Sources */,
-				B51042002AD7355400F8C941 /* String+Utilities.swift in Sources */,
-				B51042052AD7355400F8C941 /* UUID+VPropertyEncodable.swift in Sources */,
-				B51041F92AD7355400F8C941 /* EventFeedScrollView.swift in Sources */,
+				B5E929272AF2C74200272193 /* ICalComponent.swift in Sources */,
+				B5E929312AF2C74200272193 /* ICalDuration.swift in Sources */,
+				B5E9289F2AF2C5DE00272193 /* ContentView.swift in Sources */,
+				B5C0ADA32AF2D2A400F4F752 /* HomeView.swift in Sources */,
+				B5E9291B2AF2C74200272193 /* String+Utilities.swift in Sources */,
+				B5E9292B2AF2C74200272193 /* VEncodable.swift in Sources */,
+				B5E929582AF2C8D800272193 /* Concept3DEndpoint.swift in Sources */,
+				B5E929202AF2C74200272193 /* UUID+VPropertyEncodable.swift in Sources */,
+				B5E9291F2AF2C74200272193 /* URL+VPropertyEncodable.swift in Sources */,
+				B5C0AD992AF2D1D700F4F752 /* EventFeedScrollView.swift in Sources */,
+				B5E929552AF2C8D800272193 /* Concept3DLocationDetails.swift in Sources */,
+				B5E929282AF2C74200272193 /* ICalEvent.swift in Sources */,
+				B5E929252AF2C74200272193 /* XTrumbaField.swift in Sources */,
+				B5E929342AF2C74200272193 /* ICalRRule.swift in Sources */,
+				B5E9289D2AF2C5DE00272193 /* CSUSM_ARApp.swift in Sources */,
+				B5E929532AF2C8D800272193 /* Concept3D.swift in Sources */,
+				B5E929522AF2C8D800272193 /* Concept3DError.swift in Sources */,
+				B5E9291C2AF2C74200272193 /* Bool+VPropertyEncodable.swift in Sources */,
+				B5E929232AF2C74200272193 /* ICalendar.swift in Sources */,
+				B5C0AD9F2AF2D1D700F4F752 /* LocationDetailsView.swift in Sources */,
+				B5E9292D2AF2C74200272193 /* ICalParser.swift in Sources */,
+				B5E929332AF2C74200272193 /* VContentLine.swift in Sources */,
+				B5C0AD9A2AF2D1D700F4F752 /* EventDetailsView.swift in Sources */,
+				B5E929212AF2C74200272193 /* Int+VPropertyEncodable.swift in Sources */,
+				B5E929322AF2C74200272193 /* ICalParameter.swift in Sources */,
+				B5C0AD8B2AF2D18300F4F752 /* NavigationToolbar.swift in Sources */,
+				B5E929382AF2C74200272193 /* ICalAttachment.swift in Sources */,
+				B5E9291D2AF2C74200272193 /* String+VPropertyEncodable.swift in Sources */,
+				B5C0AD9E2AF2D1D700F4F752 /* LocationCollectionCardView.swift in Sources */,
+				B5C0AD8C2AF2D18300F4F752 /* Colors.swift in Sources */,
+				B5E929542AF2C8D800272193 /* Concept3DCategory.swift in Sources */,
+				B5E929222AF2C74200272193 /* ICalAlarm.swift in Sources */,
+				B5E929372AF2C74200272193 /* ICalPeriod.swift in Sources */,
+				B5E929262AF2C74200272193 /* ICalTimeZone.swift in Sources */,
+				B5C0AD9D2AF2D1D700F4F752 /* Concept3DCategoryView.swift in Sources */,
+				B5E929352AF2C74200272193 /* ICalProductIdentifier.swift in Sources */,
+				B5E929362AF2C74200272193 /* ICalDateTimes.swift in Sources */,
+				B5E929292AF2C74200272193 /* DateTimeUtil.swift in Sources */,
+				B5E9292C2AF2C74200272193 /* VComponent.swift in Sources */,
+				B5E929242AF2C74200272193 /* ICalSubTimeZone.swift in Sources */,
+				B5E929302AF2C74200272193 /* ICalDateTime.swift in Sources */,
+				B5E929572AF2C8D800272193 /* Concept3DLocationImage.swift in Sources */,
+				B5C0AD9C2AF2D1D700F4F752 /* Concept3DCategoryListView.swift in Sources */,
+				B5E9292E2AF2C74200272193 /* Constant.swift in Sources */,
+				B5C0AD9B2AF2D1D700F4F752 /* EventRowView.swift in Sources */,
+				B5C0AD8E2AF2D18B00F4F752 /* Secrets.swift in Sources */,
+				B5E9291E2AF2C74200272193 /* Date+VPropertyEncodable.swift in Sources */,
+				B5E9292F2AF2C74200272193 /* PropertyBuilder.swift in Sources */,
+				B5E9292A2AF2C74200272193 /* VPropertyEncodable.swift in Sources */,
+				B5E929562AF2C8D800272193 /* Concept3DLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		B51041BE2AD7355400F8C941 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B51041BF2AD7355400F8C941 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		B51041C02AD7355400F8C941 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B51041C12AD7355400F8C941 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		B51A95212ABE1902009DD218 /* Debug */ = {
+		B5E928A52AF2C5DF00272193 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -580,17 +532,13 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-				);
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		B51A95222ABE1902009DD218 /* Release */ = {
+		B5E928A62AF2C5DF00272193 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -640,94 +588,70 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-				);
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		B51A95242ABE1902009DD218 /* Debug */ = {
+		B5E928A82AF2C5DF00272193 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C37X5KX2W5;
+				DEVELOPMENT_ASSET_PATHS = "\"CSUSM AR/Preview Content\"";
+				DEVELOPMENT_TEAM = DD8G3E28HN;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permission is needed for AR mode.";
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Always in Use";
-				INFOPLIST_KEY_NSLocationUsageDescription = "Location needed for AR tracking, doiii...";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location permission is needed for geospatial localization.";
+				INFOPLIST_KEY_CFBundleDisplayName = "CSUSM Guide";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.salmanburhan.CSUSM-AR-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salmanburhan.CSUSM-AR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		B51A95252ABE1902009DD218 /* Release */ = {
+		B5E928A92AF2C5DF00272193 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C37X5KX2W5;
+				DEVELOPMENT_ASSET_PATHS = "\"CSUSM AR/Preview Content\"";
+				DEVELOPMENT_TEAM = DD8G3E28HN;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permission is needed for AR mode.";
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Always in Use";
-				INFOPLIST_KEY_NSLocationUsageDescription = "Location needed for AR tracking, doiii...";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location permission is needed for geospatial localization.";
+				INFOPLIST_KEY_CFBundleDisplayName = "CSUSM Guide";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.salmanburhan.CSUSM-AR-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salmanburhan.CSUSM-AR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -737,20 +661,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B51A950B2ABE1901009DD218 /* Build configuration list for PBXProject "CSUSM AR" */ = {
+		B5E928942AF2C5DE00272193 /* Build configuration list for PBXProject "CSUSM AR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B51A95212ABE1902009DD218 /* Debug */,
-				B51A95222ABE1902009DD218 /* Release */,
+				B5E928A52AF2C5DF00272193 /* Debug */,
+				B5E928A62AF2C5DF00272193 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B51A95232ABE1902009DD218 /* Build configuration list for PBXNativeTarget "CSUSM AR" */ = {
+		B5E928A72AF2C5DF00272193 /* Build configuration list for PBXNativeTarget "CSUSM AR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B51A95242ABE1902009DD218 /* Debug */,
-				B51A95252ABE1902009DD218 /* Release */,
+				B5E928A82AF2C5DF00272193 /* Debug */,
+				B5E928A92AF2C5DF00272193 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -758,54 +682,23 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B51A95262ABE1987009DD218 /* XCRemoteSwiftPackageReference "arcore-ios-sdk" */ = {
+		B5E928AA2AF2C6A700272193 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/google-ar/arcore-ios-sdk.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 1.39.0;
-			};
-		};
-		B538A2A62ACDDBE4001B1F9B /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 2.6.1;
 			};
 		};
-		B55510D32ACDB3AF0093E096 /* XCRemoteSwiftPackageReference "XMLCoder" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/CoreOffice/XMLCoder.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 0.17.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B51A952B2ABE1987009DD218 /* ARCoreGARSession */ = {
+		B5E928AB2AF2C6A700272193 /* SwiftSoup */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B51A95262ABE1987009DD218 /* XCRemoteSwiftPackageReference "arcore-ios-sdk" */;
-			productName = ARCoreGARSession;
-		};
-		B51A952D2ABE1987009DD218 /* ARCoreGeospatial */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B51A95262ABE1987009DD218 /* XCRemoteSwiftPackageReference "arcore-ios-sdk" */;
-			productName = ARCoreGeospatial;
-		};
-		B538A2A72ACDDBE4001B1F9B /* SwiftSoup */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B538A2A62ACDDBE4001B1F9B /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			package = B5E928AA2AF2C6A700272193 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
 			productName = SwiftSoup;
-		};
-		B55510D42ACDB3AF0093E096 /* XMLCoder */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B55510D32ACDB3AF0093E096 /* XCRemoteSwiftPackageReference "XMLCoder" */;
-			productName = XMLCoder;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = B51A95082ABE1901009DD218 /* Project object */;
+	rootObject = B5E928912AF2C5DE00272193 /* Project object */;
 }

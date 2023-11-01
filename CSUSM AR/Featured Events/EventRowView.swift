@@ -48,14 +48,14 @@ struct EventRowView: View {
                     Text("CSUSM")
                         .font(.callout)
                         .fontWeight(.bold)
-                        .foregroundStyle(Constants.Colors.spiritBlue)
+                        .foregroundStyle(Color.spiritBlue)
                         .padding()
                     Spacer()
                 }
                 .frame(width: 100)
                 .background {
                     LinearGradient(colors: [
-                        Constants.Colors.universityBlue, .black
+                        .universityBlue, .black
                     ], startPoint: .topLeading, endPoint: .bottomTrailing).background(.ultraThickMaterial)
                 }
             }
@@ -73,13 +73,13 @@ struct EventRowView: View {
                     .multilineTextAlignment(.leading)
                 Label(
                     title: { Text(location).font(.caption).lineLimit(1) },
-                    icon: { Image(systemName: "location.circle").symbolRenderingMode(.monochrome) .foregroundStyle(Constants.Colors.spiritBlue).font(.caption)
+                    icon: { Image(systemName: "location.circle").symbolRenderingMode(.monochrome) .foregroundStyle(Color.spiritBlue).font(.caption)
                     }
                 )
                 HStack {
                     Label(
                         title: { Text(date).font(.caption) },
-                        icon: { Image(systemName: "calendar").symbolRenderingMode(.monochrome).foregroundStyle(Constants.Colors.spiritBlue) }
+                        icon: { Image(systemName: "calendar").symbolRenderingMode(.monochrome).foregroundStyle(Color.spiritBlue) }
                     )
                     .padding([.top, .bottom], 5)
                     .padding([.leading, .trailing], 8)
@@ -87,7 +87,7 @@ struct EventRowView: View {
 
                     Label(
                         title: { Text(startTime).font(.caption) },
-                        icon: { Image(systemName: "clock").symbolRenderingMode(.monochrome).foregroundStyle(Constants.Colors.spiritBlue) }
+                        icon: { Image(systemName: "clock").symbolRenderingMode(.monochrome).foregroundStyle(Color.spiritBlue) }
                     )
                     .padding([.top, .bottom], 5)
                     .padding([.leading, .trailing], 8)

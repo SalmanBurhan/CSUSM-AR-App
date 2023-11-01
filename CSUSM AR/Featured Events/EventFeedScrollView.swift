@@ -13,20 +13,24 @@ struct EventFeedView: View {
     
     var body: some View {
         NavigationStack {
-            Group {
+            ZStack {
+                LinearGradient(gradient: Gradient(colors: [Color(.systemGray5), Color(.systemBackground)]), startPoint: .top, endPoint: .bottomTrailing)
+                    .frame(maxHeight: .infinity)
+                    .clipped()
                 if self.events.count == 0 {
                     contentUnavailableView
                 } else {
                     eventsScrollView
                 }
-            }.onAppear(perform: {
+            }
+            .ignoresSafeArea()
+            .onAppear(perform: {
                 self.loadEvents()
             })
         }
     }
     
     private func loadEvents() {
-        print("Tap Gesture Detected on \"Find Nearby Events\"")
         let url = URL(string: "https://25livepub.collegenet.com/calendars/csusm-featured-events.ics")!
         URLSession.shared.dataTask(
             with: URLRequest(url: url)) { data, response, error in
@@ -59,10 +63,18 @@ struct EventFeedView: View {
 
 extension EventFeedView {
     var contentUnavailableView: some View {
-        ContentUnavailableView {
-            Label("No Events", systemImage: "calendar")
-        } description: {
-            Text("Campus featured events will appear here.")
+        if #available(iOS 17.0, *) {
+            return ContentUnavailableView {
+                Label("No Events", systemImage: "calendar")
+            } description: {
+                Text("Campus featured events will appear here.")
+            }
+        } else {
+            // Fallback on earlier versions
+            return Group {
+                Label("No Events", systemImage: "calendar")
+                Text("Campus featured events will appear here.")
+            }
         }
     }
 }
@@ -70,15 +82,18 @@ extension EventFeedView {
 extension EventFeedView {
     var eventsScrollView: some View {
         ScrollView {
-            VStack {
+            VStack(alignment: .leading) {
+                Text("California State University San Marcos").font(.largeTitle) .padding(.horizontal)
+                Text("Campus Events").font(.title2).padding(.horizontal).foregroundColor(.secondary)
                 LazyVGrid(columns: [GridItem(.flexible())]) {
                     ForEach($events, id: \.uid) { event in
                         NavigationLink(destination: EventDetailsView(event.wrappedValue).withCustomBackButton()) {
-                            createEventView(for: event.wrappedValue)
+                            EventRowView(for: event.wrappedValue)
+                            //createEventView(for: event.wrappedValue)
                         }.buttonStyle(.plain)
                     }
                 }.frame(maxWidth: .infinity).clipped()
-            }
+            }.padding(.top, 100).padding(.bottom)
         }
     }
 }
@@ -101,8 +116,8 @@ extension EventFeedView {
             }.padding([.top, .leading, .trailing])
             
             VStack(alignment: .leading) {
-                Text(location.uppercased()).font(.subheadline).foregroundStyle(Constants.Colors.cougarBlue)
-                Text(title).font(.system(.title, design: .rounded, weight: .semibold)).foregroundStyle(Constants.Colors.universityBlue)
+                Text(location.uppercased()).font(.subheadline).foregroundStyle(Color.cougarBlue)
+                Text(title).font(.system(.title, design: .rounded, weight: .semibold)).foregroundStyle(Color.universityBlue)
             }.padding()
             
         }.padding(5).background {
@@ -117,7 +132,7 @@ extension EventFeedView {
                 .padding([.leading, .trailing], 10)
                 .background {
                     Capsule(style: .continuous)
-                        .fill(Constants.Colors.universityBlue)
+                        .fill(Color.universityBlue)
                 }
                 .foregroundColor(.white)
         }
@@ -130,7 +145,7 @@ extension EventFeedView {
                 .padding([.leading, .trailing], 10)
                 .background {
                     Capsule(style: .continuous)
-                        .fill(Constants.Colors.universityBlue)
+                        .fill(Color.universityBlue)
                 }
                 .foregroundColor(.white)
         }
