@@ -100,7 +100,5 @@ extension Concept3DCategoryListView {
 }
 
 #Preview {
-    let location = Concept3DLocation(name: "Viasat Engineering Pavilion")
-    let category = Concept3DCategory(name: "Academic Halls")
     return Concept3DCategoryListView()
 }

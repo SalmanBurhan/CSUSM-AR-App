@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B51544552AF876D80081B3A9 /* ARCoreGARSession in Frameworks */ = {isa = PBXBuildFile; productRef = B51544542AF876D80081B3A9 /* ARCoreGARSession */; };
+		B515445F2AF8873D0081B3A9 /* ARCoreGeospatial in Frameworks */ = {isa = PBXBuildFile; productRef = B515445E2AF8873D0081B3A9 /* ARCoreGeospatial */; };
 		B5C0AD8B2AF2D18300F4F752 /* NavigationToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD892AF2D18300F4F752 /* NavigationToolbar.swift */; };
 		B5C0AD8C2AF2D18300F4F752 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD8A2AF2D18300F4F752 /* Colors.swift */; };
 		B5C0AD8E2AF2D18B00F4F752 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD8D2AF2D18B00F4F752 /* Secrets.swift */; };
@@ -18,8 +20,24 @@
 		B5C0AD9E2AF2D1D700F4F752 /* LocationCollectionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD972AF2D1D700F4F752 /* LocationCollectionCardView.swift */; };
 		B5C0AD9F2AF2D1D700F4F752 /* LocationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD982AF2D1D700F4F752 /* LocationDetailsView.swift */; };
 		B5C0ADA32AF2D2A400F4F752 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0ADA22AF2D2A400F4F752 /* HomeView.swift */; };
+		B5C8281C2B013F5300471A0E /* ARCoreCloudAnchors in Frameworks */ = {isa = PBXBuildFile; productRef = B5C8281B2B013F5300471A0E /* ARCoreCloudAnchors */; };
+		B5C8281E2B01483300471A0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5C8281D2B01483300471A0E /* GoogleService-Info.plist */; };
+		B5C828212B01486500471A0E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B5C828202B01486500471A0E /* FirebaseAnalytics */; };
+		B5C828232B01486500471A0E /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = B5C828222B01486500471A0E /* FirebaseAnalyticsOnDeviceConversion */; };
+		B5C828252B01486500471A0E /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B5C828242B01486500471A0E /* FirebaseAnalyticsSwift */; };
+		B5C828272B01486500471A0E /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = B5C828262B01486500471A0E /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		B5C828292B01486500471A0E /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = B5C828282B01486500471A0E /* FirebaseAppCheck */; };
+		B5C8282D2B014FBD00471A0E /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B5C8282C2B014FBD00471A0E /* FirebaseDatabase */; };
+		B5C8282F2B015B6600471A0E /* WayfindingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C8282E2B015B6600471A0E /* WayfindingViewController.swift */; };
+		B5C828312B015B8800471A0E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C828302B015B8800471A0E /* LocationManager.swift */; };
+		B5C828332B017D4600471A0E /* ARSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C828322B017D4600471A0E /* ARSessionManager.swift */; };
+		B5C828372B01826500471A0E /* ARSessionManager+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C828362B01826500471A0E /* ARSessionManager+ARSCNViewDelegate.swift */; };
+		B5C828392B0182B400471A0E /* ARSessionManager+ARSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C828382B0182B400471A0E /* ARSessionManager+ARSessionDelegate.swift */; };
+		B5C8283D2B01B8C700471A0E /* ARRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C8283C2B01B8C700471A0E /* ARRenderer.swift */; };
+		B5C8283F2B01BBBB00471A0E /* GeospatialAccuracy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C8283E2B01BBBB00471A0E /* GeospatialAccuracy.swift */; };
+		B5E390602AF836DC00B447B7 /* WayfindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3905F2AF836DC00B447B7 /* WayfindingView.swift */; };
+		B5E3907D2AF847A700B447B7 /* RKPath in Frameworks */ = {isa = PBXBuildFile; productRef = B5E3907C2AF847A700B447B7 /* RKPath */; };
 		B5E9289D2AF2C5DE00272193 /* CSUSM_ARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9289C2AF2C5DE00272193 /* CSUSM_ARApp.swift */; };
-		B5E9289F2AF2C5DE00272193 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9289E2AF2C5DE00272193 /* ContentView.swift */; };
 		B5E928A12AF2C5DF00272193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E928A02AF2C5DF00272193 /* Assets.xcassets */; };
 		B5E928A42AF2C5DF00272193 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E928A32AF2C5DF00272193 /* Preview Assets.xcassets */; };
 		B5E928AC2AF2C6A700272193 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = B5E928AB2AF2C6A700272193 /* SwiftSoup */; };
@@ -74,9 +92,17 @@
 		B5C0AD972AF2D1D700F4F752 /* LocationCollectionCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCollectionCardView.swift; sourceTree = "<group>"; };
 		B5C0AD982AF2D1D700F4F752 /* LocationDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailsView.swift; sourceTree = "<group>"; };
 		B5C0ADA22AF2D2A400F4F752 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B5C8281D2B01483300471A0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B5C8282E2B015B6600471A0E /* WayfindingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayfindingViewController.swift; sourceTree = "<group>"; };
+		B5C828302B015B8800471A0E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		B5C828322B017D4600471A0E /* ARSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSessionManager.swift; sourceTree = "<group>"; };
+		B5C828362B01826500471A0E /* ARSessionManager+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARSessionManager+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		B5C828382B0182B400471A0E /* ARSessionManager+ARSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARSessionManager+ARSessionDelegate.swift"; sourceTree = "<group>"; };
+		B5C8283C2B01B8C700471A0E /* ARRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARRenderer.swift; sourceTree = "<group>"; };
+		B5C8283E2B01BBBB00471A0E /* GeospatialAccuracy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeospatialAccuracy.swift; sourceTree = "<group>"; };
+		B5E3905F2AF836DC00B447B7 /* WayfindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayfindingView.swift; sourceTree = "<group>"; };
 		B5E928992AF2C5DE00272193 /* CSUSM AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSUSM AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E9289C2AF2C5DE00272193 /* CSUSM_ARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUSM_ARApp.swift; sourceTree = "<group>"; };
-		B5E9289E2AF2C5DE00272193 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5E928A02AF2C5DF00272193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5E928A32AF2C5DF00272193 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5E928F62AF2C74200272193 /* String+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utilities.swift"; sourceTree = "<group>"; };
@@ -123,6 +149,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C8281C2B013F5300471A0E /* ARCoreCloudAnchors in Frameworks */,
+				B51544552AF876D80081B3A9 /* ARCoreGARSession in Frameworks */,
+				B5C828212B01486500471A0E /* FirebaseAnalytics in Frameworks */,
+				B5C828232B01486500471A0E /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				B5C828252B01486500471A0E /* FirebaseAnalyticsSwift in Frameworks */,
+				B515445F2AF8873D0081B3A9 /* ARCoreGeospatial in Frameworks */,
+				B5E3907D2AF847A700B447B7 /* RKPath in Frameworks */,
+				B5C828272B01486500471A0E /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				B5C8282D2B014FBD00471A0E /* FirebaseDatabase in Frameworks */,
+				B5C828292B01486500471A0E /* FirebaseAppCheck in Frameworks */,
 				B5E928AC2AF2C6A700272193 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +204,21 @@
 			path = Concept3D;
 			sourceTree = "<group>";
 		};
+		B5E3905B2AF831BF00B447B7 /* Augmented Reality */ = {
+			isa = PBXGroup;
+			children = (
+				B5E3905F2AF836DC00B447B7 /* WayfindingView.swift */,
+				B5C8282E2B015B6600471A0E /* WayfindingViewController.swift */,
+				B5C828322B017D4600471A0E /* ARSessionManager.swift */,
+				B5C828362B01826500471A0E /* ARSessionManager+ARSCNViewDelegate.swift */,
+				B5C828382B0182B400471A0E /* ARSessionManager+ARSessionDelegate.swift */,
+				B5C8283C2B01B8C700471A0E /* ARRenderer.swift */,
+				B5C8283E2B01BBBB00471A0E /* GeospatialAccuracy.swift */,
+				B5C828302B015B8800471A0E /* LocationManager.swift */,
+			);
+			path = "Augmented Reality";
+			sourceTree = "<group>";
+		};
 		B5E928902AF2C5DE00272193 = {
 			isa = PBXGroup;
 			children = (
@@ -190,11 +241,12 @@
 		B5E9289B2AF2C5DE00272193 /* CSUSM AR */ = {
 			isa = PBXGroup;
 			children = (
+				B5C8281D2B01483300471A0E /* GoogleService-Info.plist */,
+				B5E3905B2AF831BF00B447B7 /* Augmented Reality */,
 				B5C0AD8F2AF2D1D700F4F752 /* Featured Events */,
 				B5C0AD932AF2D1D700F4F752 /* Location Directory */,
 				B5E9289C2AF2C5DE00272193 /* CSUSM_ARApp.swift */,
 				B5C0ADA22AF2D2A400F4F752 /* HomeView.swift */,
-				B5E9289E2AF2C5DE00272193 /* ContentView.swift */,
 				B5E928A02AF2C5DF00272193 /* Assets.xcassets */,
 				B5E928A22AF2C5DF00272193 /* Preview Content */,
 			);
@@ -361,6 +413,16 @@
 			name = "CSUSM AR";
 			packageProductDependencies = (
 				B5E928AB2AF2C6A700272193 /* SwiftSoup */,
+				B5E3907C2AF847A700B447B7 /* RKPath */,
+				B51544542AF876D80081B3A9 /* ARCoreGARSession */,
+				B515445E2AF8873D0081B3A9 /* ARCoreGeospatial */,
+				B5C8281B2B013F5300471A0E /* ARCoreCloudAnchors */,
+				B5C828202B01486500471A0E /* FirebaseAnalytics */,
+				B5C828222B01486500471A0E /* FirebaseAnalyticsOnDeviceConversion */,
+				B5C828242B01486500471A0E /* FirebaseAnalyticsSwift */,
+				B5C828262B01486500471A0E /* FirebaseAnalyticsWithoutAdIdSupport */,
+				B5C828282B01486500471A0E /* FirebaseAppCheck */,
+				B5C8282C2B014FBD00471A0E /* FirebaseDatabase */,
 			);
 			productName = "CSUSM AR";
 			productReference = B5E928992AF2C5DE00272193 /* CSUSM AR.app */;
@@ -392,6 +454,9 @@
 			mainGroup = B5E928902AF2C5DE00272193;
 			packageReferences = (
 				B5E928AA2AF2C6A700272193 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				B5E3907B2AF847A700B447B7 /* XCRemoteSwiftPackageReference "RealityKit-Path-Maker" */,
+				B51544532AF876D80081B3A9 /* XCRemoteSwiftPackageReference "arcore-ios-sdk" */,
+				B5C8281F2B01486500471A0E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = B5E9289A2AF2C5DE00272193 /* Products */;
 			projectDirPath = "";
@@ -409,6 +474,7 @@
 			files = (
 				B5E928A42AF2C5DF00272193 /* Preview Assets.xcassets in Resources */,
 				B5E928A12AF2C5DF00272193 /* Assets.xcassets in Resources */,
+				B5C8281E2B01483300471A0E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,8 +486,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5E929272AF2C74200272193 /* ICalComponent.swift in Sources */,
+				B5C828372B01826500471A0E /* ARSessionManager+ARSCNViewDelegate.swift in Sources */,
+				B5E390602AF836DC00B447B7 /* WayfindingView.swift in Sources */,
 				B5E929312AF2C74200272193 /* ICalDuration.swift in Sources */,
-				B5E9289F2AF2C5DE00272193 /* ContentView.swift in Sources */,
 				B5C0ADA32AF2D2A400F4F752 /* HomeView.swift in Sources */,
 				B5E9291B2AF2C74200272193 /* String+Utilities.swift in Sources */,
 				B5E9292B2AF2C74200272193 /* VEncodable.swift in Sources */,
@@ -433,12 +500,14 @@
 				B5E929282AF2C74200272193 /* ICalEvent.swift in Sources */,
 				B5E929252AF2C74200272193 /* XTrumbaField.swift in Sources */,
 				B5E929342AF2C74200272193 /* ICalRRule.swift in Sources */,
+				B5C8283D2B01B8C700471A0E /* ARRenderer.swift in Sources */,
 				B5E9289D2AF2C5DE00272193 /* CSUSM_ARApp.swift in Sources */,
 				B5E929532AF2C8D800272193 /* Concept3D.swift in Sources */,
 				B5E929522AF2C8D800272193 /* Concept3DError.swift in Sources */,
 				B5E9291C2AF2C74200272193 /* Bool+VPropertyEncodable.swift in Sources */,
 				B5E929232AF2C74200272193 /* ICalendar.swift in Sources */,
 				B5C0AD9F2AF2D1D700F4F752 /* LocationDetailsView.swift in Sources */,
+				B5C8283F2B01BBBB00471A0E /* GeospatialAccuracy.swift in Sources */,
 				B5E9292D2AF2C74200272193 /* ICalParser.swift in Sources */,
 				B5E929332AF2C74200272193 /* VContentLine.swift in Sources */,
 				B5C0AD9A2AF2D1D700F4F752 /* EventDetailsView.swift in Sources */,
@@ -458,16 +527,20 @@
 				B5E929362AF2C74200272193 /* ICalDateTimes.swift in Sources */,
 				B5E929292AF2C74200272193 /* DateTimeUtil.swift in Sources */,
 				B5E9292C2AF2C74200272193 /* VComponent.swift in Sources */,
+				B5C8282F2B015B6600471A0E /* WayfindingViewController.swift in Sources */,
 				B5E929242AF2C74200272193 /* ICalSubTimeZone.swift in Sources */,
 				B5E929302AF2C74200272193 /* ICalDateTime.swift in Sources */,
 				B5E929572AF2C8D800272193 /* Concept3DLocationImage.swift in Sources */,
 				B5C0AD9C2AF2D1D700F4F752 /* Concept3DCategoryListView.swift in Sources */,
 				B5E9292E2AF2C74200272193 /* Constant.swift in Sources */,
 				B5C0AD9B2AF2D1D700F4F752 /* EventRowView.swift in Sources */,
+				B5C828332B017D4600471A0E /* ARSessionManager.swift in Sources */,
 				B5C0AD8E2AF2D18B00F4F752 /* Secrets.swift in Sources */,
 				B5E9291E2AF2C74200272193 /* Date+VPropertyEncodable.swift in Sources */,
+				B5C828312B015B8800471A0E /* LocationManager.swift in Sources */,
 				B5E9292F2AF2C74200272193 /* PropertyBuilder.swift in Sources */,
 				B5E9292A2AF2C74200272193 /* VPropertyEncodable.swift in Sources */,
+				B5C828392B0182B400471A0E /* ARSessionManager+ARSessionDelegate.swift in Sources */,
 				B5E929562AF2C8D800272193 /* Concept3DLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,20 +678,29 @@
 				DEVELOPMENT_TEAM = DD8G3E28HN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CSUSM-AR-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "CSUSM Guide";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_NSCameraUsageDescription = "For AR purposes, duh...";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Well, this app is heavily location based... so what do you think?";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "In order to determine the location of your device relative to the buildings around you, your permission is needed to access your current location while using the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.salmanburhan.CSUSM-AR";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salmanburhan.csusm-ar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -637,20 +719,29 @@
 				DEVELOPMENT_TEAM = DD8G3E28HN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CSUSM-AR-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "CSUSM Guide";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_NSCameraUsageDescription = "For AR purposes, duh...";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Well, this app is heavily location based... so what do you think?";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "In order to determine the location of your device relative to the buildings around you, your permission is needed to access your current location while using the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.salmanburhan.CSUSM-AR";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salmanburhan.csusm-ar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -682,6 +773,30 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B51544532AF876D80081B3A9 /* XCRemoteSwiftPackageReference "arcore-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google-ar/arcore-ios-sdk";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.40.0;
+			};
+		};
+		B5C8281F2B01486500471A0E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 10.17.0;
+			};
+		};
+		B5E3907B2AF847A700B447B7 /* XCRemoteSwiftPackageReference "RealityKit-Path-Maker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Reality-Dev/RealityKit-Path-Maker";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
 		B5E928AA2AF2C6A700272193 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/scinfu/SwiftSoup";
@@ -693,6 +808,56 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B51544542AF876D80081B3A9 /* ARCoreGARSession */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B51544532AF876D80081B3A9 /* XCRemoteSwiftPackageReference "arcore-ios-sdk" */;
+			productName = ARCoreGARSession;
+		};
+		B515445E2AF8873D0081B3A9 /* ARCoreGeospatial */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B51544532AF876D80081B3A9 /* XCRemoteSwiftPackageReference "arcore-ios-sdk" */;
+			productName = ARCoreGeospatial;
+		};
+		B5C8281B2B013F5300471A0E /* ARCoreCloudAnchors */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B51544532AF876D80081B3A9 /* XCRemoteSwiftPackageReference "arcore-ios-sdk" */;
+			productName = ARCoreCloudAnchors;
+		};
+		B5C828202B01486500471A0E /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5C8281F2B01486500471A0E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		B5C828222B01486500471A0E /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5C8281F2B01486500471A0E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		B5C828242B01486500471A0E /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5C8281F2B01486500471A0E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		B5C828262B01486500471A0E /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5C8281F2B01486500471A0E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		B5C828282B01486500471A0E /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5C8281F2B01486500471A0E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		B5C8282C2B014FBD00471A0E /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5C8281F2B01486500471A0E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		B5E3907C2AF847A700B447B7 /* RKPath */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5E3907B2AF847A700B447B7 /* XCRemoteSwiftPackageReference "RealityKit-Path-Maker" */;
+			productName = RKPath;
+		};
 		B5E928AB2AF2C6A700272193 /* SwiftSoup */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B5E928AA2AF2C6A700272193 /* XCRemoteSwiftPackageReference "SwiftSoup" */;

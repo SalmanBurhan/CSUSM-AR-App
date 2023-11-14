@@ -5,7 +5,7 @@ CSUSM Senior Capstone Project: Campus Featured Events and Campus Navigation with
 
 ## Building
 For a successful build/run, `Secrets.swift` file must be created within the project.
-Each project collaborater should have a copy of this file with their sandbox key until released for production to California State University San Marcos.
+Each project collaborator should have a copy of this file with their sandbox key until released for production to California State University San Marcos.
 The file should contain the following `struct` and values should be assigned for the relevant environment:
 ``` swift
 struct Secrets {
@@ -26,4 +26,8 @@ Access the Google API key using
 GoogleAPI.production.apiKey
 GoogleAPI.sandbox.apiKey
 ```
+
+Each project collaborator should also receive a copy of the `GoogleServices-Info.plist` file from the [repo owner](https://github.com/SalmanBurhan) to place in the `CSUSM AR` project diectory prior to building.
+
+
 Access to the Concept3D API Key is not necessary as there is no need for distinguishing between sandbox and production environments at this time.
