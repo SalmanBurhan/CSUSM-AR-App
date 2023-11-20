@@ -56,9 +56,8 @@ struct Concept3DLocation: Decodable, Identifiable {
         self.name = name
         self.reference = reference
         self.location = location
-        
     }
-        
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
