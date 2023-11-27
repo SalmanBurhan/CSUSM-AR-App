@@ -85,8 +85,6 @@ class ARSessionManager: NSObject, ObservableObject {
             }
         }
     }
-
-
         
     override init() {
         super.init()
@@ -132,6 +130,7 @@ class ARSessionManager: NSObject, ObservableObject {
                     altitudeAboveRooftop: 2,
                     eastUpSouthQAnchor: qAnchor,
                     completionHandler: { anchor, state in
+                        
                         print("GARRooftopAnchorState: \(String(describing: state))")
                         if let anchor = anchor {
                             if anchor.hasValidTransform {

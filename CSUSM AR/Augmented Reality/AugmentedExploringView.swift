@@ -17,7 +17,7 @@ struct AugmentedRealityView: View {
             if !locationManager.isAuthorized {
                 LocationServicesPermissionsView(self.locationManager)
             } else {
-                WayfindingView()
+                AugmentedExploringView()
             }
         }.onAppear(perform: {
             self.locationManager.checkPermissions()
@@ -38,15 +38,14 @@ struct LocationServicesPermissionsView: View {
     }
 }
 
-struct WayfindingView: UIViewControllerRepresentable {
-    typealias UIViewControllerType = WayfindingViewController
+struct AugmentedExploringView: UIViewControllerRepresentable {
+    typealias UIViewControllerType = AugmentedExploringViewController
 
-    func makeUIViewController(context: Context) -> WayfindingViewController {
-        return WayfindingViewController()
+    func makeUIViewController(context: Context) -> AugmentedExploringViewController {
+        return AugmentedExploringViewController()
     }
     
-    func updateUIViewController(_ uiViewController: WayfindingViewController, context: Context) {
+    func updateUIViewController(_ uiViewController: AugmentedExploringViewController, context: Context) {
         
     }
 }
-

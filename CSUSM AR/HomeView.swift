@@ -59,7 +59,7 @@ extension HomeView {
                         .foregroundStyle(Color.universityBlue.gradient)
                 }.buttonStyle(.plain)
                 
-                NavigationLink(destination: AugmentedRealityView().ignoresSafeArea(.all)) {
+                NavigationLink(destination: AugmentedExploringView().ignoresSafeArea(.all)) {
                     menuTrayItem("Explore", systemIcon: "arkit")
                         .foregroundStyle(Color.spiritBlue.gradient)
                 }.buttonStyle(.plain)

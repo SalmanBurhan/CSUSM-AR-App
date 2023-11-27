@@ -1,5 +1,5 @@
 //
-//  WayfindingViewController.swift
+//  AugmentedExploringViewCo.swift
 //  CSUSM AR
 //
 //  Created by Salman Burhan on 11/12/23.
@@ -8,7 +8,7 @@
 import UIKit
 import ARKit
 
-class WayfindingViewController: UIViewController {
+class AugmentedExploringViewController: UIViewController {
     
     let arSession = ARSessionManager.shared
     
