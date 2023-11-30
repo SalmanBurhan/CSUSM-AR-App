@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B512D2C12B14E7420004CB01 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B512D2C02B14E7420004CB01 /* ARViewController.swift */; };
 		B51544552AF876D80081B3A9 /* ARCoreGARSession in Frameworks */ = {isa = PBXBuildFile; productRef = B51544542AF876D80081B3A9 /* ARCoreGARSession */; };
 		B515445F2AF8873D0081B3A9 /* ARCoreGeospatial in Frameworks */ = {isa = PBXBuildFile; productRef = B515445E2AF8873D0081B3A9 /* ARCoreGeospatial */; };
+		B586FB792B17023900896FA6 /* spatial-marker-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = B586FB762B17023900896FA6 /* spatial-marker-yellow.png */; };
+		B586FB7A2B17023900896FA6 /* geospatial_marker.obj in Resources */ = {isa = PBXBuildFile; fileRef = B586FB772B17023900896FA6 /* geospatial_marker.obj */; };
+		B586FB7B2B17023900896FA6 /* spatial-marker-baked.png in Resources */ = {isa = PBXBuildFile; fileRef = B586FB782B17023900896FA6 /* spatial-marker-baked.png */; };
+		B586FB7D2B17255100896FA6 /* CardNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B586FB7C2B17255100896FA6 /* CardNode.swift */; };
+		B586FB7F2B173CC500896FA6 /* CardNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B586FB7E2B173CC500896FA6 /* CardNodeView.swift */; };
+		B586FB812B17422C00896FA6 /* MaterialBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B586FB802B17422C00896FA6 /* MaterialBuilder.swift */; };
+		B586FB832B1772D200896FA6 /* CardNodeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B586FB822B1772D200896FA6 /* CardNodeUIView.swift */; };
+		B586FB852B17E13000896FA6 /* AnchorBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B586FB842B17E13000896FA6 /* AnchorBridge.swift */; };
+		B586FB872B17E23C00896FA6 /* ARAnchor+GARIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B586FB862B17E23C00896FA6 /* ARAnchor+GARIdentifier.swift */; };
 		B5C0AD8B2AF2D18300F4F752 /* NavigationToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD892AF2D18300F4F752 /* NavigationToolbar.swift */; };
 		B5C0AD8C2AF2D18300F4F752 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD8A2AF2D18300F4F752 /* Colors.swift */; };
 		B5C0AD8E2AF2D18B00F4F752 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD8D2AF2D18B00F4F752 /* Secrets.swift */; };
@@ -28,14 +38,14 @@
 		B5C828272B01486500471A0E /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = B5C828262B01486500471A0E /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		B5C828292B01486500471A0E /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = B5C828282B01486500471A0E /* FirebaseAppCheck */; };
 		B5C8282D2B014FBD00471A0E /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B5C8282C2B014FBD00471A0E /* FirebaseDatabase */; };
-		B5C8282F2B015B6600471A0E /* WayfindingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C8282E2B015B6600471A0E /* WayfindingViewController.swift */; };
+		B5C8282F2B015B6600471A0E /* AugmentedExploringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C8282E2B015B6600471A0E /* AugmentedExploringViewController.swift */; };
 		B5C828312B015B8800471A0E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C828302B015B8800471A0E /* LocationManager.swift */; };
 		B5C828332B017D4600471A0E /* ARSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C828322B017D4600471A0E /* ARSessionManager.swift */; };
 		B5C828372B01826500471A0E /* ARSessionManager+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C828362B01826500471A0E /* ARSessionManager+ARSCNViewDelegate.swift */; };
 		B5C828392B0182B400471A0E /* ARSessionManager+ARSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C828382B0182B400471A0E /* ARSessionManager+ARSessionDelegate.swift */; };
 		B5C8283D2B01B8C700471A0E /* ARRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C8283C2B01B8C700471A0E /* ARRenderer.swift */; };
 		B5C8283F2B01BBBB00471A0E /* GeospatialAccuracy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C8283E2B01BBBB00471A0E /* GeospatialAccuracy.swift */; };
-		B5E390602AF836DC00B447B7 /* WayfindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3905F2AF836DC00B447B7 /* WayfindingView.swift */; };
+		B5E390602AF836DC00B447B7 /* AugmentedExploringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3905F2AF836DC00B447B7 /* AugmentedExploringView.swift */; };
 		B5E3907D2AF847A700B447B7 /* RKPath in Frameworks */ = {isa = PBXBuildFile; productRef = B5E3907C2AF847A700B447B7 /* RKPath */; };
 		B5E9289D2AF2C5DE00272193 /* CSUSM_ARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9289C2AF2C5DE00272193 /* CSUSM_ARApp.swift */; };
 		B5E928A12AF2C5DF00272193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E928A02AF2C5DF00272193 /* Assets.xcassets */; };
@@ -81,6 +91,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B512D2C02B14E7420004CB01 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		B586FB762B17023900896FA6 /* spatial-marker-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spatial-marker-yellow.png"; sourceTree = "<group>"; };
+		B586FB772B17023900896FA6 /* geospatial_marker.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = geospatial_marker.obj; sourceTree = "<group>"; };
+		B586FB782B17023900896FA6 /* spatial-marker-baked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spatial-marker-baked.png"; sourceTree = "<group>"; };
+		B586FB7C2B17255100896FA6 /* CardNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNode.swift; sourceTree = "<group>"; };
+		B586FB7E2B173CC500896FA6 /* CardNodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNodeView.swift; sourceTree = "<group>"; };
+		B586FB802B17422C00896FA6 /* MaterialBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialBuilder.swift; sourceTree = "<group>"; };
+		B586FB822B1772D200896FA6 /* CardNodeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNodeUIView.swift; sourceTree = "<group>"; };
+		B586FB842B17E13000896FA6 /* AnchorBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorBridge.swift; sourceTree = "<group>"; };
+		B586FB862B17E23C00896FA6 /* ARAnchor+GARIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARAnchor+GARIdentifier.swift"; sourceTree = "<group>"; };
 		B5C0AD892AF2D18300F4F752 /* NavigationToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationToolbar.swift; sourceTree = "<group>"; };
 		B5C0AD8A2AF2D18300F4F752 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B5C0AD8D2AF2D18B00F4F752 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
@@ -93,14 +113,14 @@
 		B5C0AD982AF2D1D700F4F752 /* LocationDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailsView.swift; sourceTree = "<group>"; };
 		B5C0ADA22AF2D2A400F4F752 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B5C8281D2B01483300471A0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B5C8282E2B015B6600471A0E /* WayfindingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayfindingViewController.swift; sourceTree = "<group>"; };
+		B5C8282E2B015B6600471A0E /* AugmentedExploringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedExploringViewController.swift; sourceTree = "<group>"; };
 		B5C828302B015B8800471A0E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		B5C828322B017D4600471A0E /* ARSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSessionManager.swift; sourceTree = "<group>"; };
 		B5C828362B01826500471A0E /* ARSessionManager+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARSessionManager+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
 		B5C828382B0182B400471A0E /* ARSessionManager+ARSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARSessionManager+ARSessionDelegate.swift"; sourceTree = "<group>"; };
 		B5C8283C2B01B8C700471A0E /* ARRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARRenderer.swift; sourceTree = "<group>"; };
 		B5C8283E2B01BBBB00471A0E /* GeospatialAccuracy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeospatialAccuracy.swift; sourceTree = "<group>"; };
-		B5E3905F2AF836DC00B447B7 /* WayfindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayfindingView.swift; sourceTree = "<group>"; };
+		B5E3905F2AF836DC00B447B7 /* AugmentedExploringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedExploringView.swift; sourceTree = "<group>"; };
 		B5E928992AF2C5DE00272193 /* CSUSM AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSUSM AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E9289C2AF2C5DE00272193 /* CSUSM_ARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUSM_ARApp.swift; sourceTree = "<group>"; };
 		B5E928A02AF2C5DF00272193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -166,6 +186,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B512D2BD2B1441DC0004CB01 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				B512D2C02B14E7420004CB01 /* ARViewController.swift */,
+				B586FB842B17E13000896FA6 /* AnchorBridge.swift */,
+				B586FB862B17E23C00896FA6 /* ARAnchor+GARIdentifier.swift */,
+				B586FB7C2B17255100896FA6 /* CardNode.swift */,
+				B586FB7E2B173CC500896FA6 /* CardNodeView.swift */,
+				B586FB822B1772D200896FA6 /* CardNodeUIView.swift */,
+				B586FB802B17422C00896FA6 /* MaterialBuilder.swift */,
+				B586FB772B17023900896FA6 /* geospatial_marker.obj */,
+				B586FB782B17023900896FA6 /* spatial-marker-baked.png */,
+				B586FB762B17023900896FA6 /* spatial-marker-yellow.png */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		B5C0AD882AF2D18300F4F752 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,8 +244,8 @@
 		B5E3905B2AF831BF00B447B7 /* Augmented Reality */ = {
 			isa = PBXGroup;
 			children = (
-				B5E3905F2AF836DC00B447B7 /* WayfindingView.swift */,
-				B5C8282E2B015B6600471A0E /* WayfindingViewController.swift */,
+				B5E3905F2AF836DC00B447B7 /* AugmentedExploringView.swift */,
+				B5C8282E2B015B6600471A0E /* AugmentedExploringViewController.swift */,
 				B5C828322B017D4600471A0E /* ARSessionManager.swift */,
 				B5C828362B01826500471A0E /* ARSessionManager+ARSCNViewDelegate.swift */,
 				B5C828382B0182B400471A0E /* ARSessionManager+ARSessionDelegate.swift */,
@@ -242,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				B5C8281D2B01483300471A0E /* GoogleService-Info.plist */,
+				B512D2BD2B1441DC0004CB01 /* New Group */,
 				B5E3905B2AF831BF00B447B7 /* Augmented Reality */,
 				B5C0AD8F2AF2D1D700F4F752 /* Featured Events */,
 				B5C0AD932AF2D1D700F4F752 /* Location Directory */,
@@ -472,8 +510,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B586FB7B2B17023900896FA6 /* spatial-marker-baked.png in Resources */,
 				B5E928A42AF2C5DF00272193 /* Preview Assets.xcassets in Resources */,
+				B586FB7A2B17023900896FA6 /* geospatial_marker.obj in Resources */,
 				B5E928A12AF2C5DF00272193 /* Assets.xcassets in Resources */,
+				B586FB792B17023900896FA6 /* spatial-marker-yellow.png in Resources */,
 				B5C8281E2B01483300471A0E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,9 +526,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B586FB832B1772D200896FA6 /* CardNodeUIView.swift in Sources */,
 				B5E929272AF2C74200272193 /* ICalComponent.swift in Sources */,
 				B5C828372B01826500471A0E /* ARSessionManager+ARSCNViewDelegate.swift in Sources */,
-				B5E390602AF836DC00B447B7 /* WayfindingView.swift in Sources */,
+				B5E390602AF836DC00B447B7 /* AugmentedExploringView.swift in Sources */,
 				B5E929312AF2C74200272193 /* ICalDuration.swift in Sources */,
 				B5C0ADA32AF2D2A400F4F752 /* HomeView.swift in Sources */,
 				B5E9291B2AF2C74200272193 /* String+Utilities.swift in Sources */,
@@ -499,12 +541,15 @@
 				B5E929552AF2C8D800272193 /* Concept3DLocationDetails.swift in Sources */,
 				B5E929282AF2C74200272193 /* ICalEvent.swift in Sources */,
 				B5E929252AF2C74200272193 /* XTrumbaField.swift in Sources */,
+				B586FB852B17E13000896FA6 /* AnchorBridge.swift in Sources */,
 				B5E929342AF2C74200272193 /* ICalRRule.swift in Sources */,
+				B586FB812B17422C00896FA6 /* MaterialBuilder.swift in Sources */,
 				B5C8283D2B01B8C700471A0E /* ARRenderer.swift in Sources */,
 				B5E9289D2AF2C5DE00272193 /* CSUSM_ARApp.swift in Sources */,
 				B5E929532AF2C8D800272193 /* Concept3D.swift in Sources */,
 				B5E929522AF2C8D800272193 /* Concept3DError.swift in Sources */,
 				B5E9291C2AF2C74200272193 /* Bool+VPropertyEncodable.swift in Sources */,
+				B586FB7F2B173CC500896FA6 /* CardNodeView.swift in Sources */,
 				B5E929232AF2C74200272193 /* ICalendar.swift in Sources */,
 				B5C0AD9F2AF2D1D700F4F752 /* LocationDetailsView.swift in Sources */,
 				B5C8283F2B01BBBB00471A0E /* GeospatialAccuracy.swift in Sources */,
@@ -513,6 +558,7 @@
 				B5C0AD9A2AF2D1D700F4F752 /* EventDetailsView.swift in Sources */,
 				B5E929212AF2C74200272193 /* Int+VPropertyEncodable.swift in Sources */,
 				B5E929322AF2C74200272193 /* ICalParameter.swift in Sources */,
+				B512D2C12B14E7420004CB01 /* ARViewController.swift in Sources */,
 				B5C0AD8B2AF2D18300F4F752 /* NavigationToolbar.swift in Sources */,
 				B5E929382AF2C74200272193 /* ICalAttachment.swift in Sources */,
 				B5E9291D2AF2C74200272193 /* String+VPropertyEncodable.swift in Sources */,
@@ -525,9 +571,10 @@
 				B5C0AD9D2AF2D1D700F4F752 /* Concept3DCategoryView.swift in Sources */,
 				B5E929352AF2C74200272193 /* ICalProductIdentifier.swift in Sources */,
 				B5E929362AF2C74200272193 /* ICalDateTimes.swift in Sources */,
+				B586FB872B17E23C00896FA6 /* ARAnchor+GARIdentifier.swift in Sources */,
 				B5E929292AF2C74200272193 /* DateTimeUtil.swift in Sources */,
 				B5E9292C2AF2C74200272193 /* VComponent.swift in Sources */,
-				B5C8282F2B015B6600471A0E /* WayfindingViewController.swift in Sources */,
+				B5C8282F2B015B6600471A0E /* AugmentedExploringViewController.swift in Sources */,
 				B5E929242AF2C74200272193 /* ICalSubTimeZone.swift in Sources */,
 				B5E929302AF2C74200272193 /* ICalDateTime.swift in Sources */,
 				B5E929572AF2C8D800272193 /* Concept3DLocationImage.swift in Sources */,
@@ -535,6 +582,7 @@
 				B5E9292E2AF2C74200272193 /* Constant.swift in Sources */,
 				B5C0AD9B2AF2D1D700F4F752 /* EventRowView.swift in Sources */,
 				B5C828332B017D4600471A0E /* ARSessionManager.swift in Sources */,
+				B586FB7D2B17255100896FA6 /* CardNode.swift in Sources */,
 				B5C0AD8E2AF2D18B00F4F752 /* Secrets.swift in Sources */,
 				B5E9291E2AF2C74200272193 /* Date+VPropertyEncodable.swift in Sources */,
 				B5C828312B015B8800471A0E /* LocationManager.swift in Sources */,

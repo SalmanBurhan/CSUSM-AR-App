@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "building-circle-filled.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
