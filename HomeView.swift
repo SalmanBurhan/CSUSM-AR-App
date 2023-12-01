@@ -65,9 +65,16 @@ extension HomeView {
             LazyHGrid(rows: [GridItem(.flexible(minimum: 100))], alignment: .top, content: {
                 NavigationLink(destination: Map()) {
                     menuTrayItem("Map", systemIcon: "map")
-                        .foregroundStyle(Color.black)
+                        .foregroundStyle(Color.spiritBlue)
                 }.buttonStyle(.plain)
                     .position(x:50, y:20)
+                
+                NavigationLink(destination: Settings()) {
+                    menuTrayItem("settings", systemIcon: "gearshape")
+                        .foregroundStyle(Color.gray.gradient)
+                }.buttonStyle(.plain)
+                    .position(x:50, y:20)
+                
             })
             
         }
