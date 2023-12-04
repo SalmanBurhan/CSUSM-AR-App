@@ -38,7 +38,7 @@ extension HomeView {
                         .font(.callout.bold())
                 }
             }
-            .frame(minWidth: 100, maxHeight: 100)
+            .frame(minWidth: 150, maxHeight: 100)
     }
     
     @ViewBuilder
@@ -57,11 +57,6 @@ extension HomeView {
                 NavigationLink(destination: Concept3DCategoryListView()) {
                     menuTrayItem("Buildings", systemIcon: "building.2")
                         .foregroundStyle(Color.universityBlue.gradient)
-                }.buttonStyle(.plain)
-                
-                NavigationLink(destination: EmptyView().ignoresSafeArea(.all)) {
-                    menuTrayItem("Explore", systemIcon: "arkit")
-                        .foregroundStyle(Color.spiritBlue.gradient)
                 }.buttonStyle(.plain)
 
             })

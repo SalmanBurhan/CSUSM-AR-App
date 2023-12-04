@@ -14,6 +14,8 @@
 		B57998702B1C5A9E00CDFFB0 /* ARSessionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B579986F2B1C5A9E00CDFFB0 /* ARSessionError.swift */; };
 		B57998722B1C60AF00CDFFB0 /* GARSessionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57998712B1C60AF00CDFFB0 /* GARSessionError.swift */; };
 		B57998742B1D596900CDFFB0 /* CatalogARSessionStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57998732B1D596900CDFFB0 /* CatalogARSessionStatistics.swift */; };
+		B57998792B1D7B1B00CDFFB0 /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57998782B1D7B1B00CDFFB0 /* PDFView.swift */; };
+		B579987B2B1D7C8300CDFFB0 /* campus-map.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B579987A2B1D7C8300CDFFB0 /* campus-map.pdf */; };
 		B5C0AD8B2AF2D18300F4F752 /* NavigationToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD892AF2D18300F4F752 /* NavigationToolbar.swift */; };
 		B5C0AD8C2AF2D18300F4F752 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD8A2AF2D18300F4F752 /* Colors.swift */; };
 		B5C0AD8E2AF2D18B00F4F752 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD8D2AF2D18B00F4F752 /* Secrets.swift */; };
@@ -93,6 +95,8 @@
 		B579986F2B1C5A9E00CDFFB0 /* ARSessionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSessionError.swift; sourceTree = "<group>"; };
 		B57998712B1C60AF00CDFFB0 /* GARSessionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GARSessionError.swift; sourceTree = "<group>"; };
 		B57998732B1D596900CDFFB0 /* CatalogARSessionStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogARSessionStatistics.swift; sourceTree = "<group>"; };
+		B57998782B1D7B1B00CDFFB0 /* PDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
+		B579987A2B1D7C8300CDFFB0 /* campus-map.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "campus-map.pdf"; sourceTree = "<group>"; };
 		B5C0AD892AF2D18300F4F752 /* NavigationToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationToolbar.swift; sourceTree = "<group>"; };
 		B5C0AD8A2AF2D18300F4F752 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B5C0AD8D2AF2D18B00F4F752 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
@@ -195,6 +199,15 @@
 				B51CCBEB2B1A5A7D0099AB6B /* CatalogARView.swift */,
 			);
 			path = CatalogARView;
+			sourceTree = "<group>";
+		};
+		B57998752B1D79A100CDFFB0 /* Campus Map */ = {
+			isa = PBXGroup;
+			children = (
+				B57998782B1D7B1B00CDFFB0 /* PDFView.swift */,
+				B579987A2B1D7C8300CDFFB0 /* campus-map.pdf */,
+			);
+			path = "Campus Map";
 			sourceTree = "<group>";
 		};
 		B5C0AD882AF2D18300F4F752 /* Extensions */ = {
@@ -315,6 +328,7 @@
 				B5C0AD8F2AF2D1D700F4F752 /* Featured Events */,
 				B5C0AD932AF2D1D700F4F752 /* Location Directory */,
 				B5E9289C2AF2C5DE00272193 /* CSUSM_ARApp.swift */,
+				B57998752B1D79A100CDFFB0 /* Campus Map */,
 				B5C0ADA22AF2D2A400F4F752 /* HomeView.swift */,
 				B5E928A02AF2C5DF00272193 /* Assets.xcassets */,
 				B5E928A22AF2C5DF00272193 /* Preview Content */,
@@ -544,6 +558,7 @@
 			files = (
 				B5E928A42AF2C5DF00272193 /* Preview Assets.xcassets in Resources */,
 				B5E928A12AF2C5DF00272193 /* Assets.xcassets in Resources */,
+				B579987B2B1D7C8300CDFFB0 /* campus-map.pdf in Resources */,
 				B5C8281E2B01483300471A0E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,6 +600,7 @@
 				B5E9292B2AF2C74200272193 /* VEncodable.swift in Sources */,
 				B5E929582AF2C8D800272193 /* Concept3DEndpoint.swift in Sources */,
 				B5E10F522B199A36005B0733 /* AnchorManager.swift in Sources */,
+				B57998792B1D7B1B00CDFFB0 /* PDFView.swift in Sources */,
 				B5E929202AF2C74200272193 /* UUID+VPropertyEncodable.swift in Sources */,
 				B5C427EB2B1C1B8000B2650F /* CatalogARSessionManager.swift in Sources */,
 				B5E9291F2AF2C74200272193 /* URL+VPropertyEncodable.swift in Sources */,

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct Concept3DCategoryView: View {
     
@@ -28,6 +29,8 @@ struct Concept3DCategoryView: View {
                             childrenListView()
                         }
                         if self.locations.count > 0 {
+                            Spacer()
+                            locationsMapView()
                             Spacer()
                             locationListView()
                         }
@@ -123,6 +126,28 @@ extension Concept3DCategoryView {
                     .padding(.bottom, 5)
             }
             
+        }
+    }
+    
+    @ViewBuilder
+    func locationsMapView() -> some View {
+        let region = MKCoordinateRegion(
+            center: .init(
+                latitude: 33.129996983381716, longitude: -117.1586831461883),
+            span: .init(
+                latitudeDelta: 0.009,
+                longitudeDelta: 0.009))
+        Group {
+            Text("Campus Map")
+                .font(.headline)
+                .fontWeight(.medium)
+                .foregroundStyle(.secondary)
+            Map(initialPosition: .region(region)) {
+                ForEach(self.locations) {
+                    Marker($0.name, coordinate: $0.location)
+                        .tint(Color.cougarBlue)
+                }
+            }.frame(height: 200)
         }
     }
     

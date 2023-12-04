@@ -10,7 +10,8 @@ import SwiftUI
 struct Concept3DCategoryListView: View {
     
     @ObservedObject var locationCatalog = Concept3D.shared
-    
+    @State private var isPDFViewPresented = false
+
     var body: some View {
         NavigationStack {
             ZStack {
@@ -24,6 +25,18 @@ struct Concept3DCategoryListView: View {
                 }
             }.ignoresSafeArea()
         }
+        .toolbar {
+            Button("PDF", systemImage: "map") {
+                isPDFViewPresented.toggle()
+            }
+        }
+        .popover(isPresented: $isPDFViewPresented, content: {
+            if let pdfURL = Bundle.main.url(forResource: "campus-map", withExtension: "pdf") {
+                PDFViewWrapper(pdfURL: pdfURL)
+            } else {
+                ContentUnavailableView("Not Found", image: "doc.questionmark", description: Text("Unable to load campus map."))
+            }
+        })
     }
 }
 
