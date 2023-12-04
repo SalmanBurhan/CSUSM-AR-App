@@ -200,6 +200,8 @@
 		B5C0AD882AF2D18300F4F752 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B5E10F4F2B1993E2005B0733 /* RooftopState.swift */,
+				B57998712B1C60AF00CDFFB0 /* GARSessionError.swift */,
 				B5C0AD892AF2D18300F4F752 /* NavigationToolbar.swift */,
 				B5C0AD8A2AF2D18300F4F752 /* Colors.swift */,
 			);
@@ -271,8 +273,6 @@
 			children = (
 				B579986F2B1C5A9E00CDFFB0 /* ARSessionError.swift */,
 				B5E10F432B197EA0005B0733 /* LocalizationState.swift */,
-				B5E10F4F2B1993E2005B0733 /* RooftopState.swift */,
-				B57998712B1C60AF00CDFFB0 /* GARSessionError.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
