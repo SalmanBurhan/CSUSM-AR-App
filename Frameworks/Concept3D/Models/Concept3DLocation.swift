@@ -12,7 +12,7 @@ struct Concept3DLocation: Decodable, Identifiable {
     
     let id: Int
     let categoryId: Int
-    let altitude: Double
+    let altitude: Double /// Appears to always return zero from the server side.
     let map: Int
     let floors: [Int]
     let markId: Int

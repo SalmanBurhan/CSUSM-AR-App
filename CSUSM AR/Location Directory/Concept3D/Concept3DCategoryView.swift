@@ -34,7 +34,19 @@ struct Concept3DCategoryView: View {
                     }.padding(.horizontal)
                 }
             }.ignoresSafeArea()
-        }.task { await self.loadDetails() }
+        }
+        .task { await self.loadDetails() }
+        .toolbar {
+            ToolbarItem(placement: .primaryAction) {
+                NavigationLink {
+                    //ExploreARView(self.locations)
+                    CatalogARView(self.locations)
+                } label: {
+                    Image(systemName: "arkit")
+                }
+
+            }
+        }
     }
 }
 

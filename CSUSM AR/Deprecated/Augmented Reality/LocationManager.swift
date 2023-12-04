@@ -11,22 +11,21 @@ import SwiftUI
 import Combine
 
 class LocationManager: NSObject {
-        
-    private let manager: CLLocationManager
-    let authorizationPublisher = CurrentValueSubject<Bool, Never>(false)
-    let locationPublisher = PassthroughSubject<CLLocation, Never>()
-        
+    
+    static let shared = LocationManager()
+    
+    private var manager: CLLocationManager
+    
+    @objc dynamic var isAuthorized: Bool = false
+    @objc dynamic var lastLocation: CLLocation?
+    
     override init() {
         /// Set Initial Values
         self.manager = CLLocationManager()
         super.init()
         
-        self.manager.desiredAccuracy = kCLLocationAccuracyBest
         self.manager.delegate = self
-    }
-    
-    deinit {
-        self.manager.stopUpdatingLocation()
+        self.checkPermissions()
     }
     
     func startMonitoring() {
@@ -111,8 +110,7 @@ class LocationManager: NSObject {
 
     }
     
-    @discardableResult
-    func isAuthorized() -> Bool {
+    func checkPermissions() {
         switch self.manager.authorizationStatus {
         
         case .notDetermined:
@@ -120,23 +118,23 @@ class LocationManager: NSObject {
             /// The app is responsible for obtaining the location permission prior to configuring the ARCore
             /// session. ARCore will not cause the location permission system prompt.
             
+            self.isAuthorized = false
             print("It is likely that that the user has not yet been prompted to grant location services access.")
-            return false
             
         case .restricted, .denied:
             /// The app's access to location services has been restricted or denied by the user.
-
+            ///
+            self.isAuthorized = false
             print("The app's access to location services has been restricted or denied by the user.")
-            return false
-            
+        
         case .authorized, .authorizedAlways, .authorizedWhenInUse:
             /// The app's access to location services has been allowed.
 
             if self.manager.accuracyAuthorization == .fullAccuracy {
-                return true
+                self.isAuthorized = true
             } else {
+                self.isAuthorized = false
                 print("The app has not been granted full precision access to location services.")
-                return false
             }
             
         @unknown default:
@@ -148,12 +146,11 @@ class LocationManager: NSObject {
 extension LocationManager: CLLocationManagerDelegate {
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        self.authorizationPublisher.send(self.isAuthorized())
+        self.isAuthorized = (manager.authorizationStatus == .authorizedAlways || manager.authorizationStatus == .authorizedWhenInUse) && (manager.accuracyAuthorization == .fullAccuracy)
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let lastLocation = locations.last else { return }
-        self.locationPublisher.send(lastLocation)
+        self.lastLocation = locations.last
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
