@@ -67,7 +67,7 @@ extension Concept3DCategoryListView {
                 Text("Building Directory").font(.title2).padding(.horizontal).foregroundColor(.secondary)
                 LazyVGrid(columns: [GridItem(.flexible())]) {
                     ForEach(self.locationCatalog.categories) { category in
-                        NavigationLink(destination: Concept3DCategoryView(category: category).withCustomBackButton()) {
+                        NavigationLink(destination: Concept3DCategoryView(category: category)) {
                             self.createRow(for: category)
                         }.buttonStyle(.plain)
                     }

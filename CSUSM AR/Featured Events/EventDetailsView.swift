@@ -188,7 +188,7 @@ struct GuidanceButton: View {
     
     var body: some View {
         VStack(spacing: 14) {
-            Text("Begin Guidance").font(.system(.title3, weight: .medium)).padding(.vertical, 12).padding(.horizontal, 24).background(Color.cougarBlue).foregroundColor(.white).mask {
+            Text("Add To Calendar").font(.system(.title3, weight: .medium)).padding(.vertical, 12).padding(.horizontal, 24).background(Color.cougarBlue).foregroundColor(.white).mask {
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
             }
         }.padding(.vertical, 28)

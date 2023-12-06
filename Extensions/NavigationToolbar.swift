@@ -15,7 +15,7 @@ struct BackButton: View {
         Button(action: action) {
             Image(systemName: "arrow.backward")
                 .font(.title3)
-                .padding(11)
+                .padding()
                 .background {
                     Circle()
                         .fill(Color(.systemBackground))

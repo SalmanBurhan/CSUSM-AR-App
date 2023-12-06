@@ -293,7 +293,7 @@ class CatalogARSessionManager: NSObject {
             do {
                 try self.garSession?.createAnchorOnRooftop(
                     coordinate: location.location,
-                    altitudeAboveRooftop: 15.24,
+                    altitudeAboveRooftop: 0.0,
                     eastUpSouthQAnchor: transform.eastUpSouthQTarget,
                     completionHandler: { self.resolveAnchor($0, forLocation: location, withState: $1) })
             } catch let error {

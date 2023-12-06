@@ -84,10 +84,10 @@ extension EventFeedView {
         ScrollView {
             VStack(alignment: .leading) {
                 Text("California State University San Marcos").font(.largeTitle) .padding(.horizontal)
-                Text("Campus Events").font(.title2).padding(.horizontal).foregroundColor(.secondary)
+                Text("Featured Events").font(.title2).padding(.horizontal).foregroundColor(.secondary)
                 LazyVGrid(columns: [GridItem(.flexible())]) {
                     ForEach($events, id: \.uid) { event in
-                        NavigationLink(destination: EventDetailsView(event.wrappedValue).withCustomBackButton()) {
+                        NavigationLink(destination: EventDetailsView(event.wrappedValue)) {
                             EventRowView(for: event.wrappedValue)
                             //createEventView(for: event.wrappedValue)
                         }.buttonStyle(.plain)

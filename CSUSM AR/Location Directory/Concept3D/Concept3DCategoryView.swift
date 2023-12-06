@@ -83,7 +83,7 @@ extension Concept3DCategoryView {
                 .fontWeight(.medium)
                 .foregroundStyle(.secondary)
             ForEach(self.children) { child in
-                NavigationLink(destination: Concept3DCategoryView(category: child).withCustomBackButton()) {
+                NavigationLink(destination: Concept3DCategoryView(category: child)) {
                     HStack {
                         AsyncImage(url: category.iconURL) { image in
                             image.renderingMode(.original)

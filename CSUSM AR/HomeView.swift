@@ -58,7 +58,6 @@ extension HomeView {
                     menuTrayItem("Buildings", systemIcon: "building.2")
                         .foregroundStyle(Color.universityBlue.gradient)
                 }.buttonStyle(.plain)
-
             })
         }
     }
