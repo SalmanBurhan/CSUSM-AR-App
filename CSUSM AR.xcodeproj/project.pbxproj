@@ -11,11 +11,15 @@
 		B515445F2AF8873D0081B3A9 /* ARCoreGeospatial in Frameworks */ = {isa = PBXBuildFile; productRef = B515445E2AF8873D0081B3A9 /* ARCoreGeospatial */; };
 		B51CCBEC2B1A5A7D0099AB6B /* CatalogARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51CCBEB2B1A5A7D0099AB6B /* CatalogARView.swift */; };
 		B51CCBEE2B1A5B620099AB6B /* CatalogARSessionManager+ARSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51CCBED2B1A5B620099AB6B /* CatalogARSessionManager+ARSessionDelegate.swift */; };
+		B521C2C72B20E77C0006CC5B /* LocationNodeUIView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B521C2C62B20E77C0006CC5B /* LocationNodeUIView.xib */; };
+		B54970412B20ED3B0003090F /* LocationNodeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54970402B20ED3B0003090F /* LocationNodeUIView.swift */; };
+		B54970452B20F07D0003090F /* LocationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54970442B20F07D0003090F /* LocationNode.swift */; };
 		B57998702B1C5A9E00CDFFB0 /* ARSessionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B579986F2B1C5A9E00CDFFB0 /* ARSessionError.swift */; };
 		B57998722B1C60AF00CDFFB0 /* GARSessionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57998712B1C60AF00CDFFB0 /* GARSessionError.swift */; };
 		B57998742B1D596900CDFFB0 /* CatalogARSessionStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57998732B1D596900CDFFB0 /* CatalogARSessionStatistics.swift */; };
 		B57998792B1D7B1B00CDFFB0 /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57998782B1D7B1B00CDFFB0 /* PDFView.swift */; };
 		B579987B2B1D7C8300CDFFB0 /* campus-map.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B579987A2B1D7C8300CDFFB0 /* campus-map.pdf */; };
+		B59003832B20404700B9BD58 /* CustomNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59003822B20404700B9BD58 /* CustomNode.swift */; };
 		B5C0AD8B2AF2D18300F4F752 /* NavigationToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD892AF2D18300F4F752 /* NavigationToolbar.swift */; };
 		B5C0AD8C2AF2D18300F4F752 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD8A2AF2D18300F4F752 /* Colors.swift */; };
 		B5C0AD8E2AF2D18B00F4F752 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD8D2AF2D18B00F4F752 /* Secrets.swift */; };
@@ -92,11 +96,15 @@
 /* Begin PBXFileReference section */
 		B51CCBEB2B1A5A7D0099AB6B /* CatalogARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogARView.swift; sourceTree = "<group>"; };
 		B51CCBED2B1A5B620099AB6B /* CatalogARSessionManager+ARSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CatalogARSessionManager+ARSessionDelegate.swift"; sourceTree = "<group>"; };
+		B521C2C62B20E77C0006CC5B /* LocationNodeUIView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationNodeUIView.xib; sourceTree = "<group>"; };
+		B54970402B20ED3B0003090F /* LocationNodeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNodeUIView.swift; sourceTree = "<group>"; };
+		B54970442B20F07D0003090F /* LocationNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNode.swift; sourceTree = "<group>"; };
 		B579986F2B1C5A9E00CDFFB0 /* ARSessionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSessionError.swift; sourceTree = "<group>"; };
 		B57998712B1C60AF00CDFFB0 /* GARSessionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GARSessionError.swift; sourceTree = "<group>"; };
 		B57998732B1D596900CDFFB0 /* CatalogARSessionStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogARSessionStatistics.swift; sourceTree = "<group>"; };
 		B57998782B1D7B1B00CDFFB0 /* PDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
 		B579987A2B1D7C8300CDFFB0 /* campus-map.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "campus-map.pdf"; sourceTree = "<group>"; };
+		B59003822B20404700B9BD58 /* CustomNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNode.swift; sourceTree = "<group>"; };
 		B5C0AD892AF2D18300F4F752 /* NavigationToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationToolbar.swift; sourceTree = "<group>"; };
 		B5C0AD8A2AF2D18300F4F752 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B5C0AD8D2AF2D18B00F4F752 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
@@ -188,6 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				B51CCBEA2B1A5A3E0099AB6B /* CatalogARView */,
+				B59003812B20404700B9BD58 /* CustomNode */,
+				B54970422B20F0610003090F /* LocationNode */,
 				B5E10F532B19A1AE005B0733 /* Card Node */,
 			);
 			path = Views;
@@ -201,6 +211,24 @@
 			path = CatalogARView;
 			sourceTree = "<group>";
 		};
+		B54970422B20F0610003090F /* LocationNode */ = {
+			isa = PBXGroup;
+			children = (
+				B54970432B20F0720003090F /* Views */,
+				B54970442B20F07D0003090F /* LocationNode.swift */,
+			);
+			path = LocationNode;
+			sourceTree = "<group>";
+		};
+		B54970432B20F0720003090F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B521C2C62B20E77C0006CC5B /* LocationNodeUIView.xib */,
+				B54970402B20ED3B0003090F /* LocationNodeUIView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B57998752B1D79A100CDFFB0 /* Campus Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +236,14 @@
 				B579987A2B1D7C8300CDFFB0 /* campus-map.pdf */,
 			);
 			path = "Campus Map";
+			sourceTree = "<group>";
+		};
+		B59003812B20404700B9BD58 /* CustomNode */ = {
+			isa = PBXGroup;
+			children = (
+				B59003822B20404700B9BD58 /* CustomNode.swift */,
+			);
+			path = CustomNode;
 			sourceTree = "<group>";
 		};
 		B5C0AD882AF2D18300F4F752 /* Extensions */ = {
@@ -558,6 +594,7 @@
 			files = (
 				B5E928A42AF2C5DF00272193 /* Preview Assets.xcassets in Resources */,
 				B5E928A12AF2C5DF00272193 /* Assets.xcassets in Resources */,
+				B521C2C72B20E77C0006CC5B /* LocationNodeUIView.xib in Resources */,
 				B579987B2B1D7C8300CDFFB0 /* campus-map.pdf in Resources */,
 				B5C8281E2B01483300471A0E /* GoogleService-Info.plist in Resources */,
 			);
@@ -591,6 +628,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B54970412B20ED3B0003090F /* LocationNodeUIView.swift in Sources */,
 				B5E929272AF2C74200272193 /* ICalComponent.swift in Sources */,
 				B57998722B1C60AF00CDFFB0 /* GARSessionError.swift in Sources */,
 				B51CCBEC2B1A5A7D0099AB6B /* CatalogARView.swift in Sources */,
@@ -610,11 +648,13 @@
 				B5C427E92B1C17B700B2650F /* LocationManager.swift in Sources */,
 				B5C427F12B1C2EEC00B2650F /* CatalogARSessionManager+ARSCNViewDelegate.swift in Sources */,
 				B5E929252AF2C74200272193 /* XTrumbaField.swift in Sources */,
+				B54970452B20F07D0003090F /* LocationNode.swift in Sources */,
 				B5E929342AF2C74200272193 /* ICalRRule.swift in Sources */,
 				B5E10F5D2B19A299005B0733 /* MaterialBuilder.swift in Sources */,
 				B5E9289D2AF2C5DE00272193 /* CSUSM_ARApp.swift in Sources */,
 				B5E10F442B197EA0005B0733 /* LocalizationState.swift in Sources */,
 				B5E929532AF2C8D800272193 /* Concept3D.swift in Sources */,
+				B59003832B20404700B9BD58 /* CustomNode.swift in Sources */,
 				B5E929522AF2C8D800272193 /* Concept3DError.swift in Sources */,
 				B5E9291C2AF2C74200272193 /* Bool+VPropertyEncodable.swift in Sources */,
 				B5E929232AF2C74200272193 /* ICalendar.swift in Sources */,
