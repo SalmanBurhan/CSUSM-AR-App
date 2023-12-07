@@ -17,7 +17,7 @@ struct Concept3DLocation: Decodable, Identifiable {
     let floors: [Int]
     let markId: Int
     let name: String
-    let reference: String
+    var reference: String
 
     var location: CLLocationCoordinate2D
     var details: Concept3DLocationDetails?

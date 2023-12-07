@@ -43,7 +43,7 @@ struct Concept3DCategoryView: View {
             ToolbarItem(placement: .primaryAction) {
                 NavigationLink {
                     //ExploreARView(self.locations)
-                    CatalogARView(self.locations)
+                    CatalogARView(self.locations, category: self.category)
                 } label: {
                     Image(systemName: "arkit")
                 }

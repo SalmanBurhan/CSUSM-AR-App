@@ -19,8 +19,9 @@ struct CatalogARView: View {
     @State private var isVPSAvailable = false
     @State private var sessionStatistics: CatalogARSessionStatistics?
 
-    init(_ locations: [Concept3DLocation] = []) {
+    init(_ locations: [Concept3DLocation] = [], category: Concept3DCategory) {
         self.session.catalog = locations
+        self.session.category = category
     }
     
     var body: some View {
@@ -28,6 +29,13 @@ struct CatalogARView: View {
             if hasLocationPermissions {
                 session
                     .sceneViewRepresentable
+//                    .onTapGesture(coordinateSpace: .local, perform: { tappedLocation in
+//                        guard let query = session.sceneView.raycastQuery(from: tappedLocation, allowing: .estimatedPlane, alignment: .any),
+//                              let result = session.session.raycast(query).first?.anchor,
+//                              let node = session.sceneView.node(for: result)
+//                        else { return }
+//                        print("tapped node: \(node)")
+//                    })
                     .overlay(session.coachingViewRepresentable)
                     .overlay(isVPSAvailable ? nil : vpsLimitedView())
                     .overlay(sessionStatistics != nil ? statisticsView() : nil)
@@ -96,8 +104,4 @@ struct CatalogARView: View {
         }
         else { EmptyView() }
     }
-}
-
-#Preview {
-    CatalogARView()
 }

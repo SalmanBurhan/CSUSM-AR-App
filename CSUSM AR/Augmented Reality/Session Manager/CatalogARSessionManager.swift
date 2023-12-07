@@ -17,6 +17,7 @@ class CatalogARSessionManager: NSObject {
     // MARK: - PROPERTIES
     
     var catalog: [Concept3DLocation] { didSet { self.anchorManager.removeAllAnchors() } }
+    var category: Concept3DCategory
     let locationManager: LocationManager
 
     /// Publishers and Subscriptions
@@ -56,6 +57,7 @@ class CatalogARSessionManager: NSObject {
     private init(_ locations: [Concept3DLocation] = []) {
         self.cancellables = []
         self.catalog = locations
+        self.category = Concept3DCategory()
         
         self.locationManager = LocationManager()
         self.session = ARSession()
@@ -314,7 +316,7 @@ class CatalogARSessionManager: NSObject {
         let identifier = AnchorManager.UUIDPair(arIdentifier: arAnchor.identifier, garIdentifier: garAnchor.identifier)
         self.anchorManager.addAnchors(
             uuidPair: identifier,
-            data: AnchorManager.AnchorData(arAnchor: arAnchor, garAnchor: garAnchor, location: location))
+            data: AnchorManager.AnchorData(arAnchor: arAnchor, garAnchor: garAnchor, location: location, category: self.category))
         self.session.add(anchor: arAnchor)
     }
 

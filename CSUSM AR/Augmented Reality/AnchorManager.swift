@@ -27,13 +27,18 @@ class AnchorManager {
         var arAnchor: ARAnchor
         var garAnchor: GARAnchor
         var location: Concept3DLocation
-        let cardNode: CardNode
+        var category: Concept3DCategory
+        //let cardNode: CardNode
+        //let cardNode: CustomNode
+        let cardNode: LocationNode
         
-        init(arAnchor: ARAnchor, garAnchor: GARAnchor, location: Concept3DLocation) {
+        init(arAnchor: ARAnchor, garAnchor: GARAnchor, location: Concept3DLocation, category: Concept3DCategory) {
             self.arAnchor = arAnchor
             self.garAnchor = garAnchor
             self.location = location
-            self.cardNode = CardNode(text: location.name)
+            self.category = category
+            //self.cardNode = CardNode(text: location.name)
+            self.cardNode = LocationNode(location, category, width: 12.19) /// 40 feet (12.19 meters)
         }
     }
     
@@ -82,7 +87,15 @@ class AnchorManager {
         return self.getAnchors(for: identifier).first?.location
     }
     
-    func getCardNode(for identifier: UUID) -> CardNode? {
+//    func getCardNode(for identifier: UUID) -> CardNode? {
+//        return self.getAnchors(for: identifier).first?.cardNode
+//    }
+
+    //    func getCardNode(for identifier: UUID) -> CustomNode? {
+    //        return self.getAnchors(for: identifier).first?.cardNode
+    //    }
+    
+    func getCardNode(for identifier: UUID) -> LocationNode? {
         return self.getAnchors(for: identifier).first?.cardNode
     }
 }
