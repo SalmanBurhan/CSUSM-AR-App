@@ -2,19 +2,14 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="assets/csusm-logo-text-only-initials.png" alt="Logo" width="100">
   </a>
 
-  <h1 align="center">cougAR</h1>
-  <h3 align="center">
-    California State University San Marcos<br/>
-    Senior Capstone Project
-  </h3>  
+  # cougAR
+  ### Campus Exploration and Navigation in Augmented Reality
+  #### Capstone Project - California State University San Marcos
 
   <p align="center">
-    Campus Exploration via Augmented Reality with wayfinding ability.
-    <br />
-    <br />
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
