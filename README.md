@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="assets/csusm-logo-text-only-initials.png" alt="Logo" width="100">
+    <img src="assets/csusm-logo-text-only-initials.png" alt="CSUSM Text Only Logo Initials Only" width="100">
   </a>
 
   # cougAR
@@ -16,6 +16,11 @@
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
   </p>
+  <br />
+  <br />
+  <img src="assets/demo-1.png" alt="Demo Image 1" width="166" />
+  <img src="assets/demo-2.png" alt="Demo Image 2" width="166" />
+  <img src="assets/demo-3.png" alt="Demo Image 3" width="166" />
 </div>
 
 
