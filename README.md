@@ -10,6 +10,8 @@
   #### Capstone Project - California State University San Marcos
 
   <p align="center">
+    <a href="assets/csusm-capstone-poster.pdf">View Presentation Poster</a>
+    ·
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
