@@ -42,6 +42,12 @@ class AnchorManager {
         }
     }
     
+    func getAnchors() -> [UUIDPair: AnchorData] {
+        lock.lock()
+        defer { lock.unlock() }
+        return self.anchorMap
+    }
+    
     // Function to safely access the data structure using one UUID
     func getAnchors(for identifier: UUID) -> [AnchorData] {
         lock.lock()

@@ -131,7 +131,7 @@ class CatalogARSessionManager: NSObject {
             $0.delegate = self
             $0.automaticallyUpdatesLighting = true;
             $0.autoenablesDefaultLighting = true;
-            $0.debugOptions = [.showFeaturePoints]
+            $0.debugOptions = [] //[.showFeaturePoints]
         })
     }()
     
