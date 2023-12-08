@@ -18,9 +18,9 @@
   </p>
   <br />
   <br />
-  <img src="assets/demo-1.png" alt="Demo Image 1" width="166" />
-  <img src="assets/demo-2.png" alt="Demo Image 2" width="166" />
-  <img src="assets/demo-3.png" alt="Demo Image 3" width="166" />
+  <img src="assets/demo-1.png" alt="Demo Image 1" width="250" />
+  <img src="assets/demo-2.png" alt="Demo Image 2" width="250" />
+  <img src="assets/demo-3.png" alt="Demo Image 3" width="250" />
 </div>
 
 
