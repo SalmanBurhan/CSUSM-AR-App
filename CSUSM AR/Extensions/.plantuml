@@ -1,0 +1,22 @@
+@startuml Colors
+!theme carbon-gray
+' STYLE START
+hide empty members
+skinparam backgroundColor transparent
+' STYLE END
+set namespaceSeparator none
+
+
+class "UIColor" as UIColor << (X, AntiqueWhite) >> { 
+  ~{static} universityBlue
+  ~{static} cougarBlue
+  ~{static} spiritBlue 
+}
+class "Color" as Color << (X, AntiqueWhite) >> { 
+  ~{static} universityBlue
+  ~{static} cougarBlue
+  ~{static} spiritBlue 
+}
+
+
+@enduml

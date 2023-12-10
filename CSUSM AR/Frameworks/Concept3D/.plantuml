@@ -1,0 +1,129 @@
+@startuml Concept3D
+!theme carbon-gray
+' STYLE START
+hide empty members
+skinparam backgroundColor transparent
+' STYLE END
+set namespaceSeparator none
+
+
+class "Concept3DError" as Concept3DError << (E, AntiqueWhite) enum >> { 
+  ~locationImageNotFound
+  ~locationImagePathInvalid
+  ~endpointResponseNotModelable
+  ~unexpectedStatusCode(_:)
+  ~mismatchedResponseData(_:)
+  ~unexpectedError 
+}
+class "Concept3D" as Concept3D << (C, AliceBlue) class >> { 
+  ~{static} shared
+  ~locations : [Concept3DLocation]
+  ~categories : [Concept3DCategory]
+  ~init(locations:categories:)
+  ~{static} fetchCategory(id:)
+  ~{static} imageURL(_:ofSize:scaled:)
+  ~{static} imageURL(iconPath:)
+  ~fetchDetails(for:)
+  ~fetchDetails(for:)
+  -{static} decode(model:from:) <&bolt>
+  -{static} validateStatusCode(for:) <&bolt>
+  -{static} url(for:) <&bolt>
+  -{static} model(for:) <&bolt>
+  -{static} fetch(_:) <&bolt> 
+}
+class "Concept3DCategoryResponse" as Concept3DCategoryResponse << (S, AntiqueWhite) struct >> { 
+  ~category : Concept3DCategory?
+  ~categories : [Concept3DCategory]
+  ~locations : [Concept3DLocation]
+  ~init(from:) 
+}
+class "RootCodingKeys" as Concept3DCategoryResponse.RootCodingKeys << (E, AntiqueWhite) enum >> { 
+  ~children 
+}
+class "ChildrenCodingKeys" as Concept3DCategoryResponse.ChildrenCodingKeys << (E, AntiqueWhite) enum >> { 
+  ~categories
+  ~locations 
+}
+class "Concept3DCategory" as Concept3DCategory << (S, AntiqueWhite) struct >> { 
+  ~id : Int
+  ~name : String
+  ~parentCategory : Int
+  ~iconURL : URL?
+  ~locations : [Concept3DLocation]?
+  ~children : [Concept3DCategory]?
+  ~init(id:name:parentCategory:)
+  ~init(from:) 
+}
+class "CodingKeys" as Concept3DCategory.CodingKeys << (E, AntiqueWhite) enum >> { 
+  ~id
+  ~name
+  ~parentCategory
+  ~listIcon
+  ~singleSelect
+  ~weight 
+}
+class "Concept3DLocationDetails" as Concept3DLocationDetails << (S, AntiqueWhite) struct >> { 
+  ~id : Int
+  ~description : String
+  ~images : [Concept3DImageSize: URL]
+  ~init(id:description:images:)
+  ~init(from:) 
+}
+class "CodingKeys" as Concept3DLocationDetails.CodingKeys << (E, AntiqueWhite) enum >> { 
+  ~id
+  ~description
+  ~mediaLinks 
+}
+class "Concept3DLocation" as Concept3DLocation << (S, AntiqueWhite) struct >> { 
+  ~id : Int
+  ~categoryId : Int
+  ~altitude : Double
+  ~map : Int
+  ~floors : [Int]
+  ~markId : Int
+  ~name : String
+  ~reference : String
+  ~location : CLLocationCoordinate2D
+  ~details : Concept3DLocationDetails?
+  ~init(id:categoryId:altitude:map:floors:markId:name:reference:location:)
+  ~init(from:)
+  ~copy(with:) 
+}
+class "CodingKeys" as Concept3DLocation.CodingKeys << (E, AntiqueWhite) enum >> { 
+  ~id
+  ~categoryId
+  ~altitude
+  ~map
+  ~floors
+  ~markId
+  ~name
+  ~reference
+  ~latitude
+  ~longitude 
+}
+class "Concept3DImageSize" as Concept3DImageSize << (E, AntiqueWhite) enum >> { 
+  ~tiny
+  ~small
+  ~medium
+  ~large
+  ~xlarge
+  ~xxlarge
+  ~resolution : (width: Int, height: Int) 
+}
+class "Concept3DEndpoint" as Concept3DEndpoint << (E, AntiqueWhite) enum >> { 
+  ~locations
+  ~location(_:)
+  ~categories(_:)
+  ~cmsImage(path:width:height:scaled:)
+  ~iconImage(path:) 
+}
+ObservableObject <|-- Concept3D #line:Black;line.dotted;text:Black : inherits from
+Identifiable <|-- Concept3DCategory #line:Black;line.dotted;text:Black : inherits from
+Identifiable <|-- Concept3DLocation #line:Black;line.dotted;text:Black : inherits from
+Concept3DCategoryResponse +-- Concept3DCategoryResponse.RootCodingKeys
+Concept3DCategoryResponse +-- Concept3DCategoryResponse.ChildrenCodingKeys
+Concept3DCategory +-- Concept3DCategory.CodingKeys
+Concept3DLocationDetails +-- Concept3DLocationDetails.CodingKeys
+Concept3DLocation +-- Concept3DLocation.CodingKeys
+
+@enduml

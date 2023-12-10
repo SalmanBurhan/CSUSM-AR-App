@@ -14,13 +14,49 @@
 		B521C2C72B20E77C0006CC5B /* LocationNodeUIView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B521C2C62B20E77C0006CC5B /* LocationNodeUIView.xib */; };
 		B54970412B20ED3B0003090F /* LocationNodeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54970402B20ED3B0003090F /* LocationNodeUIView.swift */; };
 		B54970452B20F07D0003090F /* LocationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54970442B20F07D0003090F /* LocationNode.swift */; };
+		B55167552B23DA5D009531C5 /* Concept3DError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167252B23DA5D009531C5 /* Concept3DError.swift */; };
+		B55167562B23DA5D009531C5 /* Concept3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167262B23DA5D009531C5 /* Concept3D.swift */; };
+		B55167572B23DA5D009531C5 /* Concept3DCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167282B23DA5D009531C5 /* Concept3DCategory.swift */; };
+		B55167582B23DA5D009531C5 /* Concept3DLocationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167292B23DA5D009531C5 /* Concept3DLocationDetails.swift */; };
+		B55167592B23DA5D009531C5 /* Concept3DLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551672A2B23DA5D009531C5 /* Concept3DLocation.swift */; };
+		B551675A2B23DA5D009531C5 /* Concept3DLocationImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551672B2B23DA5D009531C5 /* Concept3DLocationImage.swift */; };
+		B551675B2B23DA5D009531C5 /* Concept3DEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551672C2B23DA5D009531C5 /* Concept3DEndpoint.swift */; };
+		B551675C2B23DA5D009531C5 /* .plantuml in Resources */ = {isa = PBXBuildFile; fileRef = B551672D2B23DA5D009531C5 /* .plantuml */; };
+		B551675D2B23DA5D009531C5 /* String+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167302B23DA5D009531C5 /* String+Utilities.swift */; };
+		B551675E2B23DA5D009531C5 /* Bool+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167312B23DA5D009531C5 /* Bool+VPropertyEncodable.swift */; };
+		B551675F2B23DA5D009531C5 /* String+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167322B23DA5D009531C5 /* String+VPropertyEncodable.swift */; };
+		B55167602B23DA5D009531C5 /* Date+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167332B23DA5D009531C5 /* Date+VPropertyEncodable.swift */; };
+		B55167612B23DA5D009531C5 /* URL+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167342B23DA5D009531C5 /* URL+VPropertyEncodable.swift */; };
+		B55167622B23DA5D009531C5 /* UUID+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167352B23DA5D009531C5 /* UUID+VPropertyEncodable.swift */; };
+		B55167632B23DA5D009531C5 /* Int+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167362B23DA5D009531C5 /* Int+VPropertyEncodable.swift */; };
+		B55167642B23DA5D009531C5 /* ICalAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167382B23DA5D009531C5 /* ICalAlarm.swift */; };
+		B55167652B23DA5D009531C5 /* ICalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167392B23DA5D009531C5 /* ICalendar.swift */; };
+		B55167662B23DA5D009531C5 /* ICalSubTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551673A2B23DA5D009531C5 /* ICalSubTimeZone.swift */; };
+		B55167672B23DA5D009531C5 /* XTrumbaField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551673B2B23DA5D009531C5 /* XTrumbaField.swift */; };
+		B55167682B23DA5D009531C5 /* ICalTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551673C2B23DA5D009531C5 /* ICalTimeZone.swift */; };
+		B55167692B23DA5D009531C5 /* ICalComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551673D2B23DA5D009531C5 /* ICalComponent.swift */; };
+		B551676A2B23DA5D009531C5 /* ICalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551673E2B23DA5D009531C5 /* ICalEvent.swift */; };
+		B551676B2B23DA5D009531C5 /* DateTimeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167402B23DA5D009531C5 /* DateTimeUtil.swift */; };
+		B551676C2B23DA5D009531C5 /* VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167422B23DA5D009531C5 /* VPropertyEncodable.swift */; };
+		B551676D2B23DA5D009531C5 /* VEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167432B23DA5D009531C5 /* VEncodable.swift */; };
+		B551676E2B23DA5D009531C5 /* VComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167442B23DA5D009531C5 /* VComponent.swift */; };
+		B551676F2B23DA5D009531C5 /* ICalParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167462B23DA5D009531C5 /* ICalParser.swift */; };
+		B55167702B23DA5D009531C5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167482B23DA5D009531C5 /* Constant.swift */; };
+		B55167712B23DA5D009531C5 /* PropertyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551674A2B23DA5D009531C5 /* PropertyBuilder.swift */; };
+		B55167722B23DA5D009531C5 /* ICalDateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551674C2B23DA5D009531C5 /* ICalDateTime.swift */; };
+		B55167732B23DA5D009531C5 /* ICalDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551674D2B23DA5D009531C5 /* ICalDuration.swift */; };
+		B55167742B23DA5D009531C5 /* ICalParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551674E2B23DA5D009531C5 /* ICalParameter.swift */; };
+		B55167752B23DA5D009531C5 /* VContentLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551674F2B23DA5D009531C5 /* VContentLine.swift */; };
+		B55167762B23DA5D009531C5 /* ICalRRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167502B23DA5D009531C5 /* ICalRRule.swift */; };
+		B55167772B23DA5D009531C5 /* ICalProductIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167512B23DA5D009531C5 /* ICalProductIdentifier.swift */; };
+		B55167782B23DA5D009531C5 /* ICalDateTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167522B23DA5D009531C5 /* ICalDateTimes.swift */; };
+		B55167792B23DA5D009531C5 /* ICalPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167532B23DA5D009531C5 /* ICalPeriod.swift */; };
+		B551677A2B23DA5D009531C5 /* ICalAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55167542B23DA5D009531C5 /* ICalAttachment.swift */; };
 		B57998702B1C5A9E00CDFFB0 /* ARSessionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B579986F2B1C5A9E00CDFFB0 /* ARSessionError.swift */; };
 		B57998722B1C60AF00CDFFB0 /* GARSessionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57998712B1C60AF00CDFFB0 /* GARSessionError.swift */; };
 		B57998742B1D596900CDFFB0 /* CatalogARSessionStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57998732B1D596900CDFFB0 /* CatalogARSessionStatistics.swift */; };
 		B57998792B1D7B1B00CDFFB0 /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57998782B1D7B1B00CDFFB0 /* PDFView.swift */; };
 		B579987B2B1D7C8300CDFFB0 /* campus-map.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B579987A2B1D7C8300CDFFB0 /* campus-map.pdf */; };
-		B59003832B20404700B9BD58 /* CustomNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59003822B20404700B9BD58 /* CustomNode.swift */; };
-		B5C0AD8B2AF2D18300F4F752 /* NavigationToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD892AF2D18300F4F752 /* NavigationToolbar.swift */; };
 		B5C0AD8C2AF2D18300F4F752 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD8A2AF2D18300F4F752 /* Colors.swift */; };
 		B5C0AD8E2AF2D18B00F4F752 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD8D2AF2D18B00F4F752 /* Secrets.swift */; };
 		B5C0AD992AF2D1D700F4F752 /* EventFeedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0AD902AF2D1D700F4F752 /* EventFeedScrollView.swift */; };
@@ -44,53 +80,14 @@
 		B5C828292B01486500471A0E /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = B5C828282B01486500471A0E /* FirebaseAppCheck */; };
 		B5C8282D2B014FBD00471A0E /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B5C8282C2B014FBD00471A0E /* FirebaseDatabase */; };
 		B5E10F442B197EA0005B0733 /* LocalizationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E10F432B197EA0005B0733 /* LocalizationState.swift */; };
-		B5E10F502B1993E2005B0733 /* RooftopState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E10F4F2B1993E2005B0733 /* RooftopState.swift */; };
+		B5E10F502B1993E2005B0733 /* GARRooftopAnchorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E10F4F2B1993E2005B0733 /* GARRooftopAnchorState.swift */; };
 		B5E10F522B199A36005B0733 /* AnchorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E10F512B199A36005B0733 /* AnchorManager.swift */; };
-		B5E10F5A2B19A1E9005B0733 /* CardNodeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E10F582B19A1E9005B0733 /* CardNodeUIView.swift */; };
-		B5E10F5B2B19A1E9005B0733 /* CardNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E10F592B19A1E9005B0733 /* CardNode.swift */; };
 		B5E10F5D2B19A299005B0733 /* MaterialBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E10F5C2B19A299005B0733 /* MaterialBuilder.swift */; };
 		B5E3907D2AF847A700B447B7 /* RKPath in Frameworks */ = {isa = PBXBuildFile; productRef = B5E3907C2AF847A700B447B7 /* RKPath */; };
 		B5E9289D2AF2C5DE00272193 /* CSUSM_ARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9289C2AF2C5DE00272193 /* CSUSM_ARApp.swift */; };
 		B5E928A12AF2C5DF00272193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E928A02AF2C5DF00272193 /* Assets.xcassets */; };
 		B5E928A42AF2C5DF00272193 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E928A32AF2C5DF00272193 /* Preview Assets.xcassets */; };
 		B5E928AC2AF2C6A700272193 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = B5E928AB2AF2C6A700272193 /* SwiftSoup */; };
-		B5E9291B2AF2C74200272193 /* String+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E928F62AF2C74200272193 /* String+Utilities.swift */; };
-		B5E9291C2AF2C74200272193 /* Bool+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E928F72AF2C74200272193 /* Bool+VPropertyEncodable.swift */; };
-		B5E9291D2AF2C74200272193 /* String+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E928F82AF2C74200272193 /* String+VPropertyEncodable.swift */; };
-		B5E9291E2AF2C74200272193 /* Date+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E928F92AF2C74200272193 /* Date+VPropertyEncodable.swift */; };
-		B5E9291F2AF2C74200272193 /* URL+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E928FA2AF2C74200272193 /* URL+VPropertyEncodable.swift */; };
-		B5E929202AF2C74200272193 /* UUID+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E928FB2AF2C74200272193 /* UUID+VPropertyEncodable.swift */; };
-		B5E929212AF2C74200272193 /* Int+VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E928FC2AF2C74200272193 /* Int+VPropertyEncodable.swift */; };
-		B5E929222AF2C74200272193 /* ICalAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E928FE2AF2C74200272193 /* ICalAlarm.swift */; };
-		B5E929232AF2C74200272193 /* ICalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E928FF2AF2C74200272193 /* ICalendar.swift */; };
-		B5E929242AF2C74200272193 /* ICalSubTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929002AF2C74200272193 /* ICalSubTimeZone.swift */; };
-		B5E929252AF2C74200272193 /* XTrumbaField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929012AF2C74200272193 /* XTrumbaField.swift */; };
-		B5E929262AF2C74200272193 /* ICalTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929022AF2C74200272193 /* ICalTimeZone.swift */; };
-		B5E929272AF2C74200272193 /* ICalComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929032AF2C74200272193 /* ICalComponent.swift */; };
-		B5E929282AF2C74200272193 /* ICalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929042AF2C74200272193 /* ICalEvent.swift */; };
-		B5E929292AF2C74200272193 /* DateTimeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929062AF2C74200272193 /* DateTimeUtil.swift */; };
-		B5E9292A2AF2C74200272193 /* VPropertyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929082AF2C74200272193 /* VPropertyEncodable.swift */; };
-		B5E9292B2AF2C74200272193 /* VEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929092AF2C74200272193 /* VEncodable.swift */; };
-		B5E9292C2AF2C74200272193 /* VComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9290A2AF2C74200272193 /* VComponent.swift */; };
-		B5E9292D2AF2C74200272193 /* ICalParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9290C2AF2C74200272193 /* ICalParser.swift */; };
-		B5E9292E2AF2C74200272193 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9290E2AF2C74200272193 /* Constant.swift */; };
-		B5E9292F2AF2C74200272193 /* PropertyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929102AF2C74200272193 /* PropertyBuilder.swift */; };
-		B5E929302AF2C74200272193 /* ICalDateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929122AF2C74200272193 /* ICalDateTime.swift */; };
-		B5E929312AF2C74200272193 /* ICalDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929132AF2C74200272193 /* ICalDuration.swift */; };
-		B5E929322AF2C74200272193 /* ICalParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929142AF2C74200272193 /* ICalParameter.swift */; };
-		B5E929332AF2C74200272193 /* VContentLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929152AF2C74200272193 /* VContentLine.swift */; };
-		B5E929342AF2C74200272193 /* ICalRRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929162AF2C74200272193 /* ICalRRule.swift */; };
-		B5E929352AF2C74200272193 /* ICalProductIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929172AF2C74200272193 /* ICalProductIdentifier.swift */; };
-		B5E929362AF2C74200272193 /* ICalDateTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929182AF2C74200272193 /* ICalDateTimes.swift */; };
-		B5E929372AF2C74200272193 /* ICalPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929192AF2C74200272193 /* ICalPeriod.swift */; };
-		B5E929382AF2C74200272193 /* ICalAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9291A2AF2C74200272193 /* ICalAttachment.swift */; };
-		B5E929522AF2C8D800272193 /* Concept3DError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9294A2AF2C8D800272193 /* Concept3DError.swift */; };
-		B5E929532AF2C8D800272193 /* Concept3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9294B2AF2C8D800272193 /* Concept3D.swift */; };
-		B5E929542AF2C8D800272193 /* Concept3DCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9294D2AF2C8D800272193 /* Concept3DCategory.swift */; };
-		B5E929552AF2C8D800272193 /* Concept3DLocationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9294E2AF2C8D800272193 /* Concept3DLocationDetails.swift */; };
-		B5E929562AF2C8D800272193 /* Concept3DLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9294F2AF2C8D800272193 /* Concept3DLocation.swift */; };
-		B5E929572AF2C8D800272193 /* Concept3DLocationImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929502AF2C8D800272193 /* Concept3DLocationImage.swift */; };
-		B5E929582AF2C8D800272193 /* Concept3DEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E929512AF2C8D800272193 /* Concept3DEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,13 +96,49 @@
 		B521C2C62B20E77C0006CC5B /* LocationNodeUIView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationNodeUIView.xib; sourceTree = "<group>"; };
 		B54970402B20ED3B0003090F /* LocationNodeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNodeUIView.swift; sourceTree = "<group>"; };
 		B54970442B20F07D0003090F /* LocationNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNode.swift; sourceTree = "<group>"; };
+		B55167252B23DA5D009531C5 /* Concept3DError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DError.swift; sourceTree = "<group>"; };
+		B55167262B23DA5D009531C5 /* Concept3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3D.swift; sourceTree = "<group>"; };
+		B55167282B23DA5D009531C5 /* Concept3DCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DCategory.swift; sourceTree = "<group>"; };
+		B55167292B23DA5D009531C5 /* Concept3DLocationDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DLocationDetails.swift; sourceTree = "<group>"; };
+		B551672A2B23DA5D009531C5 /* Concept3DLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DLocation.swift; sourceTree = "<group>"; };
+		B551672B2B23DA5D009531C5 /* Concept3DLocationImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DLocationImage.swift; sourceTree = "<group>"; };
+		B551672C2B23DA5D009531C5 /* Concept3DEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DEndpoint.swift; sourceTree = "<group>"; };
+		B551672D2B23DA5D009531C5 /* .plantuml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .plantuml; sourceTree = "<group>"; };
+		B55167302B23DA5D009531C5 /* String+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utilities.swift"; sourceTree = "<group>"; };
+		B55167312B23DA5D009531C5 /* Bool+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+VPropertyEncodable.swift"; sourceTree = "<group>"; };
+		B55167322B23DA5D009531C5 /* String+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+VPropertyEncodable.swift"; sourceTree = "<group>"; };
+		B55167332B23DA5D009531C5 /* Date+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+VPropertyEncodable.swift"; sourceTree = "<group>"; };
+		B55167342B23DA5D009531C5 /* URL+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+VPropertyEncodable.swift"; sourceTree = "<group>"; };
+		B55167352B23DA5D009531C5 /* UUID+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UUID+VPropertyEncodable.swift"; sourceTree = "<group>"; };
+		B55167362B23DA5D009531C5 /* Int+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+VPropertyEncodable.swift"; sourceTree = "<group>"; };
+		B55167382B23DA5D009531C5 /* ICalAlarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalAlarm.swift; sourceTree = "<group>"; };
+		B55167392B23DA5D009531C5 /* ICalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalendar.swift; sourceTree = "<group>"; };
+		B551673A2B23DA5D009531C5 /* ICalSubTimeZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalSubTimeZone.swift; sourceTree = "<group>"; };
+		B551673B2B23DA5D009531C5 /* XTrumbaField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTrumbaField.swift; sourceTree = "<group>"; };
+		B551673C2B23DA5D009531C5 /* ICalTimeZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalTimeZone.swift; sourceTree = "<group>"; };
+		B551673D2B23DA5D009531C5 /* ICalComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalComponent.swift; sourceTree = "<group>"; };
+		B551673E2B23DA5D009531C5 /* ICalEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalEvent.swift; sourceTree = "<group>"; };
+		B55167402B23DA5D009531C5 /* DateTimeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeUtil.swift; sourceTree = "<group>"; };
+		B55167422B23DA5D009531C5 /* VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPropertyEncodable.swift; sourceTree = "<group>"; };
+		B55167432B23DA5D009531C5 /* VEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VEncodable.swift; sourceTree = "<group>"; };
+		B55167442B23DA5D009531C5 /* VComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VComponent.swift; sourceTree = "<group>"; };
+		B55167462B23DA5D009531C5 /* ICalParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalParser.swift; sourceTree = "<group>"; };
+		B55167482B23DA5D009531C5 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		B551674A2B23DA5D009531C5 /* PropertyBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyBuilder.swift; sourceTree = "<group>"; };
+		B551674C2B23DA5D009531C5 /* ICalDateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalDateTime.swift; sourceTree = "<group>"; };
+		B551674D2B23DA5D009531C5 /* ICalDuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalDuration.swift; sourceTree = "<group>"; };
+		B551674E2B23DA5D009531C5 /* ICalParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalParameter.swift; sourceTree = "<group>"; };
+		B551674F2B23DA5D009531C5 /* VContentLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VContentLine.swift; sourceTree = "<group>"; };
+		B55167502B23DA5D009531C5 /* ICalRRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalRRule.swift; sourceTree = "<group>"; };
+		B55167512B23DA5D009531C5 /* ICalProductIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalProductIdentifier.swift; sourceTree = "<group>"; };
+		B55167522B23DA5D009531C5 /* ICalDateTimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalDateTimes.swift; sourceTree = "<group>"; };
+		B55167532B23DA5D009531C5 /* ICalPeriod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalPeriod.swift; sourceTree = "<group>"; };
+		B55167542B23DA5D009531C5 /* ICalAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalAttachment.swift; sourceTree = "<group>"; };
 		B579986F2B1C5A9E00CDFFB0 /* ARSessionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSessionError.swift; sourceTree = "<group>"; };
 		B57998712B1C60AF00CDFFB0 /* GARSessionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GARSessionError.swift; sourceTree = "<group>"; };
 		B57998732B1D596900CDFFB0 /* CatalogARSessionStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogARSessionStatistics.swift; sourceTree = "<group>"; };
 		B57998782B1D7B1B00CDFFB0 /* PDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
 		B579987A2B1D7C8300CDFFB0 /* campus-map.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "campus-map.pdf"; sourceTree = "<group>"; };
-		B59003822B20404700B9BD58 /* CustomNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNode.swift; sourceTree = "<group>"; };
-		B5C0AD892AF2D18300F4F752 /* NavigationToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationToolbar.swift; sourceTree = "<group>"; };
 		B5C0AD8A2AF2D18300F4F752 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B5C0AD8D2AF2D18B00F4F752 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		B5C0AD902AF2D1D700F4F752 /* EventFeedScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFeedScrollView.swift; sourceTree = "<group>"; };
@@ -122,52 +155,13 @@
 		B5C427F02B1C2EEC00B2650F /* CatalogARSessionManager+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CatalogARSessionManager+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
 		B5C8281D2B01483300471A0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B5E10F432B197EA0005B0733 /* LocalizationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationState.swift; sourceTree = "<group>"; };
-		B5E10F4F2B1993E2005B0733 /* RooftopState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RooftopState.swift; sourceTree = "<group>"; };
+		B5E10F4F2B1993E2005B0733 /* GARRooftopAnchorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GARRooftopAnchorState.swift; sourceTree = "<group>"; };
 		B5E10F512B199A36005B0733 /* AnchorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorManager.swift; sourceTree = "<group>"; };
-		B5E10F582B19A1E9005B0733 /* CardNodeUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardNodeUIView.swift; sourceTree = "<group>"; };
-		B5E10F592B19A1E9005B0733 /* CardNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardNode.swift; sourceTree = "<group>"; };
 		B5E10F5C2B19A299005B0733 /* MaterialBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialBuilder.swift; sourceTree = "<group>"; };
 		B5E928992AF2C5DE00272193 /* CSUSM AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSUSM AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E9289C2AF2C5DE00272193 /* CSUSM_ARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUSM_ARApp.swift; sourceTree = "<group>"; };
 		B5E928A02AF2C5DF00272193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5E928A32AF2C5DF00272193 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B5E928F62AF2C74200272193 /* String+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utilities.swift"; sourceTree = "<group>"; };
-		B5E928F72AF2C74200272193 /* Bool+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+VPropertyEncodable.swift"; sourceTree = "<group>"; };
-		B5E928F82AF2C74200272193 /* String+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+VPropertyEncodable.swift"; sourceTree = "<group>"; };
-		B5E928F92AF2C74200272193 /* Date+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+VPropertyEncodable.swift"; sourceTree = "<group>"; };
-		B5E928FA2AF2C74200272193 /* URL+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+VPropertyEncodable.swift"; sourceTree = "<group>"; };
-		B5E928FB2AF2C74200272193 /* UUID+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UUID+VPropertyEncodable.swift"; sourceTree = "<group>"; };
-		B5E928FC2AF2C74200272193 /* Int+VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+VPropertyEncodable.swift"; sourceTree = "<group>"; };
-		B5E928FE2AF2C74200272193 /* ICalAlarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalAlarm.swift; sourceTree = "<group>"; };
-		B5E928FF2AF2C74200272193 /* ICalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalendar.swift; sourceTree = "<group>"; };
-		B5E929002AF2C74200272193 /* ICalSubTimeZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalSubTimeZone.swift; sourceTree = "<group>"; };
-		B5E929012AF2C74200272193 /* XTrumbaField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTrumbaField.swift; sourceTree = "<group>"; };
-		B5E929022AF2C74200272193 /* ICalTimeZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalTimeZone.swift; sourceTree = "<group>"; };
-		B5E929032AF2C74200272193 /* ICalComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalComponent.swift; sourceTree = "<group>"; };
-		B5E929042AF2C74200272193 /* ICalEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalEvent.swift; sourceTree = "<group>"; };
-		B5E929062AF2C74200272193 /* DateTimeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeUtil.swift; sourceTree = "<group>"; };
-		B5E929082AF2C74200272193 /* VPropertyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPropertyEncodable.swift; sourceTree = "<group>"; };
-		B5E929092AF2C74200272193 /* VEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VEncodable.swift; sourceTree = "<group>"; };
-		B5E9290A2AF2C74200272193 /* VComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VComponent.swift; sourceTree = "<group>"; };
-		B5E9290C2AF2C74200272193 /* ICalParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalParser.swift; sourceTree = "<group>"; };
-		B5E9290E2AF2C74200272193 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		B5E929102AF2C74200272193 /* PropertyBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyBuilder.swift; sourceTree = "<group>"; };
-		B5E929122AF2C74200272193 /* ICalDateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalDateTime.swift; sourceTree = "<group>"; };
-		B5E929132AF2C74200272193 /* ICalDuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalDuration.swift; sourceTree = "<group>"; };
-		B5E929142AF2C74200272193 /* ICalParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalParameter.swift; sourceTree = "<group>"; };
-		B5E929152AF2C74200272193 /* VContentLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VContentLine.swift; sourceTree = "<group>"; };
-		B5E929162AF2C74200272193 /* ICalRRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalRRule.swift; sourceTree = "<group>"; };
-		B5E929172AF2C74200272193 /* ICalProductIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalProductIdentifier.swift; sourceTree = "<group>"; };
-		B5E929182AF2C74200272193 /* ICalDateTimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalDateTimes.swift; sourceTree = "<group>"; };
-		B5E929192AF2C74200272193 /* ICalPeriod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalPeriod.swift; sourceTree = "<group>"; };
-		B5E9291A2AF2C74200272193 /* ICalAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalAttachment.swift; sourceTree = "<group>"; };
-		B5E9294A2AF2C8D800272193 /* Concept3DError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DError.swift; sourceTree = "<group>"; };
-		B5E9294B2AF2C8D800272193 /* Concept3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3D.swift; sourceTree = "<group>"; };
-		B5E9294D2AF2C8D800272193 /* Concept3DCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DCategory.swift; sourceTree = "<group>"; };
-		B5E9294E2AF2C8D800272193 /* Concept3DLocationDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DLocationDetails.swift; sourceTree = "<group>"; };
-		B5E9294F2AF2C8D800272193 /* Concept3DLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DLocation.swift; sourceTree = "<group>"; };
-		B5E929502AF2C8D800272193 /* Concept3DLocationImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DLocationImage.swift; sourceTree = "<group>"; };
-		B5E929512AF2C8D800272193 /* Concept3DEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concept3DEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,17 +186,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B51CCBE62B1A57A00099AB6B /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				B51CCBEA2B1A5A3E0099AB6B /* CatalogARView */,
-				B59003812B20404700B9BD58 /* CustomNode */,
-				B54970422B20F0610003090F /* LocationNode */,
-				B5E10F532B19A1AE005B0733 /* Card Node */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		B51CCBEA2B1A5A3E0099AB6B /* CatalogARView */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +212,159 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		B55167212B23D7D0009531C5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5E10F4F2B1993E2005B0733 /* GARRooftopAnchorState.swift */,
+				B57998712B1C60AF00CDFFB0 /* GARSessionError.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B55167222B23D7FF009531C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5E10F3F2B197DA9005B0733 /* Augmented Reality */,
+				B5C0AD8F2AF2D1D700F4F752 /* Featured Events */,
+				B5C0AD932AF2D1D700F4F752 /* Location Directory */,
+				B5C0ADA22AF2D2A400F4F752 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B55167232B23DA5D009531C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B55167242B23DA5D009531C5 /* Concept3D */,
+				B551672E2B23DA5D009531C5 /* iCalSwift */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		B55167242B23DA5D009531C5 /* Concept3D */ = {
+			isa = PBXGroup;
+			children = (
+				B55167252B23DA5D009531C5 /* Concept3DError.swift */,
+				B55167262B23DA5D009531C5 /* Concept3D.swift */,
+				B55167272B23DA5D009531C5 /* Models */,
+				B551672C2B23DA5D009531C5 /* Concept3DEndpoint.swift */,
+				B551672D2B23DA5D009531C5 /* .plantuml */,
+			);
+			path = Concept3D;
+			sourceTree = "<group>";
+		};
+		B55167272B23DA5D009531C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B55167282B23DA5D009531C5 /* Concept3DCategory.swift */,
+				B55167292B23DA5D009531C5 /* Concept3DLocationDetails.swift */,
+				B551672A2B23DA5D009531C5 /* Concept3DLocation.swift */,
+				B551672B2B23DA5D009531C5 /* Concept3DLocationImage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B551672E2B23DA5D009531C5 /* iCalSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B551672F2B23DA5D009531C5 /* Extension */,
+				B55167372B23DA5D009531C5 /* Component */,
+				B551673F2B23DA5D009531C5 /* Utils */,
+				B55167412B23DA5D009531C5 /* Protocol */,
+				B55167452B23DA5D009531C5 /* Parser */,
+				B55167472B23DA5D009531C5 /* Constant */,
+				B55167492B23DA5D009531C5 /* Builder */,
+				B551674B2B23DA5D009531C5 /* Structure */,
+			);
+			path = iCalSwift;
+			sourceTree = "<group>";
+		};
+		B551672F2B23DA5D009531C5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B55167302B23DA5D009531C5 /* String+Utilities.swift */,
+				B55167312B23DA5D009531C5 /* Bool+VPropertyEncodable.swift */,
+				B55167322B23DA5D009531C5 /* String+VPropertyEncodable.swift */,
+				B55167332B23DA5D009531C5 /* Date+VPropertyEncodable.swift */,
+				B55167342B23DA5D009531C5 /* URL+VPropertyEncodable.swift */,
+				B55167352B23DA5D009531C5 /* UUID+VPropertyEncodable.swift */,
+				B55167362B23DA5D009531C5 /* Int+VPropertyEncodable.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B55167372B23DA5D009531C5 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				B55167382B23DA5D009531C5 /* ICalAlarm.swift */,
+				B55167392B23DA5D009531C5 /* ICalendar.swift */,
+				B551673A2B23DA5D009531C5 /* ICalSubTimeZone.swift */,
+				B551673B2B23DA5D009531C5 /* XTrumbaField.swift */,
+				B551673C2B23DA5D009531C5 /* ICalTimeZone.swift */,
+				B551673D2B23DA5D009531C5 /* ICalComponent.swift */,
+				B551673E2B23DA5D009531C5 /* ICalEvent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		B551673F2B23DA5D009531C5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B55167402B23DA5D009531C5 /* DateTimeUtil.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B55167412B23DA5D009531C5 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B55167422B23DA5D009531C5 /* VPropertyEncodable.swift */,
+				B55167432B23DA5D009531C5 /* VEncodable.swift */,
+				B55167442B23DA5D009531C5 /* VComponent.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		B55167452B23DA5D009531C5 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				B55167462B23DA5D009531C5 /* ICalParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		B55167472B23DA5D009531C5 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				B55167482B23DA5D009531C5 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		B55167492B23DA5D009531C5 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				B551674A2B23DA5D009531C5 /* PropertyBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		B551674B2B23DA5D009531C5 /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				B551674C2B23DA5D009531C5 /* ICalDateTime.swift */,
+				B551674D2B23DA5D009531C5 /* ICalDuration.swift */,
+				B551674E2B23DA5D009531C5 /* ICalParameter.swift */,
+				B551674F2B23DA5D009531C5 /* VContentLine.swift */,
+				B55167502B23DA5D009531C5 /* ICalRRule.swift */,
+				B55167512B23DA5D009531C5 /* ICalProductIdentifier.swift */,
+				B55167522B23DA5D009531C5 /* ICalDateTimes.swift */,
+				B55167532B23DA5D009531C5 /* ICalPeriod.swift */,
+				B55167542B23DA5D009531C5 /* ICalAttachment.swift */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
 		B57998752B1D79A100CDFFB0 /* Campus Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,20 +374,9 @@
 			path = "Campus Map";
 			sourceTree = "<group>";
 		};
-		B59003812B20404700B9BD58 /* CustomNode */ = {
-			isa = PBXGroup;
-			children = (
-				B59003822B20404700B9BD58 /* CustomNode.swift */,
-			);
-			path = CustomNode;
-			sourceTree = "<group>";
-		};
 		B5C0AD882AF2D18300F4F752 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B5E10F4F2B1993E2005B0733 /* RooftopState.swift */,
-				B57998712B1C60AF00CDFFB0 /* GARSessionError.swift */,
-				B5C0AD892AF2D18300F4F752 /* NavigationToolbar.swift */,
 				B5C0AD8A2AF2D18300F4F752 /* Colors.swift */,
 			);
 			path = Extensions;
@@ -270,6 +395,7 @@
 		B5C0AD932AF2D1D700F4F752 /* Location Directory */ = {
 			isa = PBXGroup;
 			children = (
+				B57998752B1D79A100CDFFB0 /* Campus Map */,
 				B5C0AD942AF2D1D700F4F752 /* Concept3D */,
 				B5C0AD972AF2D1D700F4F752 /* LocationCollectionCardView.swift */,
 				B5C0AD982AF2D1D700F4F752 /* LocationDetailsView.swift */,
@@ -308,9 +434,12 @@
 		B5E10F3F2B197DA9005B0733 /* Augmented Reality */ = {
 			isa = PBXGroup;
 			children = (
+				B55167212B23D7D0009531C5 /* Extensions */,
 				B5C427EF2B1C2E8400B2650F /* Session Manager */,
-				B51CCBE62B1A57A00099AB6B /* Views */,
+				B54970422B20F0610003090F /* LocationNode */,
+				B51CCBEA2B1A5A3E0099AB6B /* CatalogARView */,
 				B5E10F422B197E8D005B0733 /* States */,
+				B5E10F5C2B19A299005B0733 /* MaterialBuilder.swift */,
 				B5E10F512B199A36005B0733 /* AnchorManager.swift */,
 				B5C427E82B1C17B700B2650F /* LocationManager.swift */,
 			);
@@ -326,25 +455,12 @@
 			path = States;
 			sourceTree = "<group>";
 		};
-		B5E10F532B19A1AE005B0733 /* Card Node */ = {
-			isa = PBXGroup;
-			children = (
-				B5E10F5C2B19A299005B0733 /* MaterialBuilder.swift */,
-				B5E10F592B19A1E9005B0733 /* CardNode.swift */,
-				B5E10F582B19A1E9005B0733 /* CardNodeUIView.swift */,
-			);
-			path = "Card Node";
-			sourceTree = "<group>";
-		};
 		B5E928902AF2C5DE00272193 = {
 			isa = PBXGroup;
 			children = (
 				B5C0AD8D2AF2D18B00F4F752 /* Secrets.swift */,
 				B5E9289B2AF2C5DE00272193 /* CSUSM AR */,
 				B5E9289A2AF2C5DE00272193 /* Products */,
-				B5C427EC2B1C2AC700B2650F /* Wrappers */,
-				B5C0AD882AF2D18300F4F752 /* Extensions */,
-				B5E928AD2AF2C6D900272193 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -360,12 +476,11 @@
 			isa = PBXGroup;
 			children = (
 				B5C8281D2B01483300471A0E /* GoogleService-Info.plist */,
-				B5E10F3F2B197DA9005B0733 /* Augmented Reality */,
-				B5C0AD8F2AF2D1D700F4F752 /* Featured Events */,
-				B5C0AD932AF2D1D700F4F752 /* Location Directory */,
 				B5E9289C2AF2C5DE00272193 /* CSUSM_ARApp.swift */,
-				B57998752B1D79A100CDFFB0 /* Campus Map */,
-				B5C0ADA22AF2D2A400F4F752 /* HomeView.swift */,
+				B55167222B23D7FF009531C5 /* Views */,
+				B5C427EC2B1C2AC700B2650F /* Wrappers */,
+				B5C0AD882AF2D18300F4F752 /* Extensions */,
+				B55167232B23DA5D009531C5 /* Frameworks */,
 				B5E928A02AF2C5DF00272193 /* Assets.xcassets */,
 				B5E928A22AF2C5DF00272193 /* Preview Content */,
 			);
@@ -380,140 +495,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B5E928AD2AF2C6D900272193 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B5E929492AF2C8D800272193 /* Concept3D */,
-				B5E928F42AF2C74200272193 /* iCalSwift */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B5E928F42AF2C74200272193 /* iCalSwift */ = {
-			isa = PBXGroup;
-			children = (
-				B5E928F52AF2C74200272193 /* Extension */,
-				B5E928FD2AF2C74200272193 /* Component */,
-				B5E929052AF2C74200272193 /* Utils */,
-				B5E929072AF2C74200272193 /* Protocol */,
-				B5E9290B2AF2C74200272193 /* Parser */,
-				B5E9290D2AF2C74200272193 /* Constant */,
-				B5E9290F2AF2C74200272193 /* Builder */,
-				B5E929112AF2C74200272193 /* Structure */,
-			);
-			name = iCalSwift;
-			path = Frameworks/iCalSwift;
-			sourceTree = "<group>";
-		};
-		B5E928F52AF2C74200272193 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				B5E928F62AF2C74200272193 /* String+Utilities.swift */,
-				B5E928F72AF2C74200272193 /* Bool+VPropertyEncodable.swift */,
-				B5E928F82AF2C74200272193 /* String+VPropertyEncodable.swift */,
-				B5E928F92AF2C74200272193 /* Date+VPropertyEncodable.swift */,
-				B5E928FA2AF2C74200272193 /* URL+VPropertyEncodable.swift */,
-				B5E928FB2AF2C74200272193 /* UUID+VPropertyEncodable.swift */,
-				B5E928FC2AF2C74200272193 /* Int+VPropertyEncodable.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		B5E928FD2AF2C74200272193 /* Component */ = {
-			isa = PBXGroup;
-			children = (
-				B5E928FE2AF2C74200272193 /* ICalAlarm.swift */,
-				B5E928FF2AF2C74200272193 /* ICalendar.swift */,
-				B5E929002AF2C74200272193 /* ICalSubTimeZone.swift */,
-				B5E929012AF2C74200272193 /* XTrumbaField.swift */,
-				B5E929022AF2C74200272193 /* ICalTimeZone.swift */,
-				B5E929032AF2C74200272193 /* ICalComponent.swift */,
-				B5E929042AF2C74200272193 /* ICalEvent.swift */,
-			);
-			path = Component;
-			sourceTree = "<group>";
-		};
-		B5E929052AF2C74200272193 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				B5E929062AF2C74200272193 /* DateTimeUtil.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		B5E929072AF2C74200272193 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				B5E929082AF2C74200272193 /* VPropertyEncodable.swift */,
-				B5E929092AF2C74200272193 /* VEncodable.swift */,
-				B5E9290A2AF2C74200272193 /* VComponent.swift */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		B5E9290B2AF2C74200272193 /* Parser */ = {
-			isa = PBXGroup;
-			children = (
-				B5E9290C2AF2C74200272193 /* ICalParser.swift */,
-			);
-			path = Parser;
-			sourceTree = "<group>";
-		};
-		B5E9290D2AF2C74200272193 /* Constant */ = {
-			isa = PBXGroup;
-			children = (
-				B5E9290E2AF2C74200272193 /* Constant.swift */,
-			);
-			path = Constant;
-			sourceTree = "<group>";
-		};
-		B5E9290F2AF2C74200272193 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				B5E929102AF2C74200272193 /* PropertyBuilder.swift */,
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
-		B5E929112AF2C74200272193 /* Structure */ = {
-			isa = PBXGroup;
-			children = (
-				B5E929122AF2C74200272193 /* ICalDateTime.swift */,
-				B5E929132AF2C74200272193 /* ICalDuration.swift */,
-				B5E929142AF2C74200272193 /* ICalParameter.swift */,
-				B5E929152AF2C74200272193 /* VContentLine.swift */,
-				B5E929162AF2C74200272193 /* ICalRRule.swift */,
-				B5E929172AF2C74200272193 /* ICalProductIdentifier.swift */,
-				B5E929182AF2C74200272193 /* ICalDateTimes.swift */,
-				B5E929192AF2C74200272193 /* ICalPeriod.swift */,
-				B5E9291A2AF2C74200272193 /* ICalAttachment.swift */,
-			);
-			path = Structure;
-			sourceTree = "<group>";
-		};
-		B5E929492AF2C8D800272193 /* Concept3D */ = {
-			isa = PBXGroup;
-			children = (
-				B5E9294A2AF2C8D800272193 /* Concept3DError.swift */,
-				B5E9294B2AF2C8D800272193 /* Concept3D.swift */,
-				B5E9294C2AF2C8D800272193 /* Models */,
-				B5E929512AF2C8D800272193 /* Concept3DEndpoint.swift */,
-			);
-			name = Concept3D;
-			path = Frameworks/Concept3D;
-			sourceTree = "<group>";
-		};
-		B5E9294C2AF2C8D800272193 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				B5E9294D2AF2C8D800272193 /* Concept3DCategory.swift */,
-				B5E9294E2AF2C8D800272193 /* Concept3DLocationDetails.swift */,
-				B5E9294F2AF2C8D800272193 /* Concept3DLocation.swift */,
-				B5E929502AF2C8D800272193 /* Concept3DLocationImage.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -524,7 +505,6 @@
 				B5E928952AF2C5DE00272193 /* Sources */,
 				B5E928962AF2C5DE00272193 /* Frameworks */,
 				B5E928972AF2C5DE00272193 /* Resources */,
-				B5E10F3E2B197C60005B0733 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -594,6 +574,7 @@
 			files = (
 				B5E928A42AF2C5DF00272193 /* Preview Assets.xcassets in Resources */,
 				B5E928A12AF2C5DF00272193 /* Assets.xcassets in Resources */,
+				B551675C2B23DA5D009531C5 /* .plantuml in Resources */,
 				B521C2C72B20E77C0006CC5B /* LocationNodeUIView.xib in Resources */,
 				B579987B2B1D7C8300CDFFB0 /* campus-map.pdf in Resources */,
 				B5C8281E2B01483300471A0E /* GoogleService-Info.plist in Resources */,
@@ -602,99 +583,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		B5E10F3E2B197C60005B0733 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "
-";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		B5E928952AF2C5DE00272193 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B551675F2B23DA5D009531C5 /* String+VPropertyEncodable.swift in Sources */,
 				B54970412B20ED3B0003090F /* LocationNodeUIView.swift in Sources */,
-				B5E929272AF2C74200272193 /* ICalComponent.swift in Sources */,
+				B55167572B23DA5D009531C5 /* Concept3DCategory.swift in Sources */,
+				B55167672B23DA5D009531C5 /* XTrumbaField.swift in Sources */,
 				B57998722B1C60AF00CDFFB0 /* GARSessionError.swift in Sources */,
+				B551676A2B23DA5D009531C5 /* ICalEvent.swift in Sources */,
 				B51CCBEC2B1A5A7D0099AB6B /* CatalogARView.swift in Sources */,
-				B5E929312AF2C74200272193 /* ICalDuration.swift in Sources */,
 				B5C0ADA32AF2D2A400F4F752 /* HomeView.swift in Sources */,
-				B5E9291B2AF2C74200272193 /* String+Utilities.swift in Sources */,
-				B5E9292B2AF2C74200272193 /* VEncodable.swift in Sources */,
-				B5E929582AF2C8D800272193 /* Concept3DEndpoint.swift in Sources */,
+				B55167732B23DA5D009531C5 /* ICalDuration.swift in Sources */,
 				B5E10F522B199A36005B0733 /* AnchorManager.swift in Sources */,
 				B57998792B1D7B1B00CDFFB0 /* PDFView.swift in Sources */,
-				B5E929202AF2C74200272193 /* UUID+VPropertyEncodable.swift in Sources */,
 				B5C427EB2B1C1B8000B2650F /* CatalogARSessionManager.swift in Sources */,
-				B5E9291F2AF2C74200272193 /* URL+VPropertyEncodable.swift in Sources */,
+				B551676F2B23DA5D009531C5 /* ICalParser.swift in Sources */,
+				B55167712B23DA5D009531C5 /* PropertyBuilder.swift in Sources */,
+				B551675A2B23DA5D009531C5 /* Concept3DLocationImage.swift in Sources */,
 				B5C0AD992AF2D1D700F4F752 /* EventFeedScrollView.swift in Sources */,
-				B5E929552AF2C8D800272193 /* Concept3DLocationDetails.swift in Sources */,
-				B5E929282AF2C74200272193 /* ICalEvent.swift in Sources */,
 				B5C427E92B1C17B700B2650F /* LocationManager.swift in Sources */,
+				B551677A2B23DA5D009531C5 /* ICalAttachment.swift in Sources */,
+				B55167682B23DA5D009531C5 /* ICalTimeZone.swift in Sources */,
+				B55167742B23DA5D009531C5 /* ICalParameter.swift in Sources */,
+				B551676B2B23DA5D009531C5 /* DateTimeUtil.swift in Sources */,
 				B5C427F12B1C2EEC00B2650F /* CatalogARSessionManager+ARSCNViewDelegate.swift in Sources */,
-				B5E929252AF2C74200272193 /* XTrumbaField.swift in Sources */,
+				B55167692B23DA5D009531C5 /* ICalComponent.swift in Sources */,
 				B54970452B20F07D0003090F /* LocationNode.swift in Sources */,
-				B5E929342AF2C74200272193 /* ICalRRule.swift in Sources */,
+				B55167782B23DA5D009531C5 /* ICalDateTimes.swift in Sources */,
+				B55167662B23DA5D009531C5 /* ICalSubTimeZone.swift in Sources */,
+				B551676E2B23DA5D009531C5 /* VComponent.swift in Sources */,
 				B5E10F5D2B19A299005B0733 /* MaterialBuilder.swift in Sources */,
 				B5E9289D2AF2C5DE00272193 /* CSUSM_ARApp.swift in Sources */,
+				B55167652B23DA5D009531C5 /* ICalendar.swift in Sources */,
+				B55167592B23DA5D009531C5 /* Concept3DLocation.swift in Sources */,
+				B55167772B23DA5D009531C5 /* ICalProductIdentifier.swift in Sources */,
+				B55167762B23DA5D009531C5 /* ICalRRule.swift in Sources */,
+				B55167602B23DA5D009531C5 /* Date+VPropertyEncodable.swift in Sources */,
+				B551675B2B23DA5D009531C5 /* Concept3DEndpoint.swift in Sources */,
 				B5E10F442B197EA0005B0733 /* LocalizationState.swift in Sources */,
-				B5E929532AF2C8D800272193 /* Concept3D.swift in Sources */,
-				B59003832B20404700B9BD58 /* CustomNode.swift in Sources */,
-				B5E929522AF2C8D800272193 /* Concept3DError.swift in Sources */,
-				B5E9291C2AF2C74200272193 /* Bool+VPropertyEncodable.swift in Sources */,
-				B5E929232AF2C74200272193 /* ICalendar.swift in Sources */,
 				B5C0AD9F2AF2D1D700F4F752 /* LocationDetailsView.swift in Sources */,
-				B5E9292D2AF2C74200272193 /* ICalParser.swift in Sources */,
-				B5E929332AF2C74200272193 /* VContentLine.swift in Sources */,
 				B5C0AD9A2AF2D1D700F4F752 /* EventDetailsView.swift in Sources */,
+				B551676C2B23DA5D009531C5 /* VPropertyEncodable.swift in Sources */,
 				B57998742B1D596900CDFFB0 /* CatalogARSessionStatistics.swift in Sources */,
-				B5E10F5A2B19A1E9005B0733 /* CardNodeUIView.swift in Sources */,
-				B5E929212AF2C74200272193 /* Int+VPropertyEncodable.swift in Sources */,
 				B51CCBEE2B1A5B620099AB6B /* CatalogARSessionManager+ARSessionDelegate.swift in Sources */,
-				B5E929322AF2C74200272193 /* ICalParameter.swift in Sources */,
-				B5C0AD8B2AF2D18300F4F752 /* NavigationToolbar.swift in Sources */,
+				B55167722B23DA5D009531C5 /* ICalDateTime.swift in Sources */,
+				B55167632B23DA5D009531C5 /* Int+VPropertyEncodable.swift in Sources */,
 				B57998702B1C5A9E00CDFFB0 /* ARSessionError.swift in Sources */,
-				B5E929382AF2C74200272193 /* ICalAttachment.swift in Sources */,
-				B5E9291D2AF2C74200272193 /* String+VPropertyEncodable.swift in Sources */,
+				B551675E2B23DA5D009531C5 /* Bool+VPropertyEncodable.swift in Sources */,
+				B55167622B23DA5D009531C5 /* UUID+VPropertyEncodable.swift in Sources */,
+				B55167582B23DA5D009531C5 /* Concept3DLocationDetails.swift in Sources */,
+				B55167562B23DA5D009531C5 /* Concept3D.swift in Sources */,
 				B5C0AD9E2AF2D1D700F4F752 /* LocationCollectionCardView.swift in Sources */,
+				B55167552B23DA5D009531C5 /* Concept3DError.swift in Sources */,
+				B55167612B23DA5D009531C5 /* URL+VPropertyEncodable.swift in Sources */,
+				B55167752B23DA5D009531C5 /* VContentLine.swift in Sources */,
+				B55167792B23DA5D009531C5 /* ICalPeriod.swift in Sources */,
 				B5C0AD8C2AF2D18300F4F752 /* Colors.swift in Sources */,
-				B5E929542AF2C8D800272193 /* Concept3DCategory.swift in Sources */,
-				B5E929222AF2C74200272193 /* ICalAlarm.swift in Sources */,
-				B5E929372AF2C74200272193 /* ICalPeriod.swift in Sources */,
-				B5E929262AF2C74200272193 /* ICalTimeZone.swift in Sources */,
 				B5C0AD9D2AF2D1D700F4F752 /* Concept3DCategoryView.swift in Sources */,
-				B5E929352AF2C74200272193 /* ICalProductIdentifier.swift in Sources */,
-				B5E929362AF2C74200272193 /* ICalDateTimes.swift in Sources */,
-				B5E929292AF2C74200272193 /* DateTimeUtil.swift in Sources */,
-				B5E9292C2AF2C74200272193 /* VComponent.swift in Sources */,
-				B5E929242AF2C74200272193 /* ICalSubTimeZone.swift in Sources */,
-				B5E929302AF2C74200272193 /* ICalDateTime.swift in Sources */,
-				B5E929572AF2C8D800272193 /* Concept3DLocationImage.swift in Sources */,
+				B551676D2B23DA5D009531C5 /* VEncodable.swift in Sources */,
 				B5C0AD9C2AF2D1D700F4F752 /* Concept3DCategoryListView.swift in Sources */,
-				B5E9292E2AF2C74200272193 /* Constant.swift in Sources */,
+				B55167702B23DA5D009531C5 /* Constant.swift in Sources */,
+				B551675D2B23DA5D009531C5 /* String+Utilities.swift in Sources */,
 				B5C0AD9B2AF2D1D700F4F752 /* EventRowView.swift in Sources */,
-				B5E10F5B2B19A1E9005B0733 /* CardNode.swift in Sources */,
 				B5C0AD8E2AF2D18B00F4F752 /* Secrets.swift in Sources */,
-				B5E9291E2AF2C74200272193 /* Date+VPropertyEncodable.swift in Sources */,
-				B5E9292F2AF2C74200272193 /* PropertyBuilder.swift in Sources */,
-				B5E9292A2AF2C74200272193 /* VPropertyEncodable.swift in Sources */,
-				B5E929562AF2C8D800272193 /* Concept3DLocation.swift in Sources */,
-				B5E10F502B1993E2005B0733 /* RooftopState.swift in Sources */,
+				B5E10F502B1993E2005B0733 /* GARRooftopAnchorState.swift in Sources */,
+				B55167642B23DA5D009531C5 /* ICalAlarm.swift in Sources */,
 				B5C427EE2B1C2AEA00B2650F /* WrappedUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

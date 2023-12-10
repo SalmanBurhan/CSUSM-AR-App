@@ -1,0 +1,889 @@
+@startuml CSUSM AR
+!theme carbon-gray
+' STYLE START
+hide empty members
+skinparam backgroundColor transparent
+' STYLE END
+set namespaceSeparator none
+
+
+class "VPropertyEncodable" as VPropertyEncodable << (P, AntiqueWhite) protocol >> { 
+  +parameters : [ICalParameter]
+  +parameters : [ICalParameter] <&bolt>
+  +parameter(_:) <&bolt> 
+}
+class "VEncodable" as VEncodable << (P, AntiqueWhite) protocol >> { 
+  +vEncoded : String 
+}
+class "VComponent" as VComponent << (P, AntiqueWhite) protocol >> { 
+  +component : String
+  +properties : [VContentLine?]
+  +children : [VComponent]
+  +properties : [VContentLine?] <&bolt>
+  +children : [VComponent] <&bolt>
+  +contentLines : [VContentLine?] <&bolt>
+  +vEncoded : String <&bolt> 
+}
+class "WrappedUIView" as WrappedUIView<T: UIView> << (S, AntiqueWhite) struct >> { 
+  ~unwrappedView : T
+  ~configure : (T) -> Void
+  ~init(_:)
+  ~makeUIView(context:)
+  ~updateUIView(_:context:) 
+}
+class "CSUSM_ARApp" as CSUSM_ARApp << (S, AntiqueWhite) struct >> { 
+  ~body : some Scene 
+}
+class "Concept3DError" as Concept3DError << (E, AntiqueWhite) enum >> { 
+  ~locationImageNotFound
+  ~locationImagePathInvalid
+  ~endpointResponseNotModelable
+  ~unexpectedStatusCode(_:)
+  ~mismatchedResponseData(_:)
+  ~unexpectedError 
+}
+class "Concept3D" as Concept3D << (C, AliceBlue) class >> { 
+  ~{static} shared
+  ~locations : [Concept3DLocation]
+  ~categories : [Concept3DCategory]
+  ~init(locations:categories:)
+  ~{static} fetchCategory(id:)
+  ~{static} imageURL(_:ofSize:scaled:)
+  ~{static} imageURL(iconPath:)
+  ~fetchDetails(for:)
+  ~fetchDetails(for:)
+  -{static} decode(model:from:) <&bolt>
+  -{static} validateStatusCode(for:) <&bolt>
+  -{static} url(for:) <&bolt>
+  -{static} model(for:) <&bolt>
+  -{static} fetch(_:) <&bolt> 
+}
+class "Concept3DCategoryResponse" as Concept3DCategoryResponse << (S, AntiqueWhite) struct >> { 
+  ~category : Concept3DCategory?
+  ~categories : [Concept3DCategory]
+  ~locations : [Concept3DLocation]
+  ~init(from:) 
+}
+class "RootCodingKeys" as Concept3DCategoryResponse.RootCodingKeys << (E, AntiqueWhite) enum >> { 
+  ~children 
+}
+class "ChildrenCodingKeys" as Concept3DCategoryResponse.ChildrenCodingKeys << (E, AntiqueWhite) enum >> { 
+  ~categories
+  ~locations 
+}
+class "Concept3DCategory" as Concept3DCategory << (S, AntiqueWhite) struct >> { 
+  ~id : Int
+  ~name : String
+  ~parentCategory : Int
+  ~iconURL : URL?
+  ~locations : [Concept3DLocation]?
+  ~children : [Concept3DCategory]?
+  ~init(id:name:parentCategory:)
+  ~init(from:) 
+}
+class "CodingKeys" as Concept3DCategory.CodingKeys << (E, AntiqueWhite) enum >> { 
+  ~id
+  ~name
+  ~parentCategory
+  ~listIcon
+  ~singleSelect
+  ~weight 
+}
+class "Concept3DLocationDetails" as Concept3DLocationDetails << (S, AntiqueWhite) struct >> { 
+  ~id : Int
+  ~description : String
+  ~images : [Concept3DImageSize: URL]
+  ~init(id:description:images:)
+  ~init(from:) 
+}
+class "CodingKeys" as Concept3DLocationDetails.CodingKeys << (E, AntiqueWhite) enum >> { 
+  ~id
+  ~description
+  ~mediaLinks 
+}
+class "Concept3DLocation" as Concept3DLocation << (S, AntiqueWhite) struct >> { 
+  ~id : Int
+  ~categoryId : Int
+  ~altitude : Double
+  ~map : Int
+  ~floors : [Int]
+  ~markId : Int
+  ~name : String
+  ~reference : String
+  ~location : CLLocationCoordinate2D
+  ~details : Concept3DLocationDetails?
+  ~init(id:categoryId:altitude:map:floors:markId:name:reference:location:)
+  ~init(from:)
+  ~copy(with:) 
+}
+class "CodingKeys" as Concept3DLocation.CodingKeys << (E, AntiqueWhite) enum >> { 
+  ~id
+  ~categoryId
+  ~altitude
+  ~map
+  ~floors
+  ~markId
+  ~name
+  ~reference
+  ~latitude
+  ~longitude 
+}
+class "Concept3DImageSize" as Concept3DImageSize << (E, AntiqueWhite) enum >> { 
+  ~tiny
+  ~small
+  ~medium
+  ~large
+  ~xlarge
+  ~xxlarge
+  ~resolution : (width: Int, height: Int) 
+}
+class "Concept3DEndpoint" as Concept3DEndpoint << (E, AntiqueWhite) enum >> { 
+  ~locations
+  ~location(_:)
+  ~categories(_:)
+  ~cmsImage(path:width:height:scaled:)
+  ~iconImage(path:) 
+}
+class "ICalAlarm" as ICalAlarm << (S, AntiqueWhite) struct >> { 
+  +component
+  +action : String
+  +trigger : Date
+  +summary : String?
+  +description : String?
+  +duration : ICalDuration?
+  +repetition : Int?
+  +attach : String?
+  +properties : [VContentLine?]
+  +{static} audioProp(trigger:duration:repetition:attach:)
+  +{static} displayProp(trigger:description:duration:repetition:)
+  +{static} emailProp(trigger:description:summary:duration:repetition:attach:) 
+}
+class "ICalendar" as ICalendar << (S, AntiqueWhite) struct >> { 
+  +component
+  +version
+  +prodid : ICalProductIdentifier
+  +calscale : String?
+  +method : String?
+  +events : [ICalEvent]
+  +timeZones : [ICalTimeZone]
+  +alarms : [ICalAlarm]
+  +children : [VComponent]
+  +properties : [VContentLine?]
+  +init(prodid:calscale:method:events:timeZones:alarms:) 
+}
+class "ICalSubTimeZone" as ICalSubTimeZone << (C, AliceBlue) class >> { 
+  +component
+  +dtstart : Date
+  +tzOffsetTo : String
+  +tzOffsetFrom : String
+  +rrule : ICalRRule?
+  +tzName : String?
+  +properties : [VContentLine?]
+  +init(dtstart:tzOffsetTo:tzOffsetFrom:rrule:tzName:) 
+}
+class "XTrumbaField" as XTrumbaField << (S, AntiqueWhite) struct >> { 
+  +name : String?
+  +type : String?
+  +id : String?
+  +value : String?
+  +init(name:type:id:value:) 
+}
+class "ICalTimeZone" as ICalTimeZone << (S, AntiqueWhite) struct >> { 
+  +component
+  +tzid : String
+  +standard : ICalSubTimeZone?
+  +daylight : ICalSubTimeZone?
+  +properties : [VContentLine?]
+  +children : [VComponent]
+  +init(tzid:standard:daylight:) 
+}
+class "ICalComponent" as ICalComponent << (S, AntiqueWhite) struct >> { 
+  ~properties : [(name: String, value: String)]
+  ~children : [(name: String, value: String)]
+  ~findProperty(name:)
+  ~findProperties(name:)
+  ~findExtendProperties()
+  ~buildProperty(of:)
+  ~buildProperty(of:)
+  ~buildProperty(of:)
+  ~buildProperty(of:)
+  ~buildProperty(of:)
+  ~buildProperty(of:)
+  ~buildProperty(of:)
+  ~buildProperty(of:)
+  ~buildProperty(of:)
+  ~buildProperty(of:) 
+}
+class "ICalEvent" as ICalEvent << (S, AntiqueWhite) struct >> { 
+  +component
+  +dtstamp : Date
+  +uid : String
+  +classification : String?
+  +created : Date?
+  +description : String?
+  +dtstart : ICalDateTime?
+  +lastModified : Date?
+  +location : String?
+  +organizer : String?
+  +priority : Int?
+  +seq : Int?
+  +status : String?
+  +summary : String?
+  +transp : String?
+  +url : URL?
+  +dtend : ICalDateTime?
+  +duration : ICalDuration?
+  +recurrenceID : ICalDateTime?
+  +rrule : ICalRRule?
+  +rdate : ICalDateTimes?
+  +exdate : ICalDateTimes?
+  +attachments : [ICalAttachment]?
+  +extendProperties : [String: String]?
+  +trumbaFields : [XTrumbaField]?
+  +organization : String?
+  +eventType : String?
+  +imageURL : URL?
+  +alarms : [ICalAlarm]
+  +timeZone : ICalTimeZone?
+  +isAllDay : Bool
+  +children : [VComponent]
+  +properties : [VContentLine?]
+  +extendPropertiesLine : [VContentLine?]
+  +init(dtstamp:uid:classification:created:description:dtstart:lastModified:location:organizer:priority:seq:status:summary:transp:url:dtend:duration:recurrenceID:rrule:rdate:exdate:alarms:timeZone:attachments:extendProperties:trumbaFields:organization:eventType:imageURL:) 
+}
+class "DateTimeUtil" as DateTimeUtil << (S, AntiqueWhite) struct >> { 
+  ~{static} dateFormatter(type:tzid:)
+  ~{static} params(type:tzid:) 
+}
+class "ICalParser" as ICalParser << (S, AntiqueWhite) struct >> { 
+  +init()
+  +parseCalendar(ics:)
+  +parseEvents(ics:)
+  +parseAlarms(ics:)
+  +parseTimeZones(ics:)
+  +parseDuration(value:)
+  +parseRRule(value:)
+  -buildEvents(components:)
+  -buildAlarms(components:)
+  -buildTimeZones(components:)
+  -buildSubTimeZone(component:)
+  -icsToElements(_:)
+  -findComponent(name:elements:)
+  -findProperty(name:elements:)
+  -segmentsOfProdID(_:) 
+}
+class "Constant" as Constant << (E, AntiqueWhite) enum >> {  
+}
+class "Prop" as Constant.Prop << (E, AntiqueWhite) enum >> { 
+  +{static} begin
+  +{static} end
+  +{static} dtstamp
+  +{static} uid
+  +{static} classification
+  +{static} created
+  +{static} description
+  +{static} dtstart
+  +{static} lastModified
+  +{static} location
+  +{static} organizer
+  +{static} priority
+  +{static} seq
+  +{static} status
+  +{static} summary
+  +{static} transp
+  +{static} url
+  +{static} dtend
+  +{static} duration
+  +{static} recurrenceID
+  +{static} rrule
+  +{static} rdate
+  +{static} exdate
+  +{static} version
+  +{static} prodid
+  +{static} calscale
+  +{static} method
+  +{static} tzOffsetFrom
+  +{static} tzName
+  +{static} tzOffsetTo
+  +{static} tzid
+  +{static} action
+  +{static} trigger
+  +{static} repetition
+  +{static} attach
+  +{static} frequency
+  +{static} interval
+  +{static} until
+  +{static} count
+  +{static} bySecond
+  +{static} byMinute
+  +{static} byHour
+  +{static} byDay
+  +{static} byDayOfMonth
+  +{static} byDayOfYear
+  +{static} byWeekOfYear
+  +{static} byMonth
+  +{static} bySetPos
+  +{static} startOfWorkweek
+  +{static} trumbaLink
+  +{static} trumbaOrganization
+  +{static} trumbaEventType
+  +{static} trumbaImage
+  +{static} trumbaCustomField 
+}
+class "TrumbaCustomField" as Constant.Prop.TrumbaCustomField << (E, AntiqueWhite) enum >> { 
+  +{static} name
+  +{static} id
+  +{static} type 
+}
+class "Component" as Constant.Component << (E, AntiqueWhite) enum >> { 
+  +{static} calendar
+  +{static} event
+  +{static} alarm
+  +{static} timeZone
+  +{static} daylight
+  +{static} standard 
+}
+class "Format" as Constant.Format << (E, AntiqueWhite) enum >> { 
+  +{static} dateOnly
+  +{static} dt
+  +{static} utc 
+}
+class "PropertyBuilder" as PropertyBuilder << (S, AntiqueWhite) struct >> { 
+  ~{static} buildDuration(value:)
+  ~{static} buildRRule(value:)
+  ~{static} buildDateTime(propName:value:)
+  ~{static} buildAttachment(propName:value:)
+  ~{static} buildDateTimes(propName:value:)
+  ~{static} buildTrumbaField(propName:value:)
+  ~{static} buildImage(value:)
+  ~{static} buildDescription(html:)
+  -{static} findProperty(name:elements:)
+  -{static} paramsOfValue(_:)
+  -{static} separateCommaProperty(value:)
+  -{static} matcheDuration(type:duration:)
+  -{static} dateValueType(params:)
+  -{static} timeZoneID(params:) 
+}
+class "DateValueType" as DateValueType << (E, AntiqueWhite) enum >> { 
+  +date
+  +dateTime
+  +period 
+}
+class "ICalDateTime" as ICalDateTime << (S, AntiqueWhite) struct >> { 
+  +type : DateValueType
+  +tzid : String?
+  +date : Date
+  +vEncoded : String
+  +parameters : [ICalParameter]
+  +isDateOnly : Bool
+  ~init(type:date:tzid:)
+  +{static} dateOnly(_:)
+  +{static} dateTime(_:tzid:) 
+}
+class "ICalDuration" as ICalDuration << (S, AntiqueWhite) struct >> { 
+  +{static} zero : ICalDuration
+  +totalSeconds : Int
+  +parts : (weeks: Int, days: Int, hours: Int, minutes: Int, seconds: Int)
+  +vEncoded : String
+  +init(totalSeconds:)
+  +init(integerLiteral:)
+  +init(weeks:days:hours:minutes:seconds:)
+  +negate()
+  +{static} -(_:)
+  +{static} +(_:_:)
+  +{static} -(_:_:)
+  +{static} weeks(_:)
+  +{static} days(_:)
+  +{static} hours(_:)
+  +{static} minutes(_:)
+  +{static} seconds(_:) 
+}
+class "ICalParameter" as ICalParameter << (S, AntiqueWhite) struct >> { 
+  +key : String
+  +values : [String]
+  +init(key:values:)
+  +{static} ==(_:_:) 
+}
+class "VContentLine" as VContentLine << (S, AntiqueWhite) struct >> { 
+  -{static} maxLength : Int
+  +key : String
+  +values : [VPropertyEncodable]
+  +vEncoded : String
+  +init(key:values:)
+  +{static} lines(_:_:)
+  +{static} line(_:_:)
+  -quote(_:if:) 
+}
+class "ICalRRule" as ICalRRule << (S, AntiqueWhite) struct >> { 
+  +frequency : Frequency
+  +interval : Int?
+  +until : ICalDateTime?
+  +count : Int?
+  +bySecond : [Int]?
+  +byMinute : [Int]?
+  +byHour : [Int]?
+  +byDay : [Day]?
+  +byDayOfMonth : [Int]?
+  +byDayOfYear : [Int]?
+  +byWeekOfYear : [Int]?
+  +byMonth : [Int]?
+  +bySetPos : [Int]?
+  +startOfWorkweek : DayOfWeek?
+  -properties : [(String, [VEncodable]?)]
+  +vEncoded : String
+  +init(frequency:interval:until:count:bySecond:byMinute:byHour:byDay:byDayOfMonth:byDayOfYear:byWeekOfYear:byMonth:bySetPos:startOfWorkweek:) 
+}
+class "Frequency" as ICalRRule.Frequency << (E, AntiqueWhite) enum >> { 
+  +secondly
+  +minutely
+  +hourly
+  +daily
+  +weekly
+  +monthly
+  +yearly
+  +vEncoded : String 
+}
+class "DayOfWeek" as ICalRRule.DayOfWeek << (E, AntiqueWhite) enum >> { 
+  +monday
+  +tuesday
+  +wednesday
+  +thursday
+  +friday
+  +saturday
+  +sunday
+  +vEncoded : String
+  +weekday : Int 
+}
+class "Day" as ICalRRule.Day << (S, AntiqueWhite) struct >> { 
+  +week : Int?
+  +dayOfWeek : DayOfWeek
+  +vEncoded : String
+  +init(week:dayOfWeek:)
+  +{static} every(_:)
+  +{static} first(_:)
+  +{static} last(_:)
+  +{static} from(_:) 
+}
+class "ICalProductIdentifier" as ICalProductIdentifier << (S, AntiqueWhite) struct >> { 
+  +segments : [String]
+  +vEncoded : String
+  +init(segments:) 
+}
+class "ICalDateTimes" as ICalDateTimes << (S, AntiqueWhite) struct >> { 
+  +type : DateValueType
+  +tzid : String?
+  +dates : [Date]
+  +periods : [ICalPeriod]?
+  +vEncoded : String
+  +parameters : [ICalParameter]
+  -init(type:dates:tzid:periods:)
+  +{static} dateOnly(_:)
+  +{static} dateTime(_:tzid:)
+  +{static} period(_:tzid:) 
+}
+class "ICalPeriod" as ICalPeriod << (S, AntiqueWhite) struct >> { 
+  +startDate : Date
+  +endDate : Date
+  +vEncoded : String 
+}
+class "ICalAttachment" as ICalAttachment << (S, AntiqueWhite) struct >> { 
+  +parameters : [ICalParameter]
+  +value : String
+  +vEncoded : String
+  +init(parameters:value:) 
+}
+class "CatalogARView" as CatalogARView << (S, AntiqueWhite) struct >> { 
+  -cancellables : Set<AnyCancellable>
+  -session
+  -hasLocationPermissions
+  -isVPSAvailable
+  -sessionStatistics : CatalogARSessionStatistics?
+  ~init(_:category:)
+  ~body : some View
+  ~sceneDidAppear()
+  ~sceneDidDisappear()
+  ~vpsLimitedView()
+  ~statisticsView() 
+}
+class "LocationNode" as LocationNode << (C, AliceBlue) class >> { 
+  ~location : Concept3DLocation
+  ~category : Concept3DCategory
+  ~view : LocationNodeUIView?
+  ~viewNode : SCNNode?
+  ~width : CGFloat
+  ~height : CGFloat
+  ~lastReportedDistance : Float
+  ~init(_:_:width:)
+  ~init(coder:)
+  -setup()
+  +updateTransform(_:)
+  +updateTransform(_:withScalingFromPOV:) 
+}
+class "LocationNodeUIView" as LocationNodeUIView << (C, AliceBlue) class >> { 
+  ~imageView : UIImageView!
+  ~locationNameLabel : UILabel!
+  ~locationCategoryLabel : UILabel!
+  ~locationDistanceLabel : UILabel!
+  ~containerView : UIView!
+  ~strokeWidth : CGFloat
+  ~strokeColor : UIColor
+  ~init()
+  ~init(frame:)
+  ~init(coder:)
+  -commonInit()
+  -addConstraints()
+  ~configure(name:category:categoryImageURL:distance:)
+  ~configure(distance:)
+  ~downloadImage(from:)
+  ~intrinsicContentSize : CGSize
+  ~draw(_:) 
+}
+class "AnchorManager" as AnchorManager << (C, AliceBlue) class >> { 
+  -lock
+  -anchorMap : [UUIDPair: AnchorData]
+  ~getAnchors()
+  ~getAnchors(for:)
+  ~getAnchors(arIdentifier:garIdentifier:)
+  ~addAnchors(uuidPair:data:)
+  ~removeAnchors(for:)
+  ~removeAllAnchors()
+  ~getLocation(for:)
+  ~getCardNode(for:) 
+}
+class "UUIDPair" as AnchorManager.UUIDPair << (S, AntiqueWhite) struct >> { 
+  ~arIdentifier : UUID
+  ~garIdentifier : UUID 
+}
+class "AnchorData" as AnchorManager.AnchorData << (S, AntiqueWhite) struct >> { 
+  ~arAnchor : ARAnchor
+  ~garAnchor : GARAnchor
+  ~location : Concept3DLocation
+  ~category : Concept3DCategory
+  ~cardNode : LocationNode
+  ~init(arAnchor:garAnchor:location:category:) 
+}
+class "SCNMaterialBuilder" as SCNMaterialBuilder << (S, AntiqueWhite) struct >> { 
+  -material : SCNMaterial
+  ~init()
+  ~withColor(_:)
+  ~withView(_:)
+  ~withView(_:size:)
+  ~build() 
+}
+class "LocalizationState" as LocalizationState << (E, AntiqueWhite) enum >> { 
+  ~pretracking
+  ~localizing
+  ~localized
+  ~failed 
+}
+class "ARSessionError" as ARSessionError << (E, AntiqueWhite) enum >> { 
+  ~garSessionError(_:)
+  ~vpsUnavailable
+  ~unexpected(_:)
+  ~description : String 
+}
+class "LocationManager" as LocationManager << (C, AliceBlue) class >> { 
+  -manager : CLLocationManager
+  ~authorizationPublisher
+  ~locationPublisher
+  ~init()
+  ~deinit
+  ~startMonitoring()
+  ~stopMonitoring()
+  ~viewForAuthorizationStatus()
+  ~isAuthorized()
+  ~locationManagerDidChangeAuthorization(_:) <&bolt>
+  ~locationManager(_:didUpdateLocations:) <&bolt>
+  ~locationManager(_:didFailWithError:) <&bolt> 
+}
+class "CatalogARSessionManager" as CatalogARSessionManager << (C, AliceBlue) class >> { 
+  ~{static} shared
+  ~catalog : [Concept3DLocation]
+  ~category : Concept3DCategory
+  ~locationManager : LocationManager
+  ~cancellables : Set<AnyCancellable>
+  ~vpsPublisher : CurrentValueSubject<Bool, Never>
+  ~statisticsPublisher : PassthroughSubject<CatalogARSessionStatistics, Never>
+  ~session : ARSession
+  ~scene : SCNScene
+  ~sceneView : ARSCNView
+  ~coachingView : ARCoachingOverlayView
+  ~garSession : GARSession?
+  ~didCreateAnchors : Bool
+  ~localizationState : LocalizationState
+  ~kHorizontalAccuracyLowThreshold : CLLocationAccuracy
+  ~kHorizontalAccuracyHighThreshold : CLLocationAccuracy
+  ~kOrientationYawAccuracyLowThreshold : CLLocationDirectionAccuracy
+  ~kOrientationYawAccuracyHighThreshold : CLLocationDirectionAccuracy
+  ~kLocalizationFailureTime : TimeInterval
+  ~kDurationNoTerrainAnchorResult : TimeInterval
+  ~lastBeganLocalizing : Date
+  ~anchorManager : AnchorManager
+  ~error : ARSessionError?
+  -init(_:)
+  ~deinit
+  ~sessionConfiguration : ARWorldTrackingConfiguration
+  ~garSessionConfiguration : GARSessionConfiguration
+  ~coachingViewRepresentable : WrappedUIView<ARCoachingOverlayView>
+  ~sceneViewRepresentable : WrappedUIView<ARSCNView>
+  ~run()
+  ~pause()
+  ~didCompleteLocalizing()
+  ~__updateLocalizationState()
+  ~_updateLocalizationState()
+  ~updateLocalizationState()
+  ~updateStatistics()
+  ~createAnchors(for:)
+  ~resolveAnchor(_:forLocation:withState:)
+  ~renderer(_:nodeFor:) <&bolt>
+  ~session(_:didUpdate:) <&bolt> 
+}
+class "CatalogARSessionStatistics" as CatalogARSessionStatistics << (S, AntiqueWhite) struct >> { 
+  ~error : Bool
+  ~errorMessage : String?
+  ~locationAccuracy : Double?
+  ~altitudeAccuracy : Double?
+  ~orientationAccuracy : Double?
+  ~locationAccuracyString : String
+  ~altitudeAccuracyString : String
+  ~orientationAccuracyString : String
+  ~errorMessageString : String
+  ~init(locationAccuracy:altitudeAccuracy:orientationAccuracy:)
+  ~init(errorMessage:) 
+}
+class "Concept3DCategoryListView" as Concept3DCategoryListView << (S, AntiqueWhite) struct >> { 
+  ~locationCatalog
+  -isPDFViewPresented
+  ~body : some View
+  ~renderContentUnavailableView() <&bolt>
+  ~renderCategoryListView() <&bolt>
+  ~createRow(for:) <&bolt> 
+}
+class "Concept3DCategoryView" as Concept3DCategoryView << (S, AntiqueWhite) struct >> { 
+  ~concept3D
+  ~category : Concept3DCategory
+  ~children
+  ~locations
+  ~body : some View
+  ~renderScrollView(_:) <&bolt>
+  ~childrenListView() <&bolt>
+  ~locationListView() <&bolt>
+  ~locationsMapView() <&bolt>
+  ~_locationListView() <&bolt>
+  ~loadDetails() <&bolt> 
+}
+class "LocationCollectionCardView" as LocationCollectionCardView << (S, AntiqueWhite) struct >> { 
+  ~location : Concept3DLocation
+  ~category : Concept3DCategory
+  ~init(for:with:)
+  ~body : some View 
+}
+class "LocationDetailsView" as LocationDetailsView << (S, AntiqueWhite) struct >> { 
+  ~body : some View 
+}
+class "SlideOverCard" as SlideOverCard<Content: View> << (S, AntiqueWhite) struct >> { 
+  -dragState
+  ~position
+  ~content : () -> Content
+  ~body : some View
+  -onDragEnded(drag:) 
+}
+class "CardPosition" as CardPosition << (E, AntiqueWhite) enum >> { 
+  ~top
+  ~middle
+  ~bottom 
+}
+class "DragState" as DragState << (E, AntiqueWhite) enum >> { 
+  ~inactive
+  ~dragging(translation:)
+  ~translation : CGSize
+  ~isDragging : Bool 
+}
+class "Handle" as Handle << (S, AntiqueWhite) struct >> { 
+  -handleThickness
+  ~body : some View 
+}
+class "PDFViewWrapper" as PDFViewWrapper << (S, AntiqueWhite) struct >> { 
+  ~pdfURL : URL
+  ~makeUIView(context:)
+  ~updateUIView(_:context:) 
+}
+class "HomeView" as HomeView << (S, AntiqueWhite) struct >> { 
+  ~body : some View
+  ~menuTrayItem(_:systemIcon:) <&bolt>
+  ~menuTray() <&bolt>
+  ~pageBackground() <&bolt>
+  ~headerView() <&bolt> 
+}
+class "EventFeedView" as EventFeedView << (S, AntiqueWhite) struct >> { 
+  ~events : [ICalEvent]
+  ~body : some View
+  -loadEvents()
+  ~debugPrintEvents()
+  ~contentUnavailableView : some View <&bolt>
+  ~eventsScrollView : some View <&bolt>
+  ~createEventView(for:) <&bolt>
+  ~dateLabel(_:) <&bolt>
+  ~timeLabel(_:) <&bolt> 
+}
+class "EventDetailsView" as EventDetailsView << (S, AntiqueWhite) struct >> { 
+  ~event : ICalEvent
+  ~init(_:)
+  ~location : String
+  ~title : String
+  ~organization : String
+  ~startTime : String
+  ~endTime : String
+  ~date : String
+  ~description : String
+  ~eventType : String
+  ~eventImageURL : URL?
+  ~accentColor : Color
+  ~actionColor : Color
+  ~body : some View 
+}
+class "EventImageView" as EventImageView << (S, AntiqueWhite) struct >> { 
+  ~imageURL : URL?
+  ~body : some View 
+}
+class "EventBody" as EventBody << (S, AntiqueWhite) struct >> { 
+  ~title : String
+  ~organization : String
+  ~description : String
+  ~init(_:_:_:)
+  ~body : some View 
+}
+class "EventHighlightsView" as EventHighlightsView << (S, AntiqueWhite) struct >> { 
+  ~startTime : String
+  ~endTime : String
+  ~organization : String
+  ~location : String
+  ~eventType : String
+  ~init(_:_:_:_:_:)
+  ~body : some View
+  ~timeHighlight : some View
+  ~organizationHighlight : some View
+  ~locationHighlight : some View
+  ~eventTypeHighlight : some View 
+}
+class "GuidanceButton" as GuidanceButton << (S, AntiqueWhite) struct >> { 
+  ~event : ICalEvent
+  ~init(for:)
+  ~body : some View 
+}
+class "EventRowView" as EventRowView << (S, AntiqueWhite) struct >> { 
+  ~event : ICalEvent
+  ~init(for:)
+  ~location : String
+  ~title : String
+  ~organization : String
+  ~date : String
+  ~startTime : String
+  ~body : some View 
+}
+class "UIColor" as UIColor << (X, AntiqueWhite) extension >> { 
+  ~{static} universityBlue
+  ~{static} cougarBlue
+  ~{static} spiritBlue 
+}
+class "Color" as Color << (X, AntiqueWhite) extension >> { 
+  ~{static} universityBlue
+  ~{static} cougarBlue
+  ~{static} spiritBlue 
+}
+class "String" as String << (X, AntiqueWhite) extension >> { 
+  ~chunks(ofLength:)
+  ~replacing(pattern:with:)
+  +vEncoded : String 
+}
+class "Bool" as Bool << (X, AntiqueWhite) extension >> { 
+  +vEncoded : String 
+}
+class "Date" as Date << (X, AntiqueWhite) extension >> { 
+  +vEncoded : String 
+}
+class "URL" as URL << (X, AntiqueWhite) extension >> { 
+  +vEncoded : String 
+}
+class "UUID" as UUID << (X, AntiqueWhite) extension >> { 
+  +vEncoded : String 
+}
+class "Int" as Int << (X, AntiqueWhite) extension >> { 
+  +vEncoded : String 
+}
+class "GARSessionError" as GARSessionError << (X, AntiqueWhite) extension >> { 
+  ~description : String 
+}
+class "GARRooftopAnchorState" as GARRooftopAnchorState << (X, AntiqueWhite) extension >> { 
+  ~description : String 
+}
+VEncodable <|.. VPropertyEncodable #line:Black;line.dotted;text:Black : inherits from
+VEncodable <|.. VComponent : conforms to
+UIViewRepresentable <|-- WrappedUIView #line:Black;line.dotted;text:Black : inherits from
+App <|-- CSUSM_ARApp #line:Black;line.dotted;text:Black : inherits from
+ObservableObject <|-- Concept3D #line:Black;line.dotted;text:Black : inherits from
+Identifiable <|-- Concept3DCategory #line:Black;line.dotted;text:Black : inherits from
+Identifiable <|-- Concept3DLocation #line:Black;line.dotted;text:Black : inherits from
+VComponent <|.. ICalAlarm : conforms to
+VComponent <|.. ICalendar : conforms to
+VComponent <|.. ICalSubTimeZone : conforms to
+VComponent <|.. ICalTimeZone : conforms to
+VComponent <|.. ICalEvent : conforms to
+Equatable -- DateValueType #line:Black;line.dotted;text:Black : inherits from
+VPropertyEncodable <|.. ICalDateTime : conforms to
+VPropertyEncodable <|.. ICalDuration : conforms to
+AdditiveArithmetic <|-- ICalDuration #line:Black;line.dotted;text:Black : inherits from
+Equatable <|-- ICalParameter #line:Black;line.dotted;text:Black : inherits from
+VEncodable <|.. VContentLine : conforms to
+VPropertyEncodable <|.. ICalRRule : conforms to
+VEncodable <|.. ICalRRule.Frequency : conforms to
+VEncodable <|.. ICalRRule.DayOfWeek : conforms to
+VEncodable <|.. ICalRRule.Day : conforms to
+VPropertyEncodable <|.. ICalProductIdentifier : conforms to
+VPropertyEncodable <|.. ICalDateTimes : conforms to
+VPropertyEncodable <|.. ICalPeriod : conforms to
+VPropertyEncodable <|.. ICalAttachment : conforms to
+View <|-- CatalogARView #line:Black;line.dotted;text:Black : inherits from
+SCNNode <|-- LocationNode #line:Black;line.dotted;text:Black : inherits from
+UIView <|-- LocationNodeUIView #line:Black;line.dotted;text:Black : inherits from
+Hashable <|-- AnchorManager.UUIDPair #line:Black;line.dotted;text:Black : inherits from
+LocalizedError -- ARSessionError #line:Black;line.dotted;text:Black : inherits from
+NSObject <|-- LocationManager #line:Black;line.dotted;text:Black : inherits from
+NSObject <|-- CatalogARSessionManager #line:Black;line.dotted;text:Black : inherits from
+View <|-- Concept3DCategoryListView #line:Black;line.dotted;text:Black : inherits from
+View <|-- Concept3DCategoryView #line:Black;line.dotted;text:Black : inherits from
+View <|-- LocationCollectionCardView #line:Black;line.dotted;text:Black : inherits from
+View <|-- LocationDetailsView #line:Black;line.dotted;text:Black : inherits from
+View <|-- SlideOverCard #line:Black;line.dotted;text:Black : inherits from
+CGFloat -- CardPosition #line:Black;line.dotted;text:Black : inherits from
+View <|-- Handle #line:Black;line.dotted;text:Black : inherits from
+UIViewRepresentable <|-- PDFViewWrapper #line:Black;line.dotted;text:Black : inherits from
+View <|-- HomeView #line:Black;line.dotted;text:Black : inherits from
+View <|-- EventFeedView #line:Black;line.dotted;text:Black : inherits from
+View <|-- EventDetailsView #line:Black;line.dotted;text:Black : inherits from
+View <|-- EventImageView #line:Black;line.dotted;text:Black : inherits from
+View <|-- EventBody #line:Black;line.dotted;text:Black : inherits from
+View <|-- EventHighlightsView #line:Black;line.dotted;text:Black : inherits from
+View <|-- GuidanceButton #line:Black;line.dotted;text:Black : inherits from
+View <|-- EventRowView #line:Black;line.dotted;text:Black : inherits from
+VPropertyEncodable <|.. Bool : conforms to
+VPropertyEncodable <|.. Date : conforms to
+VPropertyEncodable <|.. URL : conforms to
+VPropertyEncodable <|.. UUID : conforms to
+VPropertyEncodable <|.. Int : conforms to
+Concept3DCategoryResponse +-- Concept3DCategoryResponse.RootCodingKeys
+Concept3DCategoryResponse +-- Concept3DCategoryResponse.ChildrenCodingKeys
+Concept3DCategory +-- Concept3DCategory.CodingKeys
+Concept3DLocationDetails +-- Concept3DLocationDetails.CodingKeys
+Concept3DLocation +-- Concept3DLocation.CodingKeys
+Constant +-- Constant.Prop
+Constant.Prop +-- Constant.Prop.TrumbaCustomField
+Constant +-- Constant.Component
+Constant +-- Constant.Format
+ICalRRule +-- ICalRRule.Frequency
+ICalRRule +-- ICalRRule.DayOfWeek
+ICalRRule +-- ICalRRule.Day
+AnchorManager +-- AnchorManager.UUIDPair
+AnchorManager +-- AnchorManager.AnchorData
+
+@enduml

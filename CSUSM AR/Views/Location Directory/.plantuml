@@ -1,0 +1,33 @@
+@startuml LocationDirectory
+!theme carbon-gray
+' STYLE START
+hide empty members
+skinparam backgroundColor transparent
+' STYLE END
+set namespaceSeparator none
+
+
+class "Concept3DCategoryListView" as Concept3DCategoryListView << (S, AntiqueWhite) struct >> { 
+  ~locationCatalog
+  -isPDFViewPresented
+  ~body : some View
+  ~renderContentUnavailableView() <&bolt>
+  ~renderCategoryListView() <&bolt>
+  ~createRow(for:) <&bolt> 
+}
+class "LocationCollectionCardView" as LocationCollectionCardView << (S, AntiqueWhite) struct >> { 
+  ~location : Concept3DLocation
+  ~category : Concept3DCategory
+  ~init(for:with:)
+  ~body : some View 
+}
+class "PDFViewWrapper" as PDFViewWrapper << (S, AntiqueWhite) struct >> { 
+  ~pdfURL : URL
+  ~makeUIView(context:)
+  ~updateUIView(_:context:) 
+}
+View <|-- Concept3DCategoryListView #line:Black;line.dotted;text:Black : inherits from
+View <|-- LocationCollectionCardView #line:Black;line.dotted;text:Black : inherits from
+UIViewRepresentable <|-- PDFViewWrapper #line:Black;line.dotted;text:Black : inherits from
+
+@enduml

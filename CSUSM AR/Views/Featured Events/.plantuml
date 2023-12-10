@@ -1,0 +1,84 @@
+@startuml Featured Events
+!theme carbon-gray
+' STYLE START
+hide empty members
+skinparam backgroundColor transparent
+' STYLE END
+set namespaceSeparator none
+
+
+class "EventDetailsView" as EventDetailsView << (S, AntiqueWhite) struct >> { 
+  ~event : ICalEvent
+  ~init(_:)
+  ~location : String
+  ~title : String
+  ~organization : String
+  ~startTime : String
+  ~endTime : String
+  ~date : String
+  ~description : String
+  ~eventType : String
+  ~eventImageURL : URL?
+  ~accentColor : Color
+  ~actionColor : Color
+  ~body : some View 
+}
+class "EventImageView" as EventImageView << (S, AntiqueWhite) struct >> { 
+  ~imageURL : URL?
+  ~body : some View 
+}
+class "EventBody" as EventBody << (S, AntiqueWhite) struct >> { 
+  ~title : String
+  ~organization : String
+  ~description : String
+  ~init(_:_:_:)
+  ~body : some View 
+}
+class "EventHighlightsView" as EventHighlightsView << (S, AntiqueWhite) struct >> { 
+  ~startTime : String
+  ~endTime : String
+  ~organization : String
+  ~location : String
+  ~eventType : String
+  ~init(_:_:_:_:_:)
+  ~body : some View
+  ~timeHighlight : some View
+  ~organizationHighlight : some View
+  ~locationHighlight : some View
+  ~eventTypeHighlight : some View 
+}
+class "GuidanceButton" as GuidanceButton << (S, AntiqueWhite) struct >> { 
+  ~event : ICalEvent
+  ~init(for:)
+  ~body : some View 
+}
+class "EventFeedView" as EventFeedView << (S, AntiqueWhite) struct >> { 
+  ~events : [ICalEvent]
+  ~body : some View
+  -loadEvents()
+  ~debugPrintEvents()
+  ~contentUnavailableView : some View <&bolt>
+  ~eventsScrollView : some View <&bolt>
+  ~createEventView(for:) <&bolt>
+  ~dateLabel(_:) <&bolt>
+  ~timeLabel(_:) <&bolt> 
+}
+class "EventRowView" as EventRowView << (S, AntiqueWhite) struct >> { 
+  ~event : ICalEvent
+  ~init(for:)
+  ~location : String
+  ~title : String
+  ~organization : String
+  ~date : String
+  ~startTime : String
+  ~body : some View 
+}
+View <|-- EventDetailsView #line:Black;line.dotted;text:Black : inherits from
+View <|-- EventImageView #line:Black;line.dotted;text:Black : inherits from
+View <|-- EventBody #line:Black;line.dotted;text:Black : inherits from
+View <|-- EventHighlightsView #line:Black;line.dotted;text:Black : inherits from
+View <|-- GuidanceButton #line:Black;line.dotted;text:Black : inherits from
+View <|-- EventFeedView #line:Black;line.dotted;text:Black : inherits from
+View <|-- EventRowView #line:Black;line.dotted;text:Black : inherits from
+
+@enduml

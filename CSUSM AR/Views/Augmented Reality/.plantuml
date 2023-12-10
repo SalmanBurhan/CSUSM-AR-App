@@ -1,0 +1,179 @@
+@startuml Augmented Reality
+!theme carbon-gray
+' STYLE START
+hide empty members
+skinparam backgroundColor transparent
+' STYLE END
+set namespaceSeparator none
+
+
+class "CatalogARView" as CatalogARView << (S, AntiqueWhite) struct >> { 
+  -cancellables : Set<AnyCancellable>
+  -session
+  -hasLocationPermissions
+  -isVPSAvailable
+  -sessionStatistics : CatalogARSessionStatistics?
+  ~init(_:category:)
+  ~body : some View
+  ~sceneDidAppear()
+  ~sceneDidDisappear()
+  ~vpsLimitedView()
+  ~statisticsView() 
+}
+class "LocationNode" as LocationNode << (C, AliceBlue) class >> { 
+  ~location : Concept3DLocation
+  ~category : Concept3DCategory
+  ~view : LocationNodeUIView?
+  ~viewNode : SCNNode?
+  ~width : CGFloat
+  ~height : CGFloat
+  ~lastReportedDistance : Float
+  ~init(_:_:width:)
+  ~init(coder:)
+  -setup()
+  +updateTransform(_:)
+  +updateTransform(_:withScalingFromPOV:) 
+}
+class "LocationNodeUIView" as LocationNodeUIView << (C, AliceBlue) class >> { 
+  ~imageView : UIImageView!
+  ~locationNameLabel : UILabel!
+  ~locationCategoryLabel : UILabel!
+  ~locationDistanceLabel : UILabel!
+  ~containerView : UIView!
+  ~strokeWidth : CGFloat
+  ~strokeColor : UIColor
+  ~init()
+  ~init(frame:)
+  ~init(coder:)
+  -commonInit()
+  -addConstraints()
+  ~configure(name:category:categoryImageURL:distance:)
+  ~configure(distance:)
+  ~downloadImage(from:)
+  ~intrinsicContentSize : CGSize
+  ~draw(_:) 
+}
+class "AnchorManager" as AnchorManager << (C, AliceBlue) class >> { 
+  -lock
+  -anchorMap : [UUIDPair: AnchorData]
+  ~getAnchors()
+  ~getAnchors(for:)
+  ~getAnchors(arIdentifier:garIdentifier:)
+  ~addAnchors(uuidPair:data:)
+  ~removeAnchors(for:)
+  ~removeAllAnchors()
+  ~getLocation(for:)
+  ~getCardNode(for:) 
+}
+class "UUIDPair" as AnchorManager.UUIDPair << (S, AntiqueWhite) struct >> { 
+  ~arIdentifier : UUID
+  ~garIdentifier : UUID 
+}
+class "AnchorData" as AnchorManager.AnchorData << (S, AntiqueWhite) struct >> { 
+  ~arAnchor : ARAnchor
+  ~garAnchor : GARAnchor
+  ~location : Concept3DLocation
+  ~category : Concept3DCategory
+  ~cardNode : LocationNode
+  ~init(arAnchor:garAnchor:location:category:) 
+}
+class "SCNMaterialBuilder" as SCNMaterialBuilder << (S, AntiqueWhite) struct >> { 
+  -material : SCNMaterial
+  ~init()
+  ~withColor(_:)
+  ~withView(_:)
+  ~withView(_:size:)
+  ~build() 
+}
+class "LocalizationState" as LocalizationState << (E, AntiqueWhite) enum >> { 
+  ~pretracking
+  ~localizing
+  ~localized
+  ~failed 
+}
+class "ARSessionError" as ARSessionError << (E, AntiqueWhite) enum >> { 
+  ~garSessionError(_:)
+  ~vpsUnavailable
+  ~unexpected(_:)
+  ~description : String 
+}
+class "LocationManager" as LocationManager << (C, AliceBlue) class >> { 
+  -manager : CLLocationManager
+  ~authorizationPublisher
+  ~locationPublisher
+  ~init()
+  ~deinit
+  ~startMonitoring()
+  ~stopMonitoring()
+  ~viewForAuthorizationStatus()
+  ~isAuthorized()
+  ~locationManagerDidChangeAuthorization(_:) <&bolt>
+  ~locationManager(_:didUpdateLocations:) <&bolt>
+  ~locationManager(_:didFailWithError:) <&bolt> 
+}
+class "CatalogARSessionManager" as CatalogARSessionManager << (C, AliceBlue) class >> { 
+  ~{static} shared
+  ~catalog : [Concept3DLocation]
+  ~category : Concept3DCategory
+  ~locationManager : LocationManager
+  ~cancellables : Set<AnyCancellable>
+  ~vpsPublisher : CurrentValueSubject<Bool, Never>
+  ~statisticsPublisher : PassthroughSubject<CatalogARSessionStatistics, Never>
+  ~session : ARSession
+  ~scene : SCNScene
+  ~sceneView : ARSCNView
+  ~coachingView : ARCoachingOverlayView
+  ~garSession : GARSession?
+  ~didCreateAnchors : Bool
+  ~localizationState : LocalizationState
+  ~kHorizontalAccuracyLowThreshold : CLLocationAccuracy
+  ~kHorizontalAccuracyHighThreshold : CLLocationAccuracy
+  ~kOrientationYawAccuracyLowThreshold : CLLocationDirectionAccuracy
+  ~kOrientationYawAccuracyHighThreshold : CLLocationDirectionAccuracy
+  ~kLocalizationFailureTime : TimeInterval
+  ~kDurationNoTerrainAnchorResult : TimeInterval
+  ~lastBeganLocalizing : Date
+  ~anchorManager : AnchorManager
+  ~error : ARSessionError?
+  -init(_:)
+  ~deinit
+  ~sessionConfiguration : ARWorldTrackingConfiguration
+  ~garSessionConfiguration : GARSessionConfiguration
+  ~coachingViewRepresentable : WrappedUIView<ARCoachingOverlayView>
+  ~sceneViewRepresentable : WrappedUIView<ARSCNView>
+  ~run()
+  ~pause()
+  ~didCompleteLocalizing()
+  ~__updateLocalizationState()
+  ~_updateLocalizationState()
+  ~updateLocalizationState()
+  ~updateStatistics()
+  ~createAnchors(for:)
+  ~resolveAnchor(_:forLocation:withState:)
+  ~renderer(_:nodeFor:) <&bolt>
+  ~session(_:didUpdate:) <&bolt> 
+}
+class "CatalogARSessionStatistics" as CatalogARSessionStatistics << (S, AntiqueWhite) struct >> { 
+  ~error : Bool
+  ~errorMessage : String?
+  ~locationAccuracy : Double?
+  ~altitudeAccuracy : Double?
+  ~orientationAccuracy : Double?
+  ~locationAccuracyString : String
+  ~altitudeAccuracyString : String
+  ~orientationAccuracyString : String
+  ~errorMessageString : String
+  ~init(locationAccuracy:altitudeAccuracy:orientationAccuracy:)
+  ~init(errorMessage:) 
+}
+View <|-- CatalogARView #line:Black;line.dotted;text:Black : inherits from
+SCNNode <|-- LocationNode #line:Black;line.dotted;text:Black : inherits from
+UIView <|-- LocationNodeUIView #line:Black;line.dotted;text:Black : inherits from
+Hashable <|-- AnchorManager.UUIDPair #line:Black;line.dotted;text:Black : inherits from
+LocalizedError -- ARSessionError #line:Black;line.dotted;text:Black : inherits from
+NSObject <|-- LocationManager #line:Black;line.dotted;text:Black : inherits from
+NSObject <|-- CatalogARSessionManager #line:Black;line.dotted;text:Black : inherits from
+AnchorManager +-- AnchorManager.UUIDPair
+AnchorManager +-- AnchorManager.AnchorData
+
+@enduml
