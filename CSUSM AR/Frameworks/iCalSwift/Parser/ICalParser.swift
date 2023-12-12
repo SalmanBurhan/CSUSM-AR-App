@@ -6,6 +6,7 @@
 
 import Foundation
 
+@_documentation(visibility:private)
 public struct ICalParser {
     
     public init() {}

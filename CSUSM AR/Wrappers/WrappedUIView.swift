@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+@_documentation(visibility:private)
 struct WrappedUIView<T: UIView>: UIViewRepresentable {
     
     typealias UIViewType = T

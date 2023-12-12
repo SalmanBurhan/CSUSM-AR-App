@@ -7,6 +7,7 @@
 import Foundation
 
 /// See https://tools.ietf.org/html/rfc5545#section-3.1
+@_documentation(visibility:private)
 public struct VContentLine: VEncodable {
     private static let maxLength: Int = 75
     

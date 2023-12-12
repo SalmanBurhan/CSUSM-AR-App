@@ -10,6 +10,7 @@ import Foundation
 /// iCalendar object.
 ///
 /// See https://tools.ietf.org/html/rfc5545#section-3.7.3
+@_documentation(visibility:private)
 public struct ICalProductIdentifier: VPropertyEncodable {
     public let segments: [String]
 

@@ -9,6 +9,7 @@ import Foundation
 /// A collection of calendaring and scheduling information.
 ///
 /// See https://tools.ietf.org/html/rfc5545#section-3.4
+@_documentation(visibility:private)
 public struct ICalendar: VComponent {
     public let component = Constant.Component.calendar
 

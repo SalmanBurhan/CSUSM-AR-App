@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@_documentation(visibility:private)
 struct HomeView: View {
     var body: some View {
         NavigationStack {

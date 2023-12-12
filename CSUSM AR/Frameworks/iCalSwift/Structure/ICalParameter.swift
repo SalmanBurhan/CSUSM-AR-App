@@ -6,6 +6,7 @@
 
 import Foundation
 
+@_documentation(visibility:private)
 public struct ICalParameter: Equatable {
     public let key: String
     public let values: [String]

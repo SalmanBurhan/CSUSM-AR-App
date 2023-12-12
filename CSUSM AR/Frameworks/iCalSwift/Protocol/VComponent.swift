@@ -5,6 +5,7 @@
 //
 
 /// A component enclosed by BEGIN: and END:.
+@_documentation(visibility:private)
 public protocol VComponent: VEncodable {
     /// The component's 'type' that is used in the BEGIN/END
     /// declaration.
@@ -17,6 +18,7 @@ public protocol VComponent: VEncodable {
     var children: [VComponent] { get }
 }
 
+@_documentation(visibility:private)
 public extension VComponent {
     var properties: [VContentLine?] { [] }
     var children: [VComponent] { [] }

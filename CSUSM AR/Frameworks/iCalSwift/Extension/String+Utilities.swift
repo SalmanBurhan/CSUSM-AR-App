@@ -6,6 +6,7 @@
 
 import Foundation
 
+@_documentation(visibility:private)
 extension String {
     func chunks(ofLength length: Int) -> [String] {
         assert(length > 0, "Can only chunk string into non-empty slices.")

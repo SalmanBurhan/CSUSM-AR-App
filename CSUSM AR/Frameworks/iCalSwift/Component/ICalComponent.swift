@@ -7,6 +7,7 @@
 import Foundation
 import SwiftSoup
 
+@_documentation(visibility:private)
 public struct ICalComponent {
     let properties: [(name: String, value: String)]
     let children: [(name: String, value: String)]

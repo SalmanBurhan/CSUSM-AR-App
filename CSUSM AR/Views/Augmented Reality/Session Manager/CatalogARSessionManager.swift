@@ -12,7 +12,7 @@ import ARCoreGARSession
 import Combine
 
 /// A manager class responsible for managing the AR session in the catalog view.
-class CatalogARSessionManager: NSObject {
+public class CatalogARSessionManager: NSObject {
 
     /// The shared instance of the CatalogARSessionManager.
     static let shared = CatalogARSessionManager()

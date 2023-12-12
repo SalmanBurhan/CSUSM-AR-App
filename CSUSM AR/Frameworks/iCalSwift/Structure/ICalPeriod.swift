@@ -6,6 +6,7 @@
 
 import Foundation
 
+@_documentation(visibility:private)
 public struct ICalPeriod: VPropertyEncodable {
     public var startDate: Date
     public var endDate: Date

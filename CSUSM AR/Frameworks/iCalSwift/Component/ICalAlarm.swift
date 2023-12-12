@@ -10,6 +10,7 @@ import Foundation
 /// alarm.
 ///
 /// See https://tools.ietf.org/html/rfc5545#section-3.6.6
+@_documentation(visibility:private)
 public struct ICalAlarm: VComponent {
     public let component = Constant.Component.alarm
     

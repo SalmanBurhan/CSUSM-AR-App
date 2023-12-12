@@ -7,6 +7,7 @@
 
 import Foundation
 
+@_documentation(visibility:private)
 public struct XTrumbaField {
     public var name: String?
     public var type: String?

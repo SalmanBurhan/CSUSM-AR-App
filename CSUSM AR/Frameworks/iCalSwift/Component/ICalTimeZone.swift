@@ -10,6 +10,7 @@ import Foundation
 /// time zone.
 ///
 /// See https://tools.ietf.org/html/rfc5545#section-3.6.5
+@_documentation(visibility:private)
 public struct ICalTimeZone: VComponent {
     public let component = Constant.Component.timeZone
 

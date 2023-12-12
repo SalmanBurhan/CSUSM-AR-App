@@ -19,6 +19,7 @@ import SwiftUI
 
 
 @main
+@_documentation(visibility:private)
 struct CSUSM_ARApp: App {
     
 //    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate

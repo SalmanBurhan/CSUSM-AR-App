@@ -7,6 +7,7 @@
 import Foundation
 import SwiftSoup
 
+@_documentation(visibility:private)
 struct PropertyBuilder {
     
     /// Duration property

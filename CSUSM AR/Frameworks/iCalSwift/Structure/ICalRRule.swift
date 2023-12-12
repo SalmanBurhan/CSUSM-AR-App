@@ -10,6 +10,7 @@ import Foundation
 /// a recurrence rule specification.
 ///
 /// See https://tools.ietf.org/html/rfc5545#section-3.3.10
+@_documentation(visibility:private)
 public struct ICalRRule: VPropertyEncodable {
     
     /// The frequency of the recurrence.

@@ -6,6 +6,7 @@
 
 import Foundation
 
+@_documentation(visibility:private)
 public struct ICalDateTimes: VPropertyEncodable {
     public var type: DateValueType
     public var tzid: String?

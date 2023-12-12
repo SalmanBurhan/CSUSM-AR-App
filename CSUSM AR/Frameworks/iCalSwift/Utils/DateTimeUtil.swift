@@ -6,6 +6,7 @@
 
 import Foundation
 
+@_documentation(visibility:private)
 struct DateTimeUtil {
     static func dateFormatter(type: DateValueType, tzid: String?) -> DateFormatter {
         let formatter = DateFormatter()

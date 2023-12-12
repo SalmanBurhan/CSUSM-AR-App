@@ -15,6 +15,7 @@ fileprivate let week: Int = day * 7
 /// Specifies a positive duration of time.
 ///
 /// See https://tools.ietf.org/html/rfc5545#section-3.8.2.5
+@_documentation(visibility:private)
 public struct ICalDuration: VPropertyEncodable, AdditiveArithmetic {
     public static let zero: ICalDuration = ICalDuration(totalSeconds: 0)
 

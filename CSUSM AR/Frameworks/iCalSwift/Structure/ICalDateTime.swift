@@ -6,6 +6,7 @@
 
 import Foundation
 
+@_documentation(visibility:private)
 public enum DateValueType: Equatable {
     case date
     case dateTime
@@ -14,6 +15,7 @@ public enum DateValueType: Equatable {
 
 /// A date or date/time for use in calendar
 /// events, todos or free/busy-components.
+@_documentation(visibility:private)
 public struct ICalDateTime: VPropertyEncodable {
     public var type: DateValueType
     public var tzid: String?

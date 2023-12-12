@@ -10,6 +10,7 @@ import Foundation
 /// describes an event.
 ///
 /// See https://tools.ietf.org/html/rfc5545#section-3.6.1
+@_documentation(visibility:private)
 public struct ICalEvent: VComponent {
     public let component = Constant.Component.event
     

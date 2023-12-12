@@ -9,7 +9,7 @@ import ARKit
 
 extension CatalogARSessionManager: ARSessionDelegate {
  
-    func session(_ session: ARSession, didUpdate frame: ARFrame) {
+    public func session(_ session: ARSession, didUpdate frame: ARFrame) {
         /// Update the anchors in the scene with the updated frame.
         let updatedAnchors = try? self.garSession?.update(frame).updatedAnchors
         /// Update the localization state and statistics.

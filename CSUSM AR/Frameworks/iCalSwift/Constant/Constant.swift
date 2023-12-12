@@ -6,6 +6,7 @@
 
 import Foundation
 
+@_documentation(visibility:private)
 public enum Constant {
     public enum Prop {
         public static let begin = "BEGIN"
