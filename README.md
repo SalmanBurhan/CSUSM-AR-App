@@ -15,6 +15,8 @@
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    ·
+    <a href="https://salmanburhan.github.io/csusm-augmented-reality-app/documentation/csusm_ar">Read the Docs</a>
   </p>
   <br />
   <br />
